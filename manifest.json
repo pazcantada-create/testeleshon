@@ -1,0 +1,15 @@
+{
+  "name": "Leshon",
+  "short_name": "Leshon",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D0829",
+  "theme_color": "#D4A843",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3233/3233633.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
