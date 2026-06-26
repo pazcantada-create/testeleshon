@@ -395,14 +395,32 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Inter'
 
   <h2 style="font-size: 14px; color: var(--gold); margin-bottom: 15px; text-transform: uppercase;">Curso: O Hebraico Bíblico</h2>
   
+  <!-- LIÇÃO 1 -->
   <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center;">
     <div style="padding-right: 15px;">
       <div style="color: white; font-weight: bold; font-size: 16px; margin-bottom: 5px;">Lição 1: O Alfabeto (Alef-Bet)</div>
       <div style="color: #aaa; font-size: 13px;">Introdução à língua, letras, transliteração e pronúncia.</div>
     </div>
-    <button onclick="openPdf('Lição 1: O Alfabeto', 'https://drive.google.com/file/d/1EyqKp25BYL4ZAReWhq1NZpRuaZnlcK9c/preview?embedded=true')" style="background: var(--gold); color: #1a1a2e; border: none; border-radius: 8px; padding: 10px 15px; font-weight: bold; cursor: pointer; white-space: nowrap;">Abrir</button>
+    <button onclick="abrirLiçao([
+    'imagens/1-.jpeg', 
+    'imagens/2-.jpeg', 
+    'imagens/3-.jpeg',
+    'imagens/4-.jpeg',
+    'imagens/5-.jpeg',
+    'imagens/6-.jpeg',
+    'imagens/7-.jpeg',
+    'imagens/8-.jpeg',
+    'imagens/9-.jpeg',
+    'imagens/10-.jpeg',
+    'imagens/11-.jpeg',
+    'imagens/12-.jpeg',
+    'imagens/13-.jpeg',
+    'imagens/14-.jpeg',
+    'imagens/15-.jpeg'
+])" style="background: var(--gold); color: #1a1a2e; border: none; border-radius: 8px; padding: 10px 15px; font-weight: bold; cursor: pointer; white-space: nowrap;">Iniciar Lição</button>
   </div>
 
+  <!-- LIÇÃO 2 -->
   <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center;">
     <div style="padding-right: 15px;">
       <div style="color: white; font-weight: bold; font-size: 16px; margin-bottom: 5px;">Lição 2: Gramática Básica</div>
@@ -411,6 +429,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Inter'
     <button onclick="openPdf('Lição 2: Gramática', 'https://drive.google.com/file/d/17zLWuimwn30M8QIC8JtKlXaIrM8j8LxS/preview?embedded=true')" style="background: var(--gold); color: #1a1a2e; border: none; border-radius: 8px; padding: 10px 15px; font-weight: bold; cursor: pointer; white-space: nowrap;">Abrir</button>
   </div>
 
+  <!-- LIÇÃO 3 -->
   <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center;">
     <div style="padding-right: 15px;">
       <div style="color: white; font-weight: bold; font-size: 16px; margin-bottom: 5px;">Lição 3: Vocabulário e Frases</div>
@@ -419,6 +438,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Inter'
     <button onclick="openPdf('Lição 3: Vocabulário', 'https://drive.google.com/file/d/1TtK-EMa3N4sZrJvAt4OnQVLdxgZMGMxh/preview?embedded=true')" style="background: var(--gold); color: #1a1a2e; border: none; border-radius: 8px; padding: 10px 15px; font-weight: bold; cursor: pointer; white-space: nowrap;">Abrir</button>
   </div>
 
+  <!-- LIÇÃO 4 -->
   <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center;">
     <div style="padding-right: 15px;">
       <div style="color: white; font-weight: bold; font-size: 16px; margin-bottom: 5px;">Lição 4: Leitura e Interpretação</div>
@@ -427,6 +447,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Inter'
     <button onclick="openPdf('Lição 4: Interpretação', 'https://drive.google.com/file/d/1b5yCdC2TtFn1temUxoy1UBkx4j3jtzyF/preview?embedded=true')" style="background: var(--gold); color: #1a1a2e; border: none; border-radius: 8px; padding: 10px 15px; font-weight: bold; cursor: pointer; white-space: nowrap;">Abrir</button>
   </div>
 
+  <!-- LIÇÃO 5 -->
   <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center;">
     <div style="padding-right: 15px;">
       <div style="color: white; font-weight: bold; font-size: 16px; margin-bottom: 5px;">Lição 5: Exercícios e Quiz</div>
@@ -595,6 +616,13 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Inter'
 
 </div>
 
+<div id="screen-leitura" class="screen" style="padding-bottom: 0;">
+    <div style="padding: 15px; background: #1a1a1a; text-align: left; position: sticky; top: 0; z-index: 100;">
+        <button onclick="navTo('estudos')" style="background:none; border:none; color:var(--gold); font-size:16px; font-weight:bold; cursor: pointer;">← Voltar aos Estudos</button>
+    </div>
+    <div id="container-imagens"></div>
+</div>
+  
 <script type="module">
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
 import { getFirestore, doc, getDoc } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
@@ -3845,7 +3873,26 @@ window.playSimpleAudio = function(url, btnElement) {
     player.onended = () => { btnElement.textContent = '🎧'; };
 };
 
-
+window.abrirLiçao = function(listaImagens) {
+    const container = document.getElementById('container-imagens');
+    container.innerHTML = ''; // Limpa a leitura anterior
+    
+    listaImagens.forEach(imgUrl => {
+        const img = document.createElement('img');
+        img.src = imgUrl; 
+        img.style.width = "100%"; 
+        img.style.display = "block";
+        container.appendChild(img);
+    });
+    
+    // Esconde as outras telas
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+    
+    // Mostra a tela de leitura
+    const telaLeitura = document.getElementById('screen-leitura');
+    telaLeitura.classList.add('active');
+    telaLeitura.style.display = 'block';
+};
 </script>
 
 </body>
