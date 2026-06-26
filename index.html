@@ -1432,9 +1432,17 @@ function renderProfile(){
 window.navTo = function(scr){
   document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
   document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
-  document.getElementById(`screen-${scr}`).classList.add('active');
+  
+  const telaDestino = document.getElementById(`screen-${scr}`);
+  if(telaDestino) telaDestino.classList.add('active');
+  
   const nb = document.getElementById(`nav-${scr}`);
   if(nb) nb.classList.add('active');
+
+  // 👇 NOVA LINHA: Garante que o menu volte a aparecer nas outras telas
+  if(scr !== 'splash') {
+      document.getElementById('bottom-nav').classList.add('visible');
+  }
 };
 
 window.logout = function(){
