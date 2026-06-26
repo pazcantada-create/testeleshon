@@ -641,11 +641,9 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Inter'
   </div>
 </div>
 
-</div>
-<!-- TELA DE LEITURA DAS LIÇÕES -->
 <div id="screen-leitura" class="screen" style="padding-bottom: 0;">
     <div style="padding: 15px; background: #1a1a1a; text-align: left; position: sticky; top: 0; z-index: 100;">
-        <button onclick="navTo('estudos')" style="background:none; border:none; color:var(--gold); font-size:16px; font-weight:bold; cursor: pointer;">← Voltar aos Estudos</button>
+        <button id="btn-voltar-leitura" onclick="navTo('estudos')" style="background:none; border:none; color:var(--gold); font-size:16px; font-weight:bold; cursor: pointer;">← Voltar</button>
     </div>
     <div id="container-imagens"></div>
 </div>
@@ -3917,6 +3915,39 @@ window.abrirLiçao = function(listaImagens) {
     telaLeitura.classList.add('active');
 };
 </script>
+window.abrirLiçao = function(listaImagens) {
+    // 1. Descobrir de onde o usuário está vindo antes de trocar a tela
+    const telaAtiva = document.querySelector('.screen.active');
+    let idDaTelaDeRetorno = 'estudos'; // Destino padrão
+    
+    if (telaAtiva && telaAtiva.id !== 'screen-leitura') {
+        // Pega o ID da tela ativa e ajusta para usar no botão voltar
+        idDaTelaDeRetorno = telaAtiva.id.replace('screen-', '');
+    }
 
+    // 2. Atualizar o botão de voltar para apontar para a tela certa
+    const btnVoltar = document.getElementById('btn-voltar-leitura');
+    if (btnVoltar) {
+        btnVoltar.setAttribute('onclick', `navTo('${idDaTelaDeRetorno}')`);
+    }
+
+    // 3. Carregar as imagens na tela
+    const container = document.getElementById('container-imagens');
+    container.innerHTML = ''; 
+    
+    listaImagens.forEach(imgUrl => {
+        const img = document.createElement('img');
+        img.src = imgUrl; 
+        img.style.width = "100%"; 
+        img.style.display = "block";
+        container.appendChild(img);
+    });
+    
+    // 4. Esconder as outras telas e mostrar a tela de leitura
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+    
+    const telaLeitura = document.getElementById('screen-leitura');
+    telaLeitura.classList.add('active');
+};
 </body>
 </html>
