@@ -3887,14 +3887,14 @@ window.playSimpleAudio = function(url, btnElement) {
     // Lógica de reprodução
     if (!player.paused && player.src === url) {
         player.pause();
-        btnElement.textContent = '🎧';
+        btnElement.textContent = '▶';
     } else {
         player.src = url;
         player.play().catch(e => console.error("Erro:", e));
         btnElement.textContent = '⏸';
     }
     
-    player.onended = () => { btnElement.textContent = '🎧'; };
+    player.onended = () => { btnElement.textContent = '▶'; };
 };
 
 window.abrirLiçao = function(listaImagens) {
