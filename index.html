@@ -3914,23 +3914,19 @@ window.abrirLiçao = function(listaImagens) {
     const telaLeitura = document.getElementById('screen-leitura');
     telaLeitura.classList.add('active');
 };
-  window.abrirLiçao = function(listaImagens) {
-    // 1. Descobrir de onde o usuário está vindo antes de trocar a tela
+window.abrirLiçao = function(listaImagens) {
     const telaAtiva = document.querySelector('.screen.active');
-    let idDaTelaDeRetorno = 'estudos'; // Destino padrão
+    let idDaTelaDeRetorno = 'estudos'; 
     
     if (telaAtiva && telaAtiva.id !== 'screen-leitura') {
-        // Pega o ID da tela ativa e ajusta para usar no botão voltar
         idDaTelaDeRetorno = telaAtiva.id.replace('screen-', '');
     }
 
-    // 2. Atualizar o botão de voltar para apontar para a tela certa
     const btnVoltar = document.getElementById('btn-voltar-leitura');
     if (btnVoltar) {
         btnVoltar.setAttribute('onclick', `navTo('${idDaTelaDeRetorno}')`);
     }
 
-    // 3. Carregar as imagens na tela
     const container = document.getElementById('container-imagens');
     container.innerHTML = ''; 
     
@@ -3942,11 +3938,13 @@ window.abrirLiçao = function(listaImagens) {
         container.appendChild(img);
     });
     
-    // 4. Esconder as outras telas e mostrar a tela de leitura
     document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
     
     const telaLeitura = document.getElementById('screen-leitura');
     telaLeitura.classList.add('active');
+
+    // 👇 NOVA LINHA: Esconde o menu inferior na hora da leitura!
+    document.getElementById('bottom-nav').classList.remove('visible');
 };
 </script>
 
