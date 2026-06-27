@@ -1391,12 +1391,22 @@ window.handleLogin = async function(emailSalvo){
   const btn = document.querySelector('.btn-primary');
   if (btn) btn.textContent = "Verificando..."; 
   
-  // Se tiver e-mail salvo usa ele, senão pega o que foi digitado
-  const em = emailSalvo || document.getElementById('login-email').value.trim().toLowerCase();
-  if(!em) { if(btn) btn.textContent = "Entrar"; return; }
+  let em = "";
+  
+  // 🛡️ BARREIRA DE PROTEÇÃO: Só aceita se for um texto e se tiver a arroba do e-mail
+  if (typeof emailSalvo === 'string' && emailSalvo.includes('@')) {
+      em = emailSalvo;
+  } else {
+      em = document.getElementById('login-email').value.trim().toLowerCase();
+  }
+
+  if(!em) { 
+      if(btn) btn.textContent = "Entrar"; 
+      return; 
+  }
   
   S.email = em;
-  localStorage.setItem('leshon_email', em); // 💾 Salva na memória do celular!
+  localStorage.setItem('leshon_email', em); // Salva o e-mail de verdade
   
   await checkPro(em); 
   boot();
@@ -1404,14 +1414,16 @@ window.handleLogin = async function(emailSalvo){
   if (btn) btn.textContent = "Entrar";
 };
 
-// 🚀 Quando o app abrir, verifica se tem e-mail salvo e loga direto
+// 🚀 Quando o app abrir, verifica a memória
 window.addEventListener('load', () => {
   const emailGuardado = localStorage.getItem('leshon_email');
-  if (emailGuardado) {
+  // Se a memória guardou o erro do clique, nós a apagamos
+  if (emailGuardado && !emailGuardado.includes('@')) {
+      localStorage.removeItem('leshon_email');
+  } else if (emailGuardado) {
     window.handleLogin(emailGuardado);
   }
 });
-
 function boot(){
   renderHome(); renderDict(''); renderMusic('all'); renderProfile();
   document.getElementById('bottom-nav').classList.add('visible');
