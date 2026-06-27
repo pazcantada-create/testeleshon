@@ -373,6 +373,15 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Inter'
     <h2 style="font-family:'Cinzel',serif;font-size:1.2rem;font-weight:600">Músicas</h2>
     <span style="font-size:.78rem;color:var(--text-dim)" id="music-lbl"></span>
   </div>
+
+  <!-- NOVA BARRA DE PESQUISA -->
+  <div style="padding: 0 14px 10px;">
+    <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 12px 15px; display: flex; align-items: center;">
+      <span style="color: #aaa; margin-right: 10px; font-size: 18px;">🔍</span>
+      <input type="text" id="music-search" placeholder="Buscar música..." onkeyup="searchMusic()" style="background: transparent; border: none; color: white; width: 100%; outline: none; font-size: 15px;">
+    </div>
+  </div>
+
   <div class="music-tabs">
     <button class="music-tab active" onclick="filterMusic('all',this)">Todas</button>
     <button class="music-tab" onclick="filterMusic('acalmar',this)">🕊 Acalmar</button>
@@ -4111,6 +4120,42 @@ window.abrirLiçao = function(listaImagens) {
     // 👇 NOVA LINHA: Esconde o menu inferior na hora da leitura!
     document.getElementById('bottom-nav').classList.remove('visible');
 };
+// ================= BUSCADOR DE MÚSICAS =================
+window.searchMusic = function() {
+  const termo = document.getElementById('music-search').value.toLowerCase();
+  
+  // Tira a marcação azul das abas (Todas, Acalmar, Alegrar) para não confundir
+  if (termo.length > 0) {
+    document.querySelectorAll('#screen-music .music-tab').forEach(t => t.classList.remove('active'));
+  }
+
+  // Filtra as músicas que tem o texto digitado
+  const items = S.songs.filter(s => s.title.toLowerCase().includes(termo));
+  
+  // Atualiza o contador lá em cima
+  document.getElementById('music-lbl').textContent = `${items.length} músicas`;
+  
+  // Se não achar nada, mostra mensagem
+  if(items.length === 0) {
+     document.getElementById('music-list').innerHTML = '<div style="text-align:center; padding:20px; color:#aaa;">Nenhuma música encontrada.</div>';
+     return;
+  }
+
+  // Desenha a lista filtrada na tela
+  document.getElementById('music-list').innerHTML = items.map((s, i) => {
+    const globalIndex = S.songs.indexOf(s); 
+    return `
+    <div class="song-item">
+        <div class="fav-btn" onclick="toggleFavorito('${s.title}')" style="cursor:pointer; padding: 5px;">❤️</div>
+        <div class="song-n" onclick="playSong(${globalIndex})">${i+1}</div>
+        <div class="song-btn" onclick="playSong(${globalIndex})">▶</div>
+        <div class="song-info" onclick="playSong(${globalIndex})">
+            <div class="song-title">${s.title}</div>
+            <div class="song-cat-lbl ${s.category}">${s.category}</div>
+        </div>
+    </div>`;
+  }).join('');
+};  
 </script>
 
 </body>
