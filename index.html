@@ -4072,9 +4072,22 @@ window.playSimpleAudio = function(url, btnElement) {
 };
 
 window.abrirLiçao = function(listaImagens) {
+    const telaAtiva = document.querySelector('.screen.active');
+    let idDaTelaDeRetorno = 'estudos'; 
+    
+    if (telaAtiva && telaAtiva.id !== 'screen-leitura') {
+        idDaTelaDeRetorno = telaAtiva.id.replace('screen-', '');
+    }
+
+    const btnVoltar = document.getElementById('btn-voltar-leitura');
+    if (btnVoltar) {
+        btnVoltar.setAttribute('onclick', `navTo('${idDaTelaDeRetorno}')`);
+    }
+
     const container = document.getElementById('container-imagens');
     container.innerHTML = ''; 
     
+    // Monta as imagens na tela sequencialmente
     listaImagens.forEach(imgUrl => {
         const img = document.createElement('img');
         img.src = imgUrl; 
@@ -4083,18 +4096,19 @@ window.abrirLiçao = function(listaImagens) {
         container.appendChild(img);
     });
     
+    // Altera a tela visível
     document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
     
     const telaLeitura = document.getElementById('screen-leitura');
-    telaLeitura.classList.add('active');
-};
-window.abrirLiçao = function(listaImagens) {
-    const telaAtiva = document.querySelector('.screen.active');
-    let idDaTelaDeRetorno = 'estudos'; 
-    
-    if (telaAtiva && telaAtiva.id !== 'screen-leitura') {
-        idDaTelaDeRetorno = telaAtiva.id.replace('screen-', '');
+    if (telaLeitura) {
+        telaLeitura.classList.add('active');
+        telaLeitura.scrollTop = 0; // 🎯 CORREÇÃO: Força a página a rolar para o topo do slide 1 toda vez!
     }
+
+    // Esconde o menu inferior na hora da leitura
+    const bottomNav = document.getElementById('bottom-nav');
+    if (bottomNav) bottomNav.classList.remove('visible');
+};
 
     const btnVoltar = document.getElementById('btn-voltar-leitura');
     if (btnVoltar) {
