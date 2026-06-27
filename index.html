@@ -1424,6 +1424,7 @@ window.addEventListener('load', () => {
     window.handleLogin(emailGuardado);
   }
 });
+
 function boot(){
   renderHome(); renderDict(''); renderMusic('all'); renderProfile();
   document.getElementById('bottom-nav').classList.add('visible');
@@ -1433,17 +1434,15 @@ function renderHome(){
     const dataHj = new Date().toLocaleDateString('pt-BR',{weekday:'long',day:'numeric',month:'long'});
     document.getElementById('home-date').textContent = dataHj;
     document.getElementById('home-user').textContent = S.email.split('@')[0];
+    
     // SORTEADOR DE MÚSICA ALEATÓRIA
-    // Dentro da sua função renderHome()
-if (S.songs && S.songs.length > 0) {
-    const randomIndex = Math.floor(Math.random() * S.songs.length); 
-    const musicaSorteada = S.songs[randomIndex];
-    
-    // AQUI É A CHAVE: salvamos o índice sorteado na variável global
-    window.sugestaoIndex = randomIndex; 
-    
-    document.getElementById('sug-title').textContent = musicaSorteada.title;
-}
+    if (S.songs && S.songs.length > 0) {
+        const randomIndex = Math.floor(Math.random() * S.songs.length); 
+        const musicaSorteada = S.songs[randomIndex];
+        
+        window.sugestaoIndex = randomIndex; 
+        document.getElementById('sug-title').textContent = musicaSorteada.title;
+    }
     
     // CHAMADA DO NOSSO SORTEADOR AQUI
     window.sortearPalavraDoDia();
