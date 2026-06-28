@@ -2719,6 +2719,905 @@ const LICAO_5_HTML = `
     const bottomNav = document.getElementById('bottom-nav');
     if (bottomNav) bottomNav.classList.remove('visible');
 };
+  // ================= COFRE DAS LIÇÕES EM HTML =================
+
+window.LICAO_1_HTML = `
+  <!-- <div class="licao-html" style="background-color: #0D0829; padding: 20px; max-width: 800px; margin: 0 auto; color: #F5F0E8; font-family: 'Inter', sans-serif; padding-bottom: 80px;">
+    
+    <!-- 1. INTRODUÇÃO E ORIGENS -->
+    <div style="text-align: center; margin-bottom: 40px;">
+        <span style="font-size: 4rem; color: #D4A843; opacity: 0.15; display: block; margin-bottom: -25px;">א</span>
+        <h2 style="font-family: 'Cinzel', serif; color: #D4A843; font-size: 2.2rem; margin-bottom: 10px; line-height: 1.2;">O Alfabeto<br>Hebraico Bíblico</h2>
+        <p style="color: #9B8FCB; font-size: 0.95rem; line-height: 1.7;">
+            Uma das formas de escrita mais antigas da história, carregada de significado e simbolismo. Suas letras abrem uma janela para a cultura e a espiritualidade do povo judeu.
+        </p>
+    </div>
+
+    <!-- Cards de Evolução Histórica -->
+    <div style="display: flex; flex-direction: column; gap: 15px; margin-bottom: 40px;">
+        <div style="background: linear-gradient(135deg, #160E3F, #1A1040); border-left: 4px solid #D4A843; padding: 15px 20px; border-radius: 8px;">
+            <h4 style="font-family: 'Cinzel', serif; color: #F0C96A; margin-bottom: 5px;">Páleo-Hebraico (Séc. X a.C.)</h4>
+            <p style="font-size: 0.85rem; color: #9B8FCB; margin: 0;">As origens com as primeiras inscrições antigas.</p>
+        </div>
+        <div style="background: linear-gradient(135deg, #160E3F, #1A1040); border-left: 4px solid #D4A843; padding: 15px 20px; border-radius: 8px;">
+            <h4 style="font-family: 'Cinzel', serif; color: #F0C96A; margin-bottom: 5px;">Hebraico Quadrado (Séc. III a.C.)</h4>
+            <p style="font-size: 0.85rem; color: #9B8FCB; margin: 0;">Evolução para a forma quadrada que lemos na Bíblia e rolos da Torá.</p>
+        </div>
+        <div style="background: linear-gradient(135deg, #160E3F, #1A1040); border-left: 4px solid #D4A843; padding: 15px 20px; border-radius: 8px;">
+            <h4 style="font-family: 'Cinzel', serif; color: #F0C96A; margin-bottom: 5px;">Hebraico Moderno</h4>
+            <p style="font-size: 0.85rem; color: #9B8FCB; margin: 0;">Usado até hoje, desenvolveu-se a partir do Hebraico Quadrado.</p>
+        </div>
+    </div>
+
+    <!-- 2. CARACTERÍSTICAS DA ESCRITA -->
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; border-bottom: 1px solid rgba(212,168,67,0.2); padding-bottom: 10px; margin-bottom: 20px;">Regras Fundamentais</h3>
+    
+    <div style="display: grid; grid-template-columns: 1fr; gap: 15px; margin-bottom: 40px;">
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 20px; display: flex; align-items: center; gap: 15px;">
+            <div style="font-size: 2.5rem;">⬅️</div>
+            <div>
+                <strong style="color: #F0C96A; display: block; margin-bottom: 5px;">Direção da Escrita</strong>
+                <span style="font-size: 0.85rem; color: #9B8FCB; line-height: 1.5;">O hebraico é lido e escrito da <strong style="color: #FFF;">direita para a esquerda</strong>. Isso requer uma adaptação mental no início.</span>
+            </div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 20px; display: flex; align-items: center; gap: 15px;">
+            <div style="font-size: 2.5rem; color: #D4A843;">22</div>
+            <div>
+                <strong style="color: #F0C96A; display: block; margin-bottom: 5px;">Ordem Tradicional</strong>
+                <span style="font-size: 0.85rem; color: #9B8FCB; line-height: 1.5;">O alfabeto é composto estritamente por 22 consoantes (não há letras nativas para vogais), dispostas de Alef a Tav.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. O ALFABETO (ALEF-BET) COMPLETO -->
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; border-bottom: 1px solid rgba(212,168,67,0.2); padding-bottom: 10px; margin-bottom: 20px;">As 22 Letras do Alef-Bet</h3>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; direction: rtl; margin-bottom: 40px;">
+        
+        <div style="background: #160E3F; border: 1px solid rgba(212,168,67,0.3); border-radius: 12px; padding: 15px; text-align: center;">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">א</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Alef</div>
+            <div style="font-size: 0.75rem; color: #9B8FCB;">Muda / Suave</div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">ב</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Bet / Vet</div>
+            <div style="font-size: 0.75rem; color: #9B8FCB;">B ou V</div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">ג</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Gimel</div>
+            <div style="font-size: 0.75rem; color: #9B8FCB;">G (de Gato)</div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">ד</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Dalet</div>
+            <div style="font-size: 0.75rem; color: #9B8FCB;">D</div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">ה</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Hei</div>
+            <div style="font-size: 0.75rem; color: #9B8FCB;">H aspirado</div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">ו</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Vav</div>
+            <div style="font-size: 0.75rem; color: #9B8FCB;">V / O / U</div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">ז</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Zain</div>
+            <div style="font-size: 0.75rem; color: #9B8FCB;">Z</div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">ח</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Het</div>
+            <div style="font-size: 0.75rem; color: #9B8FCB;">CH (gutural)</div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">ט</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Tet</div>
+            <div style="font-size: 0.75rem; color: #9B8FCB;">T enfático</div>
+        </div>
+        
+        <!-- Destaque YOD -->
+        <div style="background: linear-gradient(135deg, #231551, #160E3F); border: 2px solid #D4A843; border-radius: 12px; padding: 15px; text-align: center; box-shadow: 0 0 20px rgba(212,168,67,0.2);">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">י</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Yod</div>
+            <div style="font-size: 0.7rem; color: #D4A843;">A MENOR LETRA<br>GIGANTE NA TEOLOGIA</div>
+        </div>
+
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">כ</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Kaf</div>
+            <div style="font-size: 0.75rem; color: #9B8FCB;">K ou CH</div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">ל</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Lamed</div>
+            <div style="font-size: 0.75rem; color: #9B8FCB;">L</div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">מ</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Mem</div>
+            <div style="font-size: 0.75rem; color: #9B8FCB;">M</div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">נ</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Nun</div>
+            <div style="font-size: 0.75rem; color: #9B8FCB;">N</div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">ס</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Samekh</div>
+            <div style="font-size: 0.75rem; color: #9B8FCB;">S</div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">ע</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Ayin</div>
+            <div style="font-size: 0.75rem; color: #9B8FCB;">Muda / Gutural</div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">פ</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Pe</div>
+            <div style="font-size: 0.75rem; color: #9B8FCB;">P ou F</div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">צ</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Tsadi</div>
+            <div style="font-size: 0.75rem; color: #9B8FCB;">TS</div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">ק</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Qof</div>
+            <div style="font-size: 0.75rem; color: #9B8FCB;">Q / K</div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">ר</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Resh</div>
+            <div style="font-size: 0.75rem; color: #9B8FCB;">R</div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">ש</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Shin / Sin</div>
+            <div style="font-size: 0.75rem; color: #9B8FCB;">SH ou S</div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <div style="font-size: 3.5rem; color: #F0C96A; line-height: 1; margin-bottom: 5px; font-family: serif;">ת</div>
+            <div style="font-family: 'Cinzel', serif; font-weight: bold; color: #FFF;">Tav</div>
+            <div style="font-size: 0.75rem; color: #9B8FCB;">T</div>
+        </div>
+    </div>
+
+
+    <!-- 4. LETRAS FINAIS (SOFIOT) -->
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; border-bottom: 1px solid rgba(212,168,67,0.2); padding-bottom: 10px; margin-bottom: 20px;">Letras Finais (Sofiot)</h3>
+    <p style="color: #9B8FCB; font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px;">Cinco letras hebraicas assumem uma forma totalmente diferente, mais alongada ou quadrada, quando aparecem **no final de uma palavra**.</p>
+    
+    <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; overflow: hidden; margin-bottom: 40px;">
+        <table style="width: 100%; border-collapse: collapse; text-align: center; color: #FFF;">
+            <tr style="background: rgba(212,168,67,0.1); color: #F0C96A; font-family: 'Cinzel', serif;">
+                <th style="padding: 12px; border-bottom: 1px solid rgba(212,168,67,0.2);">Letra Padrão</th>
+                <th style="padding: 12px; border-bottom: 1px solid rgba(212,168,67,0.2);">Letra Final</th>
+                <th style="padding: 12px; border-bottom: 1px solid rgba(212,168,67,0.2);">Nome</th>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 12px; font-size: 2rem; font-family: serif; color: #FFF;">כ</td>
+                <td style="padding: 12px; font-size: 2rem; font-family: serif; color: #D4A843;">ך</td>
+                <td style="padding: 12px; color: #9B8FCB;">Kaf Sofit</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 12px; font-size: 2rem; font-family: serif; color: #FFF;">מ</td>
+                <td style="padding: 12px; font-size: 2rem; font-family: serif; color: #D4A843;">ם</td>
+                <td style="padding: 12px; color: #9B8FCB;">Mem Sofit</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 12px; font-size: 2rem; font-family: serif; color: #FFF;">נ</td>
+                <td style="padding: 12px; font-size: 2rem; font-family: serif; color: #D4A843;">ן</td>
+                <td style="padding: 12px; color: #9B8FCB;">Nun Sofit</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 12px; font-size: 2rem; font-family: serif; color: #FFF;">פ</td>
+                <td style="padding: 12px; font-size: 2rem; font-family: serif; color: #D4A843;">ף</td>
+                <td style="padding: 12px; color: #9B8FCB;">Pe Sofit</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; font-size: 2rem; font-family: serif; color: #FFF;">צ</td>
+                <td style="padding: 12px; font-size: 2rem; font-family: serif; color: #D4A843;">ץ</td>
+                <td style="padding: 12px; color: #9B8FCB;">Tsadi Sofit</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- 5. SINAIS DE VOGAIS (NIKUD) -->
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; border-bottom: 1px solid rgba(212,168,67,0.2); padding-bottom: 10px; margin-bottom: 20px;">Sinais de Vogais (Nikud)</h3>
+    <p style="color: #9B8FCB; font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px;">O hebraico original não possuía vogais escritas. Para preservar a pronúncia correta da Bíblia, os massoretas criaram pequenos pontos e traços chamados <strong style="color: #FFF;">Nikud</strong>.</p>
+    
+    <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 40px;">
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(100,80,200,0.2); padding: 12px 20px; border-radius: 8px; display: flex; align-items: center; justify-content: space-between;">
+            <div style="font-size: 2.2rem; font-family: serif; color: #D4A843; width: 60px; text-align: center;">אַ</div>
+            <div style="flex: 1; margin-left: 15px;">
+                <strong style="color: #FFF; font-size: 1rem;">Patach / Qamatz</strong>
+                <div style="color: #9B8FCB; font-size: 0.8rem;">Som de "A"</div>
+            </div>
+        </div>
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(100,80,200,0.2); padding: 12px 20px; border-radius: 8px; display: flex; align-items: center; justify-content: space-between;">
+            <div style="font-size: 2.2rem; font-family: serif; color: #D4A843; width: 60px; text-align: center;">אֶ</div>
+            <div style="flex: 1; margin-left: 15px;">
+                <strong style="color: #FFF; font-size: 1rem;">Segol / Tzere</strong>
+                <div style="color: #9B8FCB; font-size: 0.8rem;">Som de "E"</div>
+            </div>
+        </div>
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(100,80,200,0.2); padding: 12px 20px; border-radius: 8px; display: flex; align-items: center; justify-content: space-between;">
+            <div style="font-size: 2.2rem; font-family: serif; color: #D4A843; width: 60px; text-align: center;">אִ</div>
+            <div style="flex: 1; margin-left: 15px;">
+                <strong style="color: #FFF; font-size: 1rem;">Chirik</strong>
+                <div style="color: #9B8FCB; font-size: 0.8rem;">Som de "I"</div>
+            </div>
+        </div>
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(100,80,200,0.2); padding: 12px 20px; border-radius: 8px; display: flex; align-items: center; justify-content: space-between;">
+            <div style="font-size: 2.2rem; font-family: serif; color: #D4A843; width: 60px; text-align: center;">אוֹ</div>
+            <div style="flex: 1; margin-left: 15px;">
+                <strong style="color: #FFF; font-size: 1rem;">Cholam</strong>
+                <div style="color: #9B8FCB; font-size: 0.8rem;">Som de "O"</div>
+            </div>
+        </div>
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(100,80,200,0.2); padding: 12px 20px; border-radius: 8px; display: flex; align-items: center; justify-content: space-between;">
+            <div style="font-size: 2.2rem; font-family: serif; color: #D4A843; width: 60px; text-align: center;">אֻ</div>
+            <div style="flex: 1; margin-left: 15px;">
+                <strong style="color: #FFF; font-size: 1rem;">Kubutz / Shuruk</strong>
+                <div style="color: #9B8FCB; font-size: 0.8rem;">Som de "U"</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. VALORES NUMÉRICOS (GUEMATRIA) E TRANSLITERAÇÃO -->
+    <div style="margin-top: 40px; background: linear-gradient(135deg, rgba(212,168,67,0.1), rgba(212,168,67,0.02)); border: 1px solid rgba(212,168,67,0.3); border-radius: 16px; padding: 25px;">
+        <h4 style="font-family: 'Cinzel', serif; color: #F0C96A; margin-bottom: 15px; font-size: 1.2rem; text-align: center;">Mística e Tradução</h4>
+        
+        <div style="margin-bottom: 25px;">
+            <strong style="color: #0D0829; background: #D4A843; padding: 4px 12px; border-radius: 6px; display: inline-block; margin-bottom: 8px; font-weight: 800;">Valores Numéricos</strong>
+            <p style="font-size: 0.85rem; color: #9B8FCB; line-height: 1.5;">O hebraico não tem números separados. Cada letra tem um valor numérico (Alef=1, Bet=2...). A união do significado linguístico com cálculos matemáticos (Guematria) é a base de interpretações cabalísticas profundas.</p>
+        </div>
+
+        <div>
+            <strong style="color: #0D0829; background: #D4A843; padding: 4px 12px; border-radius: 6px; display: inline-block; margin-bottom: 8px; font-weight: 800;">Transliteração (A Ponte)</strong>
+            <p style="font-size: 0.85rem; color: #9B8FCB; line-height: 1.5;">Converter letras hebraicas para o nosso alfabeto facilita a pronúncia para iniciantes.<br>Ex: <span style="font-family: serif; color: #D4A843; font-size: 1.2rem;">שָׁלוֹם</span> se torna <strong style="color: #FFF;">Shalom</strong> (Paz).</p>
+        </div>
+    </div>
+
+</div> -->
+`;
+
+window.LICAO_2_HTML = `
+  <!-- <div class="licao-html" style="background-color: #0D0829; padding: 20px; max-width: 800px; margin: 0 auto; color: #F5F0E8; font-family: 'Inter', sans-serif; padding-bottom: 80px; line-height: 1.6;">
+
+    <div style="text-align: center; margin-bottom: 40px; border-bottom: 1px solid rgba(212,168,67,0.2); padding-bottom: 20px;">
+        <h2 style="font-family: 'Cinzel', serif; color: #D4A843; font-size: 2rem; margin-bottom: 10px; line-height: 1.2;">Lição 2<br>Gramática Fundamental</h2>
+        <p style="color: #9B8FCB; font-size: 0.95rem;">Compreenda a estrutura que organiza as palavras e frases no Antigo Testamento para uma interpretação precisa dos textos originais.</p>
+    </div>
+
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; margin-bottom: 15px;">2.1 - Por que estudar gramática?</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-bottom: 40px;">
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <strong style="color: #FFF; display: block; margin-bottom: 8px;">Entendimento Correto</strong>
+            <span style="font-size: 0.85rem; color: #9B8FCB;">Entenda exatamente o que o autor bíblico pretendia comunicar.</span>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <strong style="color: #FFF; display: block; margin-bottom: 8px;">Evita Má Interpretação</strong>
+            <span style="font-size: 0.85rem; color: #9B8FCB;">Pequenas diferenças podem alterar completamente o significado.</span>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; text-align: center;">
+            <strong style="color: #FFF; display: block; margin-bottom: 8px;">Aprofundamento</strong>
+            <span style="font-size: 0.85rem; color: #9B8FCB;">Perceba detalhes espirituais que passam despercebidos nas traduções.</span>
+        </div>
+    </div>
+
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; margin-bottom: 15px;">2.2 - Substantivos no Hebraico Bíblico</h3>
+    <p style="color: #9B8FCB; font-size: 0.95rem; margin-bottom: 20px;">Palavras que identificam seres, lugares, objetos, ideias ou sentimentos.</p>
+    
+    <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; overflow: hidden; margin-bottom: 20px;">
+        <table style="width: 100%; border-collapse: collapse; text-align: left;">
+            <tr style="background: rgba(212,168,67,0.1); color: #F0C96A; font-family: 'Cinzel', serif;">
+                <th style="padding: 12px; border-bottom: 1px solid rgba(212,168,67,0.2);">Hebraico</th>
+                <th style="padding: 12px; border-bottom: 1px solid rgba(212,168,67,0.2);">Transliteração</th>
+                <th style="padding: 12px; border-bottom: 1px solid rgba(212,168,67,0.2);">Tradução</th>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 12px; font-size: 1.3rem; font-family: serif; color: #FFF; direction: rtl;">מֶלֶךְ</td>
+                <td style="padding: 12px; color: #9B8FCB;">Melekh</td>
+                <td style="padding: 12px; color: #FFF;">Rei</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 12px; font-size: 1.3rem; font-family: serif; color: #FFF; direction: rtl;">תּוֹרָה</td>
+                <td style="padding: 12px; color: #9B8FCB;">Torah</td>
+                <td style="padding: 12px; color: #FFF;">Lei</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 12px; font-size: 1.3rem; font-family: serif; color: #FFF; direction: rtl;">אֶרֶץ</td>
+                <td style="padding: 12px; color: #9B8FCB;">Eretz</td>
+                <td style="padding: 12px; color: #FFF;">Terra</td>
+            </tr>
+            <tr>
+                <td style="padding: 12px; font-size: 1.3rem; font-family: serif; color: #FFF; direction: rtl;">אֱלֹהִים</td>
+                <td style="padding: 12px; color: #9B8FCB;">Elohim</td>
+                <td style="padding: 12px; color: #FFF;">Deus</td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="background: rgba(212,168,67,0.1); border-left: 4px solid #D4A843; padding: 15px; border-radius: 0 8px 8px 0; margin-bottom: 40px;">
+        <strong style="color: #0D0829; background: #D4A843; padding: 3px 10px; border-radius: 4px; display: inline-block; margin-bottom: 8px; font-size: 0.85rem;">CURIOSIDADE: Elohim</strong>
+        <p style="font-size: 0.85rem; color: #E8E3F5; margin: 0;">A palavra 'Elohim' (אֱלֹהִים) possui forma plural, mas na maioria das vezes é usada no singular quando se refere ao Deus de Israel, demonstrando majestade e grandeza.</p>
+    </div>
+
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; margin-bottom: 15px;">2.3 - Gênero: Masculino e Feminino</h3>
+    <p style="color: #9B8FCB; font-size: 0.95rem; margin-bottom: 20px;">Todos os substantivos hebraicos são masculinos ou femininos. Isso afeta adjetivos, verbos e pronomes.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 40px;">
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 20px;">
+            <strong style="color: #F0C96A; font-size: 1.1rem; display: block; margin-bottom: 10px;">Identificando o Feminino</strong>
+            <p style="font-size: 0.85rem; color: #9B8FCB;">Muitos substantivos femininos terminam com a letra <strong style="color: #FFF;">ה (Hei)</strong> ou <strong style="color: #FFF;">ת (Tav)</strong>.</p>
+            <ul style="font-size: 0.85rem; color: #FFF; padding-left: 20px;">
+                <li>אִשָּׁה (Ishah) - Mulher</li>
+                <li>מַלְכָּה (Malkah) - Rainha</li>
+            </ul>
+        </div>
+        <div style="background: rgba(224, 94, 94, 0.1); border-left: 4px solid #E05E5E; border-radius: 0 12px 12px 0; padding: 20px;">
+            <strong style="color: #E05E5E; display: block; margin-bottom: 8px;">Erros Comuns de Iniciantes</strong>
+            <ul style="font-size: 0.85rem; color: #E8E3F5; padding-left: 20px; margin: 0;">
+                <li>Imaginar que apenas pessoas têm gênero (objetos também têm).</li>
+                <li>Traduzir sem observar a concordância.</li>
+                <li>Ignorar exceções nos textos bíblicos.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; margin-bottom: 15px;">2.4 - Número: Singular, Plural e Dual</h3>
+    
+    <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 20px; margin-bottom: 40px;">
+        <div style="margin-bottom: 15px;">
+            <strong style="color: #0D0829; background: #5BB8A0; padding: 3px 10px; border-radius: 4px; display: inline-block; margin-bottom: 5px; font-size: 0.85rem;">Plural Masculino</strong>
+            <p style="font-size: 0.85rem; color: #9B8FCB; margin: 0;">Adiciona-se a terminação <strong style="color: #FFF; font-size: 1rem;">ים (-im)</strong>. Ex: סֵפֶר (Sefer/Livro) ➔ סְפָרִים (Sefarim/Livros).</p>
+        </div>
+        <div style="margin-bottom: 15px;">
+            <strong style="color: #0D0829; background: #E07B6A; padding: 3px 10px; border-radius: 4px; display: inline-block; margin-bottom: 5px; font-size: 0.85rem;">Plural Feminino</strong>
+            <p style="font-size: 0.85rem; color: #9B8FCB; margin: 0;">Adiciona-se a terminação <strong style="color: #FFF; font-size: 1rem;">וֹת (-ot)</strong>. Ex: מַלְכָּה (Malkah/Rainha) ➔ מְלָכוֹת (Melakhot/Rainhas).</p>
+        </div>
+        <div>
+            <strong style="color: #0D0829; background: #F0C96A; padding: 3px 10px; border-radius: 4px; display: inline-block; margin-bottom: 5px; font-size: 0.85rem;">O Dual</strong>
+            <p style="font-size: 0.85rem; color: #9B8FCB; margin: 0;">Usado para pares naturais (olhos, mãos). Terminação <strong style="color: #FFF; font-size: 1rem;">ַיִם (-ayim)</strong>. Ex: עֵינַיִם (Einayim/Dois olhos).</p>
+        </div>
+    </div>
+
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; margin-bottom: 15px;">2.5 - Adjetivos e Concordância</h3>
+    <p style="color: #9B8FCB; font-size: 0.95rem; margin-bottom: 20px;">O adjetivo deve <strong>concordar em gênero e número</strong> com o substantivo. E ao contrário do português, o adjetivo geralmente <strong>aparece depois</strong> do substantivo.</p>
+    
+    <div style="background: linear-gradient(135deg, #160E3F, #1A1040); border: 1px solid rgba(212,168,67,0.3); border-radius: 12px; padding: 20px; text-align: center; margin-bottom: 40px;">
+        <div style="font-size: 1.8rem; font-family: serif; color: #F0C96A; margin-bottom: 5px; direction: rtl;">הַמֶּלֶךְ הַגָּדוֹל</div>
+        <div style="color: #FFF; font-weight: bold; margin-bottom: 5px;">HaMelekh HaGadol</div>
+        <div style="color: #9B8FCB; font-size: 0.85rem;">O Rei (Substantivo) + Grande (Adjetivo)</div>
+    </div>
+
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; margin-bottom: 15px;">2.6 - Verbos e Raízes Triconsonantais</h3>
+    <p style="color: #9B8FCB; font-size: 0.95rem; margin-bottom: 20px;">O Segredo do Hebraico: A maioria das palavras deriva de uma raiz de 3 consoantes. Entender a raiz ajuda a deduzir o significado de palavras novas!</p>
+
+    <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 20px; margin-bottom: 40px;">
+        <strong style="color: #F0C96A; font-size: 1.1rem; display: block; margin-bottom: 15px; text-align: center;">Exemplo: A raiz כתב (K-T-V) = Escrita</strong>
+        <ul style="font-size: 0.9rem; color: #FFF; line-height: 1.8; list-style: none; padding: 0; text-align: center;">
+            <li><strong>Katav:</strong> Ele escreveu (Verbo)</li>
+            <li><strong>Kotev:</strong> Escrevendo (Verbo)</li>
+            <li><strong>Mikhtav:</strong> Carta (Substantivo)</li>
+            <li><strong>Ktav:</strong> Escrita (Substantivo)</li>
+        </ul>
+    </div>
+
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; margin-bottom: 15px;">2.7 - Conjugação: Passado, Presente e Futuro</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 40px; text-align: center;">
+        <div style="background: #1A1040; border: 1px solid rgba(100,80,200,0.2); padding: 15px; border-radius: 8px;">
+            <strong style="color: #F0C96A;">Passado</strong>
+            <p style="font-size: 0.8rem; color: #9B8FCB; margin-top: 5px;">Ação concluída.<br><span style="color:#FFF">כָּתַב (Katav)</span></p>
+        </div>
+        <div style="background: #1A1040; border: 1px solid rgba(100,80,200,0.2); padding: 15px; border-radius: 8px;">
+            <strong style="color: #F0C96A;">Presente</strong>
+            <p style="font-size: 0.8rem; color: #9B8FCB; margin-top: 5px;">Ação contínua.<br><span style="color:#FFF">כּוֹתֵב (Kotev)</span></p>
+        </div>
+        <div style="background: #1A1040; border: 1px solid rgba(100,80,200,0.2); padding: 15px; border-radius: 8px;">
+            <strong style="color: #F0C96A;">Futuro</strong>
+            <p style="font-size: 0.8rem; color: #9B8FCB; margin-top: 5px;">Irá acontecer.<br><span style="color:#FFF">יִכְתֹּב (Yikhtov)</span></p>
+        </div>
+    </div>
+
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; margin-bottom: 15px;">2.8 - Preposições Incorporadas</h3>
+    <p style="color: #9B8FCB; font-size: 0.95rem; margin-bottom: 20px;">Diferente do português, muitas preposições hebraicas são grudadas no início da palavra (prefixos).</p>
+    
+    <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 20px; margin-bottom: 40px;">
+        <ul style="font-size: 0.95rem; color: #FFF; line-height: 2; list-style: none; padding: 0;">
+            <li><strong style="color: #F0C96A;">בְּ (Be)</strong> = Em / No / Na ➔ <span style="color: #9B8FCB;">בְּסֵפֶר (No livro)</span></li>
+            <li><strong style="color: #F0C96A;">לְ (Le)</strong> = Para / A ➔ <span style="color: #9B8FCB;">לְמֶלֶךְ (Para o rei)</span></li>
+            <li><strong style="color: #F0C96A;">מִ (Min)</strong> = De / Da ➔ <span style="color: #9B8FCB;">מֵאֶרֶץ (Da terra)</span></li>
+        </ul>
+    </div>
+
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; margin-bottom: 15px;">2.9 - Pronomes e Sufixos Possessivos</h3>
+    <div style="background: rgba(212,168,67,0.1); border-left: 4px solid #D4A843; padding: 15px; border-radius: 0 8px 8px 0; margin-bottom: 40px;">
+        <strong style="color: #0D0829; background: #D4A843; padding: 3px 10px; border-radius: 4px; display: inline-block; margin-bottom: 8px; font-size: 0.85rem;">Curiosidade Bíblica</strong>
+        <p style="font-size: 0.85rem; color: #E8E3F5; margin: 0;">Em muitas sentenças, o pronome pessoal nem precisa aparecer, pois a própria conjugação do verbo já indica quem está realizando a ação. Além disso, a posse (meu, seu, nosso) é indicada por sufixos grudados no final da palavra (Ex: Elohei<strong>nu</strong> = <strong>Nosso</strong> Deus).</p>
+    </div>
+
+    <div style="margin-top: 50px; background: linear-gradient(135deg, #1A1040, #0D0829); border: 1px solid rgba(212,168,67,0.4); border-radius: 16px; padding: 25px;">
+        <h3 style="font-family: 'Cinzel', serif; font-size: 1.6rem; color: #D4A843; text-align: center; margin-bottom: 20px;">2.10 - Revisão e Check-list</h3>
+        
+        <p style="font-size: 0.95rem; color: #FFF; text-align: center; margin-bottom: 20px;">Antes de passar para a próxima lição, pergunte-se:</p>
+        
+        <ul style="font-size: 0.9rem; color: #9B8FCB; line-height: 1.8; list-style: none; padding: 0; max-width: 500px; margin: 0 auto;">
+            <li>✅ Consigo identificar um substantivo?</li>
+            <li>✅ Reconheço o gênero de uma palavra (ex: terminação feminina)?</li>
+            <li>✅ Entendo a diferença entre singular, plural (-im/-ot) e dual?</li>
+            <li>✅ Sei que o adjetivo vem depois do substantivo?</li>
+            <li>✅ Entendo o que é uma raiz triconsonantal?</li>
+            <li>✅ Consigo identificar preposições coladas nas palavras?</li>
+        </ul>
+        
+        <div style="text-align: center; margin-top: 30px;">
+            <strong style="color: #0D0829; background: #F0C96A; padding: 8px 20px; border-radius: 8px; display: inline-block; font-weight: 800; letter-spacing: 1px;">PARABÉNS! VOCÊ CONCLUIU A LIÇÃO 2.</strong>
+        </div>
+    </div>
+
+</div> -->
+`;
+
+window.LICAO_3_HTML = `
+  <!-- <div class="licao-html" style="background-color: #0D0829; padding: 20px; max-width: 800px; margin: 0 auto; color: #F5F0E8; font-family: 'Inter', sans-serif; padding-bottom: 80px; line-height: 1.6;">
+
+    <div style="text-align: center; margin-bottom: 40px; border-bottom: 1px solid rgba(212,168,67,0.2); padding-bottom: 20px;">
+        <h2 style="font-family: 'Cinzel', serif; color: #D4A843; font-size: 2rem; margin-bottom: 10px; line-height: 1.2;">Lição 3<br>Vocabulário e Frases</h2>
+        <p style="color: #9B8FCB; font-size: 0.95rem;">Do vocabulário essencial à construção das suas primeiras sentenças em Hebraico Bíblico.</p>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #1A1040, #160E3F); border: 2px solid #D4A843; border-radius: 16px; padding: 25px; margin-bottom: 40px; box-shadow: 0 4px 20px rgba(212,168,67,0.15);">
+        <div style="text-align: center; margin-bottom: 15px;">
+            <div style="font-size: 3rem; font-family: serif; color: #F0C96A; line-height: 1; direction: rtl;">שָׁלוֹם</div>
+            <strong style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.2rem; display: block; letter-spacing: 2px;">SHALOM: PAZ COMPLETA</strong>
+        </div>
+        <p style="font-size: 0.9rem; color: #E8E3F5; text-align: center; font-style: italic; margin-bottom: 20px;">"A verdadeira paz não depende das circunstâncias, mas da presença de Deus."</p>
+        
+        <strong style="color: #0D0829; background: #D4A843; padding: 4px 12px; border-radius: 6px; display: inline-block; margin-bottom: 8px; font-size: 0.85rem; font-weight: 800;">O que significa?</strong>
+        <p style="font-size: 0.85rem; color: #9B8FCB; margin-bottom: 15px;">Shalom não significa apenas ausência de conflito, mas uma paz completa que envolve mente, coração, alma e relacionamento com Deus. Transmite ideias de integridade, bem-estar e prosperidade.</p>
+        
+        <strong style="color: #0D0829; background: #5BB8A0; padding: 4px 12px; border-radius: 6px; display: inline-block; margin-bottom: 8px; font-size: 0.85rem; font-weight: 800;">Versículo do Dia</strong>
+        <p style="font-size: 0.9rem; color: #FFF; margin: 0; text-align: center; border-left: 3px solid #5BB8A0; padding-left: 10px; font-style: italic;">"O Senhor volte o rosto para ti e te dê a paz." — Números 6:26</p>
+    </div>
+
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; margin-bottom: 15px;">As Cores no Hebraico</h3>
+    <p style="color: #9B8FCB; font-size: 0.9rem; margin-bottom: 20px;">Aparecem frequentemente para descrever o Tabernáculo, as vestes sacerdotais e elementos da natureza.</p>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; margin-bottom: 40px;">
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; display: flex; align-items: center; gap: 12px;">
+            <div style="width: 24px; height: 24px; background: #FFF; border-radius: 50%; border: 1px solid #CCC;"></div>
+            <div><strong style="color: #FFF; display: block; font-size: 1rem;">לָבָן</strong><span style="font-size: 0.8rem; color: #9B8FCB;">Lavan (Branco)</span></div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; display: flex; align-items: center; gap: 12px;">
+            <div style="width: 24px; height: 24px; background: #E05E5E; border-radius: 50%;"></div>
+            <div><strong style="color: #FFF; display: block; font-size: 1rem;">אָדוֹם</strong><span style="font-size: 0.8rem; color: #9B8FCB;">Adom (Vermelho)</span></div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; display: flex; align-items: center; gap: 12px;">
+            <div style="width: 24px; height: 24px; background: #4A90E2; border-radius: 50%;"></div>
+            <div><strong style="color: #FFF; display: block; font-size: 1rem;">כָּחוֹל</strong><span style="font-size: 0.8rem; color: #9B8FCB;">Kachol (Azul)</span></div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; display: flex; align-items: center; gap: 12px;">
+            <div style="width: 24px; height: 24px; background: #5BB8A0; border-radius: 50%;"></div>
+            <div><strong style="color: #FFF; display: block; font-size: 1rem;">יָרוֹק</strong><span style="font-size: 0.8rem; color: #9B8FCB;">Yarok (Verde)</span></div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; display: flex; align-items: center; gap: 12px;">
+            <div style="width: 24px; height: 24px; background: #F0C96A; border-radius: 50%;"></div>
+            <div><strong style="color: #FFF; display: block; font-size: 1rem;">צָהוֹב</strong><span style="font-size: 0.8rem; color: #9B8FCB;">Tsahov (Amarelo)</span></div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; display: flex; align-items: center; gap: 12px;">
+            <div style="width: 24px; height: 24px; background: #000; border-radius: 50%; border: 1px solid #333;"></div>
+            <div><strong style="color: #FFF; display: block; font-size: 1rem;">שָׁחוֹר</strong><span style="font-size: 0.8rem; color: #9B8FCB;">Shachor (Preto)</span></div>
+        </div>
+    </div>
+
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; margin-bottom: 15px;">Vocabulário Essencial</h3>
+    <p style="color: #9B8FCB; font-size: 0.9rem; margin-bottom: 20px;">Palavras que você encontrará centenas de vezes durante sua leitura bíblica.</p>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px;">
+        
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; overflow: hidden;">
+            <div style="background: rgba(212,168,67,0.1); padding: 10px; text-align: center; color: #F0C96A; font-family: 'Cinzel', serif; font-weight: bold;">Família</div>
+            <div style="padding: 15px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.9rem;">
+                <div style="color:#FFF;"><span style="font-family:serif; color:#D4A843; font-size:1.2rem; margin-right:5px;">אָב</span> Av (Pai)</div>
+                <div style="color:#FFF;"><span style="font-family:serif; color:#D4A843; font-size:1.2rem; margin-right:5px;">אֵם</span> Em (Mãe)</div>
+                <div style="color:#FFF;"><span style="font-family:serif; color:#D4A843; font-size:1.2rem; margin-right:5px;">בֵּן</span> Ben (Filho)</div>
+                <div style="color:#FFF;"><span style="font-family:serif; color:#D4A843; font-size:1.2rem; margin-right:5px;">בַּת</span> Bat (Filha)</div>
+                <div style="color:#FFF;"><span style="font-family:serif; color:#D4A843; font-size:1.2rem; margin-right:5px;">אָח</span> Ach (Irmão)</div>
+                <div style="color:#FFF;"><span style="font-family:serif; color:#D4A843; font-size:1.2rem; margin-right:5px;">אָחוֹת</span> Achot (Irmã)</div>
+            </div>
+        </div>
+
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; overflow: hidden;">
+            <div style="background: rgba(212,168,67,0.1); padding: 10px; text-align: center; color: #F0C96A; font-family: 'Cinzel', serif; font-weight: bold;">Natureza & Lugares</div>
+            <div style="padding: 15px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.9rem;">
+                <div style="color:#FFF;"><span style="font-family:serif; color:#D4A843; font-size:1.2rem; margin-right:5px;">אֶרֶץ</span> Eretz (Terra)</div>
+                <div style="color:#FFF;"><span style="font-family:serif; color:#D4A843; font-size:1.2rem; margin-right:5px;">שָׁמַיִם</span> Shamayim (Céus)</div>
+                <div style="color:#FFF;"><span style="font-family:serif; color:#D4A843; font-size:1.2rem; margin-right:5px;">מַיִם</span> Mayim (Água)</div>
+                <div style="color:#FFF;"><span style="font-family:serif; color:#D4A843; font-size:1.2rem; margin-right:5px;">בַּיִת</span> Bayit (Casa)</div>
+                <div style="color:#FFF;"><span style="font-family:serif; color:#D4A843; font-size:1.2rem; margin-right:5px;">עִיר</span> Ir (Cidade)</div>
+                <div style="color:#FFF;"><span style="font-family:serif; color:#D4A843; font-size:1.2rem; margin-right:5px;">הַר</span> Har (Monte)</div>
+            </div>
+        </div>
+
+    </div>
+
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; margin-bottom: 15px;">Formação de Frases Simples</h3>
+    <p style="color: #9B8FCB; font-size: 0.9rem; margin-bottom: 20px;">O Hebraico Bíblico tem sua própria estrutura lógica. A ordem mais comum das palavras é: <strong>Verbo + Sujeito + Objeto</strong> (ou Sujeito + Verbo + Objeto).</p>
+    
+    <div style="background: linear-gradient(135deg, #160E3F, #1A1040); border: 1px solid rgba(212,168,67,0.3); border-radius: 12px; padding: 20px; text-align: center; margin-bottom: 20px;">
+        <div style="font-size: 2.2rem; font-family: serif; color: #F0C96A; margin-bottom: 10px; direction: rtl;">הַמֶּלֶךְ כָּתַב סֵפֶר</div>
+        <div style="color: #FFF; font-weight: bold; margin-bottom: 10px; font-size: 1.1rem;">HaMelekh Katav Sefer</div>
+        
+        <div style="display: flex; justify-content: center; gap: 15px; font-size: 0.85rem;">
+            <div style="background: rgba(255,255,255,0.05); padding: 5px 10px; border-radius: 6px; color: #9B8FCB;">
+                <span style="color: #D4A843; display: block;">הַמֶּלֶךְ (O rei)</span> Sujeito
+            </div>
+            <div style="background: rgba(255,255,255,0.05); padding: 5px 10px; border-radius: 6px; color: #9B8FCB;">
+                <span style="color: #D4A843; display: block;">כָּתַב (escreveu)</span> Verbo
+            </div>
+            <div style="background: rgba(255,255,255,0.05); padding: 5px 10px; border-radius: 6px; color: #9B8FCB;">
+                <span style="color: #D4A843; display: block;">סֵפֶר (um livro)</span> Objeto
+            </div>
+        </div>
+    </div>
+
+    <div style="background: rgba(212,168,67,0.1); border-left: 4px solid #D4A843; padding: 15px; border-radius: 0 8px 8px 0; margin-bottom: 40px;">
+        <strong style="color: #0D0829; background: #D4A843; padding: 3px 10px; border-radius: 4px; display: inline-block; margin-bottom: 8px; font-size: 0.85rem;">Atenção: O Verbo "Ser/Estar"</strong>
+        <p style="font-size: 0.85rem; color: #E8E3F5; margin: 0;">No tempo presente, o verbo "ser/estar" frequentemente <strong>não aparece</strong> na frase, ficando subentendido. <br>Exemplo: <span style="color:#F0C96A; font-family:serif; font-size:1.1rem;">אֱלֹהִים קָדוֹשׁ</span> (Elohim Kadosh) traduz-se como "Deus <strong>[é]</strong> Santo".</p>
+    </div>
+
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; margin-bottom: 15px;">Expressões Bíblicas Frequentes</h3>
+    
+    <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 20px; margin-bottom: 40px;">
+        <ul style="font-size: 0.95rem; color: #FFF; line-height: 2.2; list-style: none; padding: 0; margin: 0;">
+            <li style="border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px;"><strong style="font-family: serif; font-size: 1.2rem; color: #F0C96A; margin-right: 10px;">שָׁלוֹם לָכֶם</strong> Shalom Lakhem ➔ <span style="color: #9B8FCB;">Paz esteja convosco.</span></li>
+            <li style="border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px;"><strong style="font-family: serif; font-size: 1.2rem; color: #F0C96A; margin-right: 10px;">בָּרוּךְ יְהוָה</strong> Baruch Adonai ➔ <span style="color: #9B8FCB;">Bendito seja o Senhor.</span></li>
+            <li style="border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px;"><strong style="font-family: serif; font-size: 1.2rem; color: #F0C96A; margin-right: 10px;">כֹּה אָמַר יְהוָה</strong> Koh Amar Adonai ➔ <span style="color: #9B8FCB;">Assim diz o Senhor.</span></li>
+            <li><strong style="font-family: serif; font-size: 1.2rem; color: #F0C96A; margin-right: 10px;">הַלְלוּיָהּ</strong> Haleluya ➔ <span style="color: #9B8FCB;">Louvai ao Senhor.</span></li>
+        </ul>
+    </div>
+
+    <div style="margin-top: 50px; background: linear-gradient(135deg, #1A1040, #0D0829); border: 1px solid rgba(212,168,67,0.4); border-radius: 16px; padding: 25px;">
+        <h3 style="font-family: 'Cinzel', serif; font-size: 1.6rem; color: #D4A843; text-align: center; margin-bottom: 10px;">Desafio Final</h3>
+        <p style="font-size: 0.95rem; color: #FFF; text-align: center; margin-bottom: 25px;">Sua Primeira Leitura Bíblica (Gênesis 1:3)</p>
+        
+        <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(212,168,67,0.2); padding: 20px; border-radius: 12px; text-align: center; margin-bottom: 25px;">
+            <div style="font-size: 2.5rem; font-family: serif; color: #F0C96A; margin-bottom: 15px; direction: rtl; line-height: 1.4;">וַיֹּאמֶר אֱלֹהִים יְהִי אוֹר וַיְהִי אוֹר</div>
+            <div style="color: #FFF; font-weight: bold; margin-bottom: 10px; font-size: 1rem;">Vayomer Elohim Yehi Or Vayehi Or</div>
+            <div style="color: #9B8FCB; font-style: italic; font-size: 0.9rem;">"E disse Deus: Haja luz; e houve luz."</div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.85rem; color: #FFF; margin-bottom: 30px;">
+            <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px;">
+                <span style="font-family: serif; color: #D4A843; font-size: 1.2rem;">וַיֹּאמֶר</span> (Vayomer) = E disse <span style="color:#9B8FCB">(Verbo)</span>
+            </div>
+            <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px;">
+                <span style="font-family: serif; color: #D4A843; font-size: 1.2rem;">אֱלֹהִים</span> (Elohim) = Deus <span style="color:#9B8FCB">(Sujeito)</span>
+            </div>
+            <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px;">
+                <span style="font-family: serif; color: #D4A843; font-size: 1.2rem;">יְהִי</span> (Yehi) = Haja <span style="color:#9B8FCB">(Verbo)</span>
+            </div>
+            <div style="background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px;">
+                <span style="font-family: serif; color: #D4A843; font-size: 1.2rem;">אוֹר</span> (Or) = Luz <span style="color:#9B8FCB">(Objeto)</span>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 20px;">
+            <strong style="color: #0D0829; background: #F0C96A; padding: 8px 20px; border-radius: 8px; display: inline-block; font-weight: 800; letter-spacing: 1px;">VOCÊ CHEGOU LÁ!</strong>
+            <p style="font-size: 0.85rem; color: #9B8FCB; margin-top: 15px; margin-bottom: 0;">Você já é capaz de reconhecer palavras e estruturas completas na Torá. Continue avançando com consistência!</p>
+        </div>
+    </div>
+
+</div> -->
+`;
+
+window.LICAO_4_HTML = `
+  <!-- <div class="licao-html" style="background-color: #0D0829; padding: 20px; max-width: 800px; margin: 0 auto; color: #F5F0E8; font-family: 'Inter', sans-serif; padding-bottom: 80px; line-height: 1.6;">
+
+    <!-- CABEÇALHO -->
+    <div style="text-align: center; margin-bottom: 40px; border-bottom: 1px solid rgba(212,168,67,0.2); padding-bottom: 20px;">
+        <h2 style="font-family: 'Cinzel', serif; color: #D4A843; font-size: 2rem; margin-bottom: 10px; line-height: 1.2;">Lição 4<br>Leitura e Interpretação</h2>
+        <p style="color: #9B8FCB; font-size: 0.95rem;">Aprenda a analisar o contexto, reconhecer gêneros literários e aplicar um método eficiente para ler as Escrituras corretamente.</p>
+    </div>
+
+    <!-- 4.1 e 4.2 O PODER DO CONTEXTO -->
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; margin-bottom: 15px;">4.1 e 4.2 - A Importância do Contexto</h3>
+    <p style="color: #9B8FCB; font-size: 0.95rem; margin-bottom: 20px;">Um dos maiores erros ao estudar a Bíblia é interpretar um versículo isoladamente. O contexto determina qual ideia está sendo comunicada.</p>
+    
+    <div style="background: rgba(224, 94, 94, 0.1); border-left: 4px solid #E05E5E; border-radius: 0 12px 12px 0; padding: 20px; margin-bottom: 30px;">
+        <strong style="color: #E05E5E; display: block; margin-bottom: 8px;">Erro Comum de Iniciantes</strong>
+        <p style="font-size: 0.85rem; color: #E8E3F5; margin: 0;">Ler o texto bíblico como se fosse um dicionário. Desconsiderar a quem o texto foi escrito, em que época e qual era o propósito do autor gera distorções graves (o famoso "texto fora de contexto").</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr; gap: 10px; margin-bottom: 40px;">
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 8px; padding: 15px; display: flex; align-items: center; gap: 15px;">
+            <div style="font-size: 1.5rem;">📖</div>
+            <div>
+                <strong style="color: #F0C96A; display: block;">1. Palavra e Frase</strong>
+                <span style="font-size: 0.85rem; color: #9B8FCB;">O significado direto e como as palavras se relacionam gramaticalmente.</span>
+            </div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 8px; padding: 15px; display: flex; align-items: center; gap: 15px;">
+            <div style="font-size: 1.5rem;">📄</div>
+            <div>
+                <strong style="color: #F0C96A; display: block;">2. Parágrafo (Contexto Imediato)</strong>
+                <span style="font-size: 0.85rem; color: #9B8FCB;">Os versículos que vêm imediatamente antes e depois do texto lido.</span>
+            </div>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 8px; padding: 15px; display: flex; align-items: center; gap: 15px;">
+            <div style="font-size: 1.5rem;">📚</div>
+            <div>
+                <strong style="color: #F0C96A; display: block;">3. Livro e História (Contexto Geral)</strong>
+                <span style="font-size: 0.85rem; color: #9B8FCB;">O objetivo do autor ao escrever o livro inteiro e a cultura da época.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4.3 GÊNEROS LITERÁRIOS -->
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; margin-bottom: 15px;">4.3 - Gêneros Literários</h3>
+    <p style="color: #9B8FCB; font-size: 0.95rem; margin-bottom: 20px;">Cada gênero possui regras de interpretação diferentes. Interpretar um poema (Salmos) como se fosse uma narrativa histórica rigorosa (Reis) leva a conclusões equivocadas.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 40px;">
+        <div style="background: linear-gradient(135deg, #1A1040, #160E3F); border: 1px solid rgba(212,168,67,0.2); padding: 15px; border-radius: 12px; text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 10px;">📜</div>
+            <strong style="color: #FFF; display: block; margin-bottom: 5px;">Narrativa Histórica</strong>
+            <p style="font-size: 0.8rem; color: #9B8FCB; margin: 0;">Relata eventos, guerras e personagens. (Ex: Gênesis, Josué, Juízes)</p>
+        </div>
+        <div style="background: linear-gradient(135deg, #1A1040, #160E3F); border: 1px solid rgba(212,168,67,0.2); padding: 15px; border-radius: 12px; text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 10px;">⚖️</div>
+            <strong style="color: #FFF; display: block; margin-bottom: 5px;">Lei</strong>
+            <p style="font-size: 0.8rem; color: #9B8FCB; margin: 0;">Mandamentos, regras e diretrizes. (Ex: Êxodo, Levítico, Deuteronômio)</p>
+        </div>
+        <div style="background: linear-gradient(135deg, #1A1040, #160E3F); border: 1px solid rgba(212,168,67,0.2); padding: 15px; border-radius: 12px; text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 10px;">🎵</div>
+            <strong style="color: #FFF; display: block; margin-bottom: 5px;">Poesia</strong>
+            <p style="font-size: 0.8rem; color: #9B8FCB; margin: 0;">Usa metáforas, imagens e paralelismos. (Ex: Salmos, Cântico dos Cânticos)</p>
+        </div>
+        <div style="background: linear-gradient(135deg, #1A1040, #160E3F); border: 1px solid rgba(212,168,67,0.2); padding: 15px; border-radius: 12px; text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 10px;">👁️</div>
+            <strong style="color: #FFF; display: block; margin-bottom: 5px;">Profecia</strong>
+            <p style="font-size: 0.8rem; color: #9B8FCB; margin: 0;">Avisos divinos, linguagem simbólica e promessas. (Ex: Isaías, Jeremias)</p>
+        </div>
+    </div>
+
+    <!-- 4.4 PARALELISMO -->
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; margin-bottom: 15px;">4.4 - Paralelismo na Poesia Hebraica</h3>
+    <div style="background: rgba(212,168,67,0.1); border-left: 4px solid #D4A843; padding: 15px; border-radius: 0 8px 8px 0; margin-bottom: 25px;">
+        <strong style="color: #0D0829; background: #D4A843; padding: 3px 10px; border-radius: 4px; display: inline-block; margin-bottom: 8px; font-size: 0.85rem; font-weight: bold;">Você Sabia?</strong>
+        <p style="font-size: 0.85rem; color: #E8E3F5; margin: 0;">A poesia hebraica não depende de rimas sonoras como a nossa. O seu principal recurso é o <strong>Paralelismo</strong>: a arte de rimar <em>ideias</em> em vez de palavras.</p>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 15px; margin-bottom: 40px;">
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 8px; padding: 20px;">
+            <strong style="color: #F0C96A; display: block; font-size: 1.1rem; margin-bottom: 5px;">🔄 Paralelismo Sinônimo</strong>
+            <p style="font-size: 0.85rem; color: #9B8FCB; margin-bottom: 10px;">A segunda linha repete e reforça a ideia da primeira usando palavras diferentes.</p>
+            <em style="color: #FFF; font-size: 0.9rem;">"Do Senhor é a terra e a sua plenitude, <br>o mundo e aqueles que nele habitam." (Salmo 24:1)</em>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 8px; padding: 20px;">
+            <strong style="color: #F0C96A; display: block; font-size: 1.1rem; margin-bottom: 5px;">⚖️ Paralelismo Antitético</strong>
+            <p style="font-size: 0.85rem; color: #9B8FCB; margin-bottom: 10px;">A segunda linha apresenta um contraste direto à primeira.</p>
+            <em style="color: #FFF; font-size: 0.9rem;">"O filho sábio alegra o pai, <br>mas o filho insensato é a tristeza da mãe." (Provérbios 10:1)</em>
+        </div>
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 8px; padding: 20px;">
+            <strong style="color: #F0C96A; display: block; font-size: 1.1rem; margin-bottom: 5px;">➕ Paralelismo Sintético</strong>
+            <p style="font-size: 0.85rem; color: #9B8FCB; margin-bottom: 10px;">A segunda linha completa ou expande a informação da primeira linha.</p>
+            <em style="color: #FFF; font-size: 0.9rem;">"O Senhor é o meu pastor; <br>nada me faltará." (Salmo 23:1)</em>
+        </div>
+    </div>
+
+    <!-- 4.5 OS 7 PASSOS DA ANÁLISE -->
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; margin-bottom: 15px;">4.5 - Os 7 Passos da Análise Exegética</h3>
+    <p style="color: #9B8FCB; font-size: 0.95rem; margin-bottom: 20px;">Método simples e eficiente para aplicar em qualquer versículo bíblico:</p>
+    
+    <ol style="color: #FFF; font-size: 0.95rem; line-height: 2; margin-bottom: 40px; padding-left: 20px;">
+        <li><strong style="color: #D4A843;">Ler</strong> todo o versículo em hebraico.</li>
+        <li><strong style="color: #D4A843;">Identificar</strong> as palavras e raízes conhecidas.</li>
+        <li><strong style="color: #D4A843;">Localizar</strong> os verbos (a ação central).</li>
+        <li><strong style="color: #D4A843;">Determinar</strong> o sujeito (quem faz) e os objetos (quem recebe).</li>
+        <li><strong style="color: #D4A843;">Observar</strong> o contexto do capítulo.</li>
+        <li><strong style="color: #D4A843;">Reconhecer</strong> o gênero literário do livro.</li>
+        <li><strong style="color: #D4A843;">Interpretar</strong> extraindo a mensagem e a aplicação.</li>
+    </ol>
+
+    <!-- 4.6 REVISÃO E CHECKLIST -->
+    <div style="margin-top: 50px; background: linear-gradient(135deg, #1A1040, #0D0829); border: 1px solid rgba(212,168,67,0.4); border-radius: 16px; padding: 25px;">
+        <h3 style="font-family: 'Cinzel', serif; font-size: 1.6rem; color: #D4A843; text-align: center; margin-bottom: 20px;">4.6 - Checklist de Preparação</h3>
+        
+        <p style="font-size: 0.95rem; color: #FFF; text-align: center; margin-bottom: 20px;">Você concluiu a parte teórica fundamental! Antes dos exercícios práticos, garanta que você já domina:</p>
+        
+        <ul style="font-size: 0.9rem; color: #9B8FCB; line-height: 1.8; list-style: none; padding: 0; max-width: 500px; margin: 0 auto; margin-bottom: 30px;">
+            <li>☑️ O Alfabeto (Alef-Bet) e a transliteração.</li>
+            <li>☑️ O funcionamento das raízes triconsonantais.</li>
+            <li>☑️ O reconhecimento de gêneros literários.</li>
+            <li>☑️ A estrutura do paralelismo poético.</li>
+            <li>☑️ A leitura do contexto geral e imediato.</li>
+        </ul>
+        
+        <div style="text-align: center;">
+            <strong style="color: #0D0829; background: #5BB8A0; padding: 8px 20px; border-radius: 8px; display: inline-block; font-weight: 800; letter-spacing: 1px;">PREPARADO PARA A LIÇÃO 5: EXERCÍCIOS PRÁTICOS</strong>
+            <p style="font-size: 0.85rem; color: #9B8FCB; margin-top: 15px; margin-bottom: 0;">A partir de agora o aprendizado acontecerá principalmente pela repetição guiada nos textos bíblicos.</p>
+        </div>
+    </div>
+
+</div> -->
+`;
+
+  window.LICAO_5_HTML = `
+  <!-- <div class="licao-html" style="background-color: #0D0829; padding: 20px; max-width: 800px; margin: 0 auto; color: #F5F0E8; font-family: 'Inter', sans-serif; padding-bottom: 80px; line-height: 1.6;">
+
+    <!-- CABEÇALHO -->
+    <div style="text-align: center; margin-bottom: 40px; border-bottom: 1px solid rgba(212,168,67,0.2); padding-bottom: 20px;">
+        <h2 style="font-family: 'Cinzel', serif; color: #D4A843; font-size: 2rem; margin-bottom: 10px; line-height: 1.2;">Lição 5<br>Revisão e Prática</h2>
+        <p style="color: #9B8FCB; font-size: 0.95rem;">Chegou a hora de testar seus conhecimentos e consolidar tudo o que aprendemos no curso fundamental de Hebraico Bíblico.</p>
+    </div>
+
+    <!-- 5.1 O GRANDE QUIZ FINAL -->
+    <h3 style="font-family: 'Cinzel', serif; font-size: 1.4rem; color: #F0C96A; margin-bottom: 15px;">Quiz de Verificação</h3>
+    <p style="color: #9B8FCB; font-size: 0.95rem; margin-bottom: 25px;">Responda mentalmente às perguntas abaixo e confira as respostas destacadas em dourado para avaliar seu progresso.</p>
+    
+    <div style="display: flex; flex-direction: column; gap: 15px; margin-bottom: 50px;">
+        
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 20px;">
+            <div style="color: #FFF; margin-bottom: 10px;"><strong>1. A palavra <span style="font-family: serif; color: #D4A843; font-size: 1.2rem;">אֱלֹהִים</span> significa:</strong></div>
+            <div style="background: rgba(212,168,67,0.15); border-left: 3px solid #D4A843; padding: 8px 12px; color: #F0C96A; border-radius: 0 6px 6px 0;">Deus</div>
+        </div>
+
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 20px;">
+            <div style="color: #FFF; margin-bottom: 10px;"><strong>2. Qual é o verbo na frase <span style="font-family: serif; color: #D4A843; font-size: 1.2rem;">הַמֶּלֶךְ כָּתַב סֵפֶר</span> ?</strong></div>
+            <div style="background: rgba(212,168,67,0.15); border-left: 3px solid #D4A843; padding: 8px 12px; color: #F0C96A; border-radius: 0 6px 6px 0; font-family: serif; font-size: 1.1rem;">כָּתַב (Escreveu)</div>
+        </div>
+
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 20px;">
+            <div style="color: #FFF; margin-bottom: 10px;"><strong>3. O Hebraico Bíblico é lido:</strong></div>
+            <div style="background: rgba(212,168,67,0.15); border-left: 3px solid #D4A843; padding: 8px 12px; color: #F0C96A; border-radius: 0 6px 6px 0;">Da direita para a esquerda</div>
+        </div>
+
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 20px;">
+            <div style="color: #FFF; margin-bottom: 10px;"><strong>4. Qual destas palavras significa "Luz"?</strong></div>
+            <div style="background: rgba(212,168,67,0.15); border-left: 3px solid #D4A843; padding: 8px 12px; color: #F0C96A; border-radius: 0 6px 6px 0; font-family: serif; font-size: 1.1rem;">אוֹר (Or)</div>
+        </div>
+
+        <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 20px;">
+            <div style="color: #FFF; margin-bottom: 10px;"><strong>5. O paralelismo é uma característica comum de qual gênero?</strong></div>
+            <div style="background: rgba(212,168,67,0.15); border-left: 3px solid #D4A843; padding: 8px 12px; color: #F0C96A; border-radius: 0 6px 6px 0;">Poesia Hebraica</div>
+        </div>
+
+    </div>
+
+    <!-- 5.2 DESAFIO FINAL: GÊNESIS 1:1 -->
+    <div style="margin-top: 50px; background: linear-gradient(135deg, #1A1040, #0D0829); border: 1px solid rgba(212,168,67,0.4); border-radius: 16px; padding: 25px; margin-bottom: 50px;">
+        <h3 style="font-family: 'Cinzel', serif; font-size: 1.6rem; color: #D4A843; text-align: center; margin-bottom: 10px;">Desafio Final</h3>
+        <p style="font-size: 0.95rem; color: #FFF; text-align: center; margin-bottom: 25px;">Analise o versículo abaixo usando tudo o que você aprendeu.</p>
+        
+        <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(212,168,67,0.2); padding: 20px; border-radius: 12px; text-align: center; margin-bottom: 25px;">
+            <div style="font-size: 2.2rem; font-family: serif; color: #F0C96A; margin-bottom: 15px; direction: rtl; line-height: 1.4;">בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ</div>
+            <div style="color: #FFF; font-weight: bold; margin-bottom: 10px; font-size: 0.95rem;">Bereshit Bará Elohim Et HaShamayim Ve'et HaAretz</div>
+        </div>
+
+        <ul style="font-size: 0.9rem; color: #FFF; line-height: 2; list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 10px;"><strong style="color: #9B8FCB;">Qual é o sujeito?</strong> <span style="color: #F0C96A;">אֱלֹהִים (Deus)</span></li>
+            <li style="margin-bottom: 10px;"><strong style="color: #9B8FCB;">Qual é o verbo?</strong> <span style="color: #F0C96A;">בָּרָא (Criou)</span></li>
+            <li style="margin-bottom: 10px;"><strong style="color: #9B8FCB;">Quais são os objetos?</strong> <span style="color: #F0C96A;">הַשָּׁמַיִם (Os céus) e הָאָרֶץ (A terra)</span></li>
+            <li style="margin-bottom: 10px;"><strong style="color: #9B8FCB;">Qual é o Gênero Literário?</strong> <span style="color: #F0C96A;">Narrativa Histórica</span></li>
+            <li><strong style="color: #9B8FCB;">Tradução:</strong> <span style="color: #F0C96A;">No princípio, criou Deus os céus e a terra.</span></li>
+        </ul>
+    </div>
+
+    <!-- 5.3 GUIA DE REFERÊNCIA RÁPIDA -->
+    <div style="text-align: center; margin-bottom: 30px;">
+        <span style="font-size: 3rem; color: #D4A843; opacity: 0.15; display: block; margin-bottom: -15px;">📖</span>
+        <h2 style="font-family: 'Cinzel', serif; color: #D4A843; font-size: 1.8rem; margin-bottom: 10px; line-height: 1.2;">Guia de Referência Rápida</h2>
+        <p style="color: #9B8FCB; font-size: 0.9rem;">Resumo dos principais conceitos para você consultar sempre que precisar.</p>
+    </div>
+
+    <!-- Referência: O Alef-Bet -->
+    <strong style="color: #0D0829; background: #D4A843; padding: 4px 12px; border-radius: 6px; display: inline-block; margin-bottom: 15px; font-size: 0.85rem; font-weight: 800;">1. O Alef-Bet</strong>
+    <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; overflow: hidden; margin-bottom: 30px;">
+        <table style="width: 100%; border-collapse: collapse; text-align: center; color: #FFF; font-size: 0.85rem;">
+            <tr style="background: rgba(212,168,67,0.1); color: #F0C96A;">
+                <th style="padding: 10px;">Letra</th><th style="padding: 10px;">Nome</th>
+                <th style="padding: 10px;">Letra</th><th style="padding: 10px;">Nome</th>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">א</td><td>Alef</td>
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">ל</td><td>Lamed</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">ב</td><td>Bet</td>
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">מ</td><td>Mem</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">ג</td><td>Gimel</td>
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">נ</td><td>Nun</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">ד</td><td>Dalet</td>
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">ס</td><td>Samekh</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">ה</td><td>He</td>
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">ע</td><td>Ayin</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">ו</td><td>Vav</td>
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">פ</td><td>Pe</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">ז</td><td>Zayin</td>
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">צ</td><td>Tsadi</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">ח</td><td>Het</td>
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">ק</td><td>Qof</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">ט</td><td>Tet</td>
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">ר</td><td>Resh</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">י</td><td>Yod</td>
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">ש</td><td>Shin</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">כ</td><td>Kaf</td>
+                <td style="padding: 8px; font-family: serif; font-size: 1.5rem;">ת</td><td>Tav</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Referência: Vocabulário e Verbos -->
+    <div style="display: grid; grid-template-columns: 1fr; gap: 20px; margin-bottom: 30px;">
+        
+        <div>
+            <strong style="color: #0D0829; background: #D4A843; padding: 4px 12px; border-radius: 6px; display: inline-block; margin-bottom: 15px; font-size: 0.85rem; font-weight: 800;">2. Vocabulário Essencial</strong>
+            <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.85rem;">
+                <div style="color:#FFF; display:flex; justify-content:space-between; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:5px;"><span>Deus</span><span style="font-family:serif; color:#F0C96A; font-size:1.2rem;">אֱלֹהִים</span></div>
+                <div style="color:#FFF; display:flex; justify-content:space-between; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:5px;"><span>Luz</span><span style="font-family:serif; color:#F0C96A; font-size:1.2rem;">אוֹר</span></div>
+                <div style="color:#FFF; display:flex; justify-content:space-between; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:5px;"><span>Paz</span><span style="font-family:serif; color:#F0C96A; font-size:1.2rem;">שָׁלוֹם</span></div>
+                <div style="color:#FFF; display:flex; justify-content:space-between; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:5px;"><span>Rei</span><span style="font-family:serif; color:#F0C96A; font-size:1.2rem;">מֶלֶךְ</span></div>
+                <div style="color:#FFF; display:flex; justify-content:space-between;"><span>Casa</span><span style="font-family:serif; color:#F0C96A; font-size:1.2rem;">בַּיִת</span></div>
+                <div style="color:#FFF; display:flex; justify-content:space-between;"><span>Homem</span><span style="font-family:serif; color:#F0C96A; font-size:1.2rem;">אִישׁ</span></div>
+            </div>
+        </div>
+
+        <div>
+            <strong style="color: #0D0829; background: #D4A843; padding: 4px 12px; border-radius: 6px; display: inline-block; margin-bottom: 15px; font-size: 0.85rem; font-weight: 800;">3. Verbos Mais Comuns</strong>
+            <div style="background: #160E3F; border: 1px solid rgba(100,80,200,0.2); border-radius: 12px; padding: 15px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.85rem;">
+                <div style="color:#FFF; display:flex; justify-content:space-between; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:5px;"><span>Criou</span><span style="font-family:serif; color:#F0C96A; font-size:1.2rem;">בָּרָא</span></div>
+                <div style="color:#FFF; display:flex; justify-content:space-between; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:5px;"><span>Disse</span><span style="font-family:serif; color:#F0C96A; font-size:1.2rem;">אָמַר</span></div>
+                <div style="color:#FFF; display:flex; justify-content:space-between; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:5px;"><span>Escreveu</span><span style="font-family:serif; color:#F0C96A; font-size:1.2rem;">כָּתַב</span></div>
+                <div style="color:#FFF; display:flex; justify-content:space-between; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:5px;"><span>Andou</span><span style="font-family:serif; color:#F0C96A; font-size:1.2rem;">הָלַךְ</span></div>
+                <div style="color:#FFF; display:flex; justify-content:space-between;"><span>Viu</span><span style="font-family:serif; color:#F0C96A; font-size:1.2rem;">רָאָה</span></div>
+                <div style="color:#FFF; display:flex; justify-content:space-between;"><span>Ouviu</span><span style="font-family:serif; color:#F0C96A; font-size:1.2rem;">שָׁמַע</span></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Dicas Finais -->
+    <div style="background: rgba(224, 123, 106, 0.1); border-left: 4px solid #E07B6A; padding: 20px; border-radius: 0 12px 12px 0;">
+        <strong style="color: #E07B6A; display: block; margin-bottom: 10px; font-size: 1.1rem;">Dicas de Ouro para a Leitura</strong>
+        <ul style="font-size: 0.85rem; color: #E8E3F5; line-height: 1.8; margin: 0; padding-left: 20px;">
+            <li>Leia sempre da direita para a esquerda.</li>
+            <li>Não interprete versículos isoladamente. Observe o contexto!</li>
+            <li>Identifique o verbo primeiro para achar a ação.</li>
+            <li>Revise o vocabulário e o Alef-Bet frequentemente.</li>
+            <li>Quanto mais você pratica, mais se aproxima da essência das Escrituras.</li>
+        </ul>
+    </div>
+
+</div> -->
+`;
+  
 // ⚙️ O MOTOR: Transforma os nomes em links
 const REAL_SONGS = [];
 let contadorId = 1;
