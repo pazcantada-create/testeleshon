@@ -435,8 +435,8 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Inter'
         📘 Hebraico Bíblico
       </button>
       
-      <button style="background: rgba(255,255,255,0.02); border: 1px dashed var(--border); color: #666; border-radius: 12px; padding: 16px 10px; font-weight: 600; font-size: 0.85rem; cursor: not-allowed;">
-        🔒 Em breve
+      <button onclick="navTo('curso-cultura')" style="background: var(--surface); border: 1px solid var(--border); color: white; border-radius: 12px; padding: 16px 10px; font-weight: 600; font-size: 0.85rem; cursor: pointer; transition: 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+        🏺 Cultura Bíblica
       </button>
       
       <button style="background: rgba(255,255,255,0.02); border: 1px dashed var(--border); color: #666; border-radius: 12px; padding: 16px 10px; font-weight: 600; font-size: 0.85rem; cursor: not-allowed;">
@@ -521,6 +521,127 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Inter'
 </div>
 <!-- ================= FIM TELA DE ESTUDOS ================= -->
 <!-- ================= FIM TELA DE ESTUDOS ================= -->
+<!-- ================= TELA DO CURSO DE CULTURA BÍBLICA ================= -->
+<div class="screen" id="screen-curso-cultura" style="padding: 20px; padding-bottom: 100px; overflow-y: auto; height: 100%;">
+  
+  <div style="display: flex; align-items: center; margin-bottom: 25px; gap: 15px;">
+    <button onclick="navTo('estudos')" style="background: none; border: none; color: var(--gold); font-size: 24px; cursor: pointer; line-height: 1;">←</button>
+    <h1 style="font-size: 18px; font-weight: 600; color: white; margin: 0; line-height: 1.2;">CURSO: CULTURA BÍBLICA</h1>
+  </div>
+
+  <p style="color: #9B8FCB; font-size: 0.9rem; margin-bottom: 20px;">Mergulhe no contexto histórico e social das Escrituras.</p>
+
+  <!-- MÓDULO 1 -->
+  <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="padding-right: 15px;">
+      <div style="color: white; font-weight: bold; font-size: 15px; margin-bottom: 3px;">Módulo 1</div>
+      <div style="color: var(--gold); font-size: 12px; font-weight: bold; text-transform: uppercase;">Conhecendo o Mundo Bíblico</div>
+    </div>
+    <button onclick="abrirLicaoConteudo(window.CULTURA_MOD_1_HTML)" style="background: rgba(212,168,67,0.2); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 12px; font-weight: bold; cursor: pointer; white-space: nowrap;">Acessar</button>
+  </div>
+
+  <!-- MÓDULO 2 -->
+  <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="padding-right: 15px;">
+      <div style="color: white; font-weight: bold; font-size: 15px; margin-bottom: 3px;">Módulo 2</div>
+      <div style="color: var(--gold); font-size: 12px; font-weight: bold; text-transform: uppercase;">Família e Sociedade</div>
+    </div>
+    <button onclick="abrirLicaoConteudo(window.CULTURA_MOD_2_HTML)" style="background: rgba(212,168,67,0.2); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 12px; font-weight: bold; cursor: pointer; white-space: nowrap;">Acessar</button>
+  </div>
+
+  <!-- MÓDULO 3 -->
+  <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="padding-right: 15px;">
+      <div style="color: white; font-weight: bold; font-size: 15px; margin-bottom: 3px;">Módulo 3</div>
+      <div style="color: var(--gold); font-size: 12px; font-weight: bold; text-transform: uppercase;">O Templo e a Adoração</div>
+    </div>
+    <button onclick="abrirLicaoConteudo(window.CULTURA_MOD_3_HTML)" style="background: rgba(212,168,67,0.2); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 12px; font-weight: bold; cursor: pointer; white-space: nowrap;">Acessar</button>
+  </div>
+  
+  <!-- MÓDULO 4 -->
+  <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="padding-right: 15px;">
+      <div style="color: white; font-weight: bold; font-size: 15px; margin-bottom: 3px;">Módulo 4</div>
+      <div style="color: var(--gold); font-size: 12px; font-weight: bold; text-transform: uppercase;">Festas Bíblicas</div>
+    </div>
+    <button onclick="abrirLicaoConteudo(window.CULTURA_MOD_4_HTML)" style="background: rgba(212,168,67,0.2); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 12px; font-weight: bold; cursor: pointer; white-space: nowrap;">Acessar</button>
+  </div>
+
+  <!-- MÓDULO 5 -->
+  <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="padding-right: 15px;">
+      <div style="color: white; font-weight: bold; font-size: 15px; margin-bottom: 3px;">Módulo 5</div>
+      <div style="color: var(--gold); font-size: 12px; font-weight: bold; text-transform: uppercase;">Objetos Bíblicos</div>
+    </div>
+    <button onclick="abrirLicaoConteudo(window.CULTURA_MOD_5_HTML)" style="background: rgba(212,168,67,0.2); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 12px; font-weight: bold; cursor: pointer; white-space: nowrap;">Acessar</button>
+  </div>
+
+  <!-- MÓDULO 6 -->
+  <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="padding-right: 15px;">
+      <div style="color: white; font-weight: bold; font-size: 15px; margin-bottom: 3px;">Módulo 6</div>
+      <div style="color: var(--gold); font-size: 12px; font-weight: bold; text-transform: uppercase;">Alimentação Bíblica</div>
+    </div>
+    <button onclick="abrirLicaoConteudo(window.CULTURA_MOD_6_HTML)" style="background: rgba(212,168,67,0.2); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 12px; font-weight: bold; cursor: pointer; white-space: nowrap;">Acessar</button>
+  </div>
+
+  <!-- MÓDULO 7 -->
+  <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="padding-right: 15px;">
+      <div style="color: white; font-weight: bold; font-size: 15px; margin-bottom: 3px;">Módulo 7</div>
+      <div style="color: var(--gold); font-size: 12px; font-weight: bold; text-transform: uppercase;">Vestimentas</div>
+    </div>
+    <button onclick="abrirLicaoConteudo(window.CULTURA_MOD_7_HTML)" style="background: rgba(212,168,67,0.2); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 12px; font-weight: bold; cursor: pointer; white-space: nowrap;">Acessar</button>
+  </div>
+
+  <!-- MÓDULO 8 -->
+  <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="padding-right: 15px;">
+      <div style="color: white; font-weight: bold; font-size: 15px; margin-bottom: 3px;">Módulo 8</div>
+      <div style="color: var(--gold); font-size: 12px; font-weight: bold; text-transform: uppercase;">Economia</div>
+    </div>
+    <button onclick="abrirLicaoConteudo(window.CULTURA_MOD_8_HTML)" style="background: rgba(212,168,67,0.2); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 12px; font-weight: bold; cursor: pointer; white-space: nowrap;">Acessar</button>
+  </div>
+
+  <!-- MÓDULO 9 -->
+  <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="padding-right: 15px;">
+      <div style="color: white; font-weight: bold; font-size: 15px; margin-bottom: 3px;">Módulo 9</div>
+      <div style="color: var(--gold); font-size: 12px; font-weight: bold; text-transform: uppercase;">Personagens e Costumes</div>
+    </div>
+    <button onclick="abrirLicaoConteudo(window.CULTURA_MOD_9_HTML)" style="background: rgba(212,168,67,0.2); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 12px; font-weight: bold; cursor: pointer; white-space: nowrap;">Acessar</button>
+  </div>
+
+  <!-- MÓDULO 10 -->
+  <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="padding-right: 15px;">
+      <div style="color: white; font-weight: bold; font-size: 15px; margin-bottom: 3px;">Módulo 10</div>
+      <div style="color: var(--gold); font-size: 12px; font-weight: bold; text-transform: uppercase;">Curiosidades Bíblicas</div>
+    </div>
+    <button onclick="abrirLicaoConteudo(window.CULTURA_MOD_10_HTML)" style="background: rgba(212,168,67,0.2); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 12px; font-weight: bold; cursor: pointer; white-space: nowrap;">Acessar</button>
+  </div>
+
+  <!-- BÔNUS -->
+  <div style="background: linear-gradient(135deg, rgba(212,168,67,0.15), rgba(212,168,67,0.05)); border: 1px solid var(--gold); border-radius: 12px; padding: 15px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="padding-right: 15px;">
+      <div style="color: white; font-weight: bold; font-size: 15px; margin-bottom: 3px;">🎁 Bônus Exclusivo</div>
+      <div style="color: var(--gold-light); font-size: 12px; font-weight: bold;">Glossário, Nomes e Símbolos</div>
+    </div>
+    <button onclick="abrirLicaoConteudo(window.CULTURA_BONUS_HTML)" style="background: var(--gold); color: #1a1a2e; border: none; border-radius: 8px; padding: 8px 12px; font-weight: bold; cursor: pointer; white-space: nowrap;">Acessar</button>
+  </div>
+
+<!-- BOTÃO DO QUIZ -->
+  <div style="margin-top: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; text-align: center;">
+      <button onclick="abrirLicaoConteudo(window.CULTURA_QUIZ_HTML)" style="background: linear-gradient(135deg, var(--gold), #D4A843); color: #1a1a2e; border: none; border-radius: 12px; padding: 15px 30px; font-weight: 900; font-size: 1.1rem; cursor: pointer; box-shadow: 0 4px 15px rgba(212,168,67,0.3); text-transform: uppercase;">
+          🏆 Iniciar Quiz Final
+      </button>
+  </div>
+
+</div>
+<!-- ================= FIM DA TELA DO CURSO DE CULTURA ================= -->
+
+</div>
+<!-- ================= FIM DA TELA DO CURSO DE CULTURA ================= -->
 <nav class="bottom-nav" id="bottom-nav">
   <button class="nav-btn active" id="nav-home" onclick="navTo('home')"><span class="nav-ico">🏠</span><span class="nav-lbl">Início</span></button>
   <button class="nav-btn" id="nav-devocional" onclick="navTo('devocional')"><span class="nav-ico">🙏</span><span class="nav-lbl">Devocional</span></button>
@@ -1509,6 +1630,680 @@ window.LICAO_5_HTML = `
   </div>
 `;
 
+// ================= CURSO CULTURA BÍBLICA: MÓDULO 1 =================
+window.CULTURA_MOD_1_HTML = `
+  <div class="licao-html" style="background-color: #0D0829; padding: 20px; max-width: 800px; margin: 0 auto; color: #F5F0E8; font-family: 'Inter', sans-serif; padding-bottom: 80px; line-height: 1.8;">
+
+    <div style="text-align: center; margin-bottom: 40px; border-bottom: 1px solid rgba(212,168,67,0.2); padding-bottom: 20px;">
+        <span style="font-size: 3rem; margin-bottom: 10px; display: block;">🌍</span>
+        <h2 style="font-family: 'Cinzel', serif; color: #D4A843; font-size: 2.2rem; margin-bottom: 10px; line-height: 1.2;">Módulo 1<br>Conhecendo o Mundo Bíblico</h2>
+        <p style="color: #9B8FCB; font-size: 1rem;">O cenário geográfico, climático e cotidiano do Antigo Oriente Médio.</p>
+    </div>
+
+    <!-- TÓPICO 1 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> O que é Cultura Bíblica?
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">A Bíblia não foi escrita no século XXI, nem sob a ótica da cultura ocidental moderna. Ela nasceu no <strong>Antigo Oriente Médio</strong>, uma região com costumes, leis, economia e visões de mundo completamente diferentes das nossas.</p>
+        <p style="margin-bottom: 15px; text-align: justify;">Estudar a Cultura Bíblica é construir uma "ponte no tempo". É aprender a ler as Escrituras com os "óculos" de um judeu do primeiro século ou de um nômade da época dos patriarcas. Quando entendemos como eles viviam, comiam, se casavam e trabalhavam, passagens que antes pareciam obscuras ou estranhas ganham vida e um significado profundo.</p>
+    </div>
+
+    <!-- TÓPICO 2 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> Como era Israel nos tempos bíblicos?
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">Geograficamente, Israel era o "umbigo do mundo" antigo. O país funcionava como uma <strong>ponte terrestre obrigatória</strong> que ligava três grandes continentes: África, Ásia e Europa. Grandes potências, como o Egito ao sul e a Assíria e Babilônia ao norte, precisavam cruzar Israel para fazer comércio ou travar guerras.</p>
+        <p style="margin-bottom: 15px; text-align: justify;">Essa localização privilegiada trazia duas consequências: a nação estava sempre exposta a invasões estrangeiras (o que explica as constantes guerras narradas na Bíblia), mas também estava no centro do mundo para irradiar a revelação do Deus único para todas as nações da terra.</p>
+    </div>
+
+    <!-- TÓPICO 3 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> O Calendário Judaico e as Estações
+        </h3>
+        <div style="background: rgba(255,255,255,0.03); border-left: 4px solid #D4A843; padding: 15px; margin-bottom: 15px; border-radius: 0 8px 8px 0;">
+            Ao contrário do nosso calendário solar (Gregoriano), o calendário bíblico é <strong>Lunissolar</strong>. Os meses seguem o ciclo da lua (cerca de 29 ou 30 dias), mas os anos são ajustados ao ciclo do sol para garantir que as festas agrícolas caiam na estação certa.
+        </div>
+        <p style="margin-bottom: 15px; text-align: justify;">O clima em Israel é dividido basicamente em duas estações: um <strong>verão longo, quente e totalmente seco</strong> (de maio a outubro), e um <strong>inverno frio e chuvoso</strong> (de novembro a abril). A dependência da chuva era absoluta. A "primeira chuva" (outono) amolecia a terra para o plantio, e a "última chuva" (primavera) amadurecia os grãos para a colheita. Se Deus retivesse as chuvas, a nação inteira entrava em fome.</p>
+        <p style="text-align: justify;">Outra curiosidade: o dia bíblico não começa à meia-noite, mas ao <strong>pôr do sol</strong>. Por isso, no Gênesis lemos: <em>"E foi a tarde e a manhã, o dia primeiro"</em>.</p>
+    </div>
+
+    <!-- TÓPICO 4 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> Um dia comum e a importância do Deserto
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">A vida cotidiana era agrária e regida pela luz do sol. As pessoas acordavam ao amanhecer e iam imediatamente para os campos ou para os seus ofícios. O meio-dia era o horário de pico do calor, onde muitas vezes o trabalho era pausado para descanso e refeição leve.</p>
+        <p style="margin-bottom: 15px; text-align: justify;">Perto das cidades e vilas agricultáveis, encontrava-se o <strong>Midbar</strong> (Deserto). O deserto, na cultura bíblica, não era apenas um lugar geográfico de areia e pedras, mas uma escola espiritual. É no deserto que não há distrações, recursos ou autossuficiência. É o lugar onde o homem depende exclusivamente do maná e da água que vêm de Deus. Curiosamente, a raiz da palavra hebraica para deserto (Midbar) tem a mesma origem da palavra "falar" (Dabar). O deserto é onde Deus fala com o Seu povo.</p>
+    </div>
+
+    <!-- TÓPICO 5 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> Jerusalém: A Cidade Santa
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">As antigas cidades bíblicas eram construídas no alto de colinas (Téis) para facilitar a defesa militar e geralmente cercadas por grandes e espessas muralhas. Os portões da cidade eram o centro da vida cívica: era lá que os negócios eram fechados, os juízes se sentavam e as profecias eram declaradas.</p>
+        <p style="text-align: justify;">Acima de todas as cidades estava <strong>Jerusalém</strong>. Geograficamente, ela fica encravada nos montes da Judeia, a quase 800 metros acima do nível do mar. É por isso que a Bíblia sempre fala em <em>"subir a Jerusalém"</em>, independentemente de onde a pessoa estivesse vindo. Ela não era um pólo comercial (não tinha rios navegáveis nem estava nas rotas principais), mas foi escolhida pelo próprio Deus para colocar o Seu Nome. Ali no Monte Moriá, foi construído o Templo, tornando-se o coração pulsante da fé, identidade e esperança de todo o povo judeu.</p>
+    </div>
+  </div>
+`;
+
+// ================= CURSO CULTURA BÍBLICA: MÓDULO 2 =================
+window.CULTURA_MOD_2_HTML = `
+  <div class="licao-html" style="background-color: #0D0829; padding: 20px; max-width: 800px; margin: 0 auto; color: #F5F0E8; font-family: 'Inter', sans-serif; padding-bottom: 80px; line-height: 1.8;">
+
+    <div style="text-align: center; margin-bottom: 40px; border-bottom: 1px solid rgba(212,168,67,0.2); padding-bottom: 20px;">
+        <span style="font-size: 3rem; margin-bottom: 10px; display: block;">⛺</span>
+        <h2 style="font-family: 'Cinzel', serif; color: #D4A843; font-size: 2.2rem; margin-bottom: 10px; line-height: 1.2;">Módulo 2<br>Família e Sociedade</h2>
+        <p style="color: #9B8FCB; font-size: 1rem;">O núcleo da sobrevivência e da fé no Antigo Oriente.</p>
+    </div>
+
+    <!-- TÓPICO 1 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> O Noivado e o Casamento Judaico
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">O casamento não era apenas a união romântica de dois indivíduos, mas uma aliança sagrada e política entre duas famílias, muitas vezes arranjada pelos pais. O processo tinha duas fases distintas que explicam, por exemplo, a história de Maria e José.</p>
+        <p style="margin-bottom: 15px; text-align: justify;">A primeira fase era o <strong>Erusin (Noivado/Desposório)</strong>. Era um compromisso legal e vinculativo selado com um contrato (Ketubá) e o pagamento do dote (Mohar) à família da noiva. Eles eram considerados legalmente marido e mulher, mas ainda não moravam juntos nem tinham intimidade. Quebrar esse acordo exigia um divórcio formal.</p>
+        <p style="margin-bottom: 15px; text-align: justify;">A segunda fase, geralmente um ano depois, era o <strong>Nissuin (Casamento)</strong>. O noivo ia em procissão, à noite, iluminado por lâmpadas, até a casa da noiva para buscá-la. A celebração e o banquete de casamento duravam até sete dias, envolvendo toda a comunidade.</p>
+    </div>
+
+    <!-- TÓPICO 2 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> O papel do Pai, da Mãe e a Educação
+        </h3>
+        <div style="background: rgba(255,255,255,0.03); border-left: 4px solid #D4A843; padding: 15px; margin-bottom: 15px; border-radius: 0 8px 8px 0;">
+            A família hebraica era <em>Patriarcal</em>. O pai era a autoridade máxima, o juiz, o provedor e o sacerdote do lar. Ele tinha a responsabilidade espiritual de ensinar os mandamentos e garantir que o legado familiar e a herança da terra se mantivessem intactos.
+        </div>
+        <p style="margin-bottom: 15px; text-align: justify;">No entanto, o papel da mãe era tratado com imensa honra. Provérbios 31 revela a <strong>"Mulher Virtuosa" (Eshet Chayil)</strong> não como uma figura submissa que apenas ficava calada, mas como uma gestora brilhante que administrava propriedades, produzia tecidos de alta qualidade, comprava campos, aconselhava com sabedoria e era o coração da casa.</p>
+        <p style="margin-bottom: 15px; text-align: justify;">A <strong>educação das crianças</strong> começava em casa. A prioridade absoluta era ensinar a Torá e os feitos de Deus (o Shemá Israel, Deut. 6). Somado a isso, todo pai judeu tinha a obrigação de ensinar um ofício braçal ao seu filho (como carpintaria, pastoreio ou fabricação de tendas). O ditado rabínico dizia: <em>"Quem não ensina seu filho a trabalhar, ensina-o a roubar"</em>.</p>
+    </div>
+
+    <!-- TÓPICO 3 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> Genealogias, Heranças e o Primogênito
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">Para nós ocidentais, ler capítulos inteiros de genealogias parece cansativo. Mas no Antigo Oriente, a genealogia era a sua <strong>"Identidade de CPF"</strong>, seu título de eleitor e a escritura das suas terras. Se você não pudesse provar sua linhagem (sua tribo e clã), você perderia o direito à herança na terra de Israel e o direito de exercer funções como o sacerdócio.</p>
+        <p style="margin-bottom: 15px; text-align: justify;">A lei de herança determinava que o <strong>Filho Primogênito</strong> recebesse a porção dobrada da propriedade do pai. Isso não acontecia porque ele era mais amado, mas porque ele assumia uma carga dupla de responsabilidade: após a morte do pai, ele teria que sustentar a mãe viúva e garantir o sustento e os dotes das irmãs solteiras, além de se tornar o líder espiritual do clã.</p>
+    </div>
+
+    <!-- TÓPICO 4 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> A Sagrada Lei da Hospitalidade
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">Viajar no mundo antigo era perigoso. Não havia hotéis e os viajantes dependiam da bondade de estranhos. Por isso, a hospitalidade não era uma questão de "educação", era um <strong>dever sagrado e uma questão de sobrevivência</strong>.</p>
+        <p style="text-align: justify;">Quando um hóspede entrava na tenda ou na casa de alguém, o anfitrião era obrigado a providenciar água para lavar a poeira dos pés, dar a sua melhor comida e, acima de tudo, garantir a proteção da vida daquele hóspede, mesmo que isso custasse a vida de sua própria família. É sob essa lente cultural que entendemos a atitude drástica e chocante de Ló, em Gênesis 19, que preferiu oferecer as filhas à multidão perversa de Sodoma a permitir que seus hóspedes (os anjos) sofressem violência debaixo do seu teto.</p>
+    </div>
+
+  </div>
+`;
+
+// ================= CURSO CULTURA BÍBLICA: MÓDULO 3 =================
+window.CULTURA_MOD_3_HTML = `
+  <div class="licao-html" style="background-color: #0D0829; padding: 20px; max-width: 800px; margin: 0 auto; color: #F5F0E8; font-family: 'Inter', sans-serif; padding-bottom: 80px; line-height: 1.8;">
+
+    <div style="text-align: center; margin-bottom: 40px; border-bottom: 1px solid rgba(212,168,67,0.2); padding-bottom: 20px;">
+        <span style="font-size: 3rem; margin-bottom: 10px; display: block;">🏛️</span>
+        <h2 style="font-family: 'Cinzel', serif; color: #D4A843; font-size: 2.2rem; margin-bottom: 10px; line-height: 1.2;">Módulo 3<br>O Templo e a Adoração</h2>
+        <p style="color: #9B8FCB; font-size: 1rem;">O epicentro da vida espiritual, sacrifícios e conexão com o divino.</p>
+    </div>
+
+    <!-- TÓPICO 1 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> Do Tabernáculo aos Templos
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">A adoração a Deus em Israel evoluiu de uma estrutura móvel para monumentos de pedra, mas a essência do "layout" permaneceu a mesma. Tudo começou com o <strong>Tabernáculo (Mishkan)</strong>, uma tenda sagrada e portátil construída no deserto sob as ordens dadas a Moisés, simbolizando que Deus "acampava" no meio do Seu povo.</p>
+        <p style="margin-bottom: 15px; text-align: justify;">Séculos depois, o Rei Salomão construiu o <strong>Primeiro Templo</strong> em Jerusalém, uma obra arquitetônica deslumbrante revestida de ouro, que acabou sendo destruída pelo império Babilônico. Após o exílio, Zorobabel construiu o <strong>Segundo Templo</strong> (mais simples), que mais tarde foi expandido e embelezado de forma colossal pelo Rei Herodes — este é o Templo que Jesus frequentou, e que foi finalmente destruído por Roma no ano 70 d.C.</p>
+    </div>
+
+    <!-- TÓPICO 2 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> Sacerdotes, Levitas e o Sumo Sacerdote
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">O serviço no Templo era exclusivo da tribo de Levi. Os <strong>Levitas</strong> eram os "funcionários gerais": cuidavam da música, cantavam os Salmos, vigiavam os portões e mantinham a estrutura. No entanto, apenas uma família dentro da tribo de Levi podia oficiar sacrifícios: os descendentes de Arão, conhecidos como <strong>Sacerdotes (Kohanim)</strong>.</p>
+        <div style="background: rgba(255,255,255,0.03); border-left: 4px solid #D4A843; padding: 15px; margin-bottom: 15px; border-radius: 0 8px 8px 0;">
+            Acima de todos estava o <strong>Sumo Sacerdote (Kohen Gadol)</strong>. Ele usava vestes sagradas especiais, incluindo um peitoral com doze pedras preciosas representando as doze tribos de Israel. Ele carregava o peso da nação sobre o coração ao entrar na presença de Deus.
+        </div>
+    </div>
+
+    <!-- TÓPICO 3 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> A Estrutura do Templo: Do Pátio ao Santo dos Santos
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">O nível de santidade aumentava à medida que se caminhava para dentro. No <strong>Pátio Exterior</strong> (onde o povo podia ficar), encontrava-se o <em>Altar de Bronze</em> (para queimar os sacrifícios) e a <em>Pia de Bronze</em>, onde os sacerdotes lavavam mãos e pés antes de oficiar, simbolizando que ninguém se aproxima de Deus sem arrependimento e purificação.</p>
+        <p style="margin-bottom: 15px; text-align: justify;">Entrando no edifício principal, havia o <strong>Santo Lugar</strong>. Era iluminado apenas pela <em>Menorá</em> (o candelabro de ouro batido, aceso com azeite puro). Lá também estava a <em>Mesa dos Pães da Proposição</em> (12 pães frescos toda semana) e o <em>Altar do Incenso</em>, cuja fumaça subia continuamente representando as orações dos santos.</p>
+    </div>
+
+    <!-- TÓPICO 4 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> O Santo dos Santos e a Arca da Aliança
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">Separado por um véu espesso e pesado, ficava o cômodo mais sagrado e temido de toda a terra: o <strong>Kodesh Hakodashim (Santo dos Santos)</strong>. Não havia luz natural ali, apenas a presença gloriosa do próprio Deus (a Shekiná). Apenas o Sumo Sacerdote podia entrar lá, e apenas um dia por ano (no Yom Kippur).</p>
+        <p style="text-align: justify;">Dentro desta sala ficava um único móvel: a <strong>Arca da Aliança</strong>. Era uma caixa de madeira de acácia revestida de ouro. A tampa era chamada de <em>Propiciatório</em>, coroada por dois Querubins. Dentro da Arca, guardavam-se três relíquias sagradas: as Tábuas de Pedra com os Dez Mandamentos, um vaso com o Maná do deserto e o Cajado de Arão que floresceu.</p>
+    </div>
+  </div>
+`;
+
+// ================= CURSO CULTURA BÍBLICA: MÓDULO 4 =================
+window.CULTURA_MOD_4_HTML = `
+  <div class="licao-html" style="background-color: #0D0829; padding: 20px; max-width: 800px; margin: 0 auto; color: #F5F0E8; font-family: 'Inter', sans-serif; padding-bottom: 80px; line-height: 1.8;">
+
+    <div style="text-align: center; margin-bottom: 40px; border-bottom: 1px solid rgba(212,168,67,0.2); padding-bottom: 20px;">
+        <span style="font-size: 3rem; margin-bottom: 10px; display: block;">🎺</span>
+        <h2 style="font-family: 'Cinzel', serif; color: #D4A843; font-size: 2.2rem; margin-bottom: 10px; line-height: 1.2;">Módulo 4<br>Festas Bíblicas</h2>
+        <p style="color: #9B8FCB; font-size: 1rem;">O calendário de encontros marcados entre Deus e os homens.</p>
+    </div>
+
+    <!-- TÓPICO 1 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> O Ciclo das Festas e a Agricultura
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">Em Levítico 23, Deus estabelece os Seus "tempos determinados" (Moedim). As festas bíblicas não eram simples feriados culturais; eram <strong>ensaios proféticos</strong> e estavam intimamente ligadas ao ciclo agrícola de Israel. Três vezes ao ano (Páscoa, Pentecostes e Tabernáculos), todo homem judeu era obrigado a viajar até Jerusalém para celebrar diante do Senhor.</p>
+    </div>
+
+    <!-- TÓPICO 2 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> As Festas da Primavera (A Obra da Redenção)
+        </h3>
+        <ul style="margin: 0; padding-left: 20px; font-size: 0.95rem; line-height: 1.8; color: #E8E3F5; text-align: justify;">
+            <li style="margin-bottom: 10px;"><strong>Páscoa (Pessach):</strong> Celebra a libertação da escravidão do Egito, quando o anjo da morte passou por cima das casas marcadas com o sangue de um cordeiro sem defeito. Para o cristianismo, aponta para o sacrifício de Cristo.</li>
+            <li style="margin-bottom: 10px;"><strong>Pães Asmos (Hag HaMatzot):</strong> Duração de sete dias, onde todo fermento (símbolo de pecado e orgulho) era retirado de casa. Comiam o "pão da aflição" para lembrar a pressa da saída do Egito.</li>
+            <li style="margin-bottom: 10px;"><strong>Primícias (Bikkurim):</strong> A oferta do primeiro feixe da colheita da cevada. Era a garantia de que o resto da colheita viria. (Cristo é chamado na Bíblia de "as primícias dos que dormem", pois ressuscitou no dia desta festa).</li>
+            <li><strong>Pentecostes (Shavuot):</strong> Celebrada exatamente 50 dias após as Primícias. Era a festa da colheita do trigo e marcava o dia em que Deus entregou a Torá (A Lei) a Moisés no Monte Sinai. No Novo Testamento, marca o derramamento do Espírito Santo.</li>
+        </ul>
+    </div>
+
+    <!-- TÓPICO 3 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> As Festas do Outono (O Retorno e Julgamento)
+        </h3>
+        <ul style="margin: 0; padding-left: 20px; font-size: 0.95rem; line-height: 1.8; color: #E8E3F5; text-align: justify;">
+            <li style="margin-bottom: 10px;"><strong>Trombetas (Rosh Hashaná):</strong> O ano novo civil judeu. Marcado pelo toque incessante do Shofar, que servia como um "alarme espiritual" para despertar o povo ao arrependimento.</li>
+            <li style="margin-bottom: 10px;"><strong>Dia da Expiação (Yom Kippur):</strong> O dia mais solene do calendário, marcado por jejum absoluto. Era o único dia em que o Sumo Sacerdote entrava no Santo dos Santos com o sangue do sacrifício para cobrir os pecados da nação por mais um ano.</li>
+            <li><strong>Tabernáculos (Sucot):</strong> A festa mais alegre do ano. Durante sete dias, o povo construía cabanas de galhos e dormia fora de casa. Isso os lembrava da fragilidade da vida no deserto e de como a proteção verdadeira vem apenas de Deus.</li>
+        </ul>
+    </div>
+
+    <!-- TÓPICO 4 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> As Festas Históricas
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">Fora das festas instituídas por Moisés, os judeus adicionaram duas festas essenciais para celebrar grandes livramentos: o <strong>Purim</strong>, que lembra como a Rainha Ester e Mardoqueu salvaram os judeus da aniquilação na Pérsia; e o <strong>Hanucá (Festa das Luzes)</strong>, que celebra a reconquista e purificação do Templo após a revolta dos Macabeus (festa que Jesus também celebrou, segundo João 10).</p>
+    </div>
+  </div>
+`;
+
+// ================= CURSO CULTURA BÍBLICA: MÓDULO 5 =================
+window.CULTURA_MOD_5_HTML = `
+  <div class="licao-html" style="background-color: #0D0829; padding: 20px; max-width: 800px; margin: 0 auto; color: #F5F0E8; font-family: 'Inter', sans-serif; padding-bottom: 80px; line-height: 1.8;">
+
+    <div style="text-align: center; margin-bottom: 40px; border-bottom: 1px solid rgba(212,168,67,0.2); padding-bottom: 20px;">
+        <span style="font-size: 3rem; margin-bottom: 10px; display: block;">🏺</span>
+        <h2 style="font-family: 'Cinzel', serif; color: #D4A843; font-size: 2.2rem; margin-bottom: 10px; line-height: 1.2;">Módulo 5<br>Objetos Bíblicos</h2>
+        <p style="color: #9B8FCB; font-size: 1rem;">Artefatos sagrados e utensílios do cotidiano e seu simbolismo espiritual.</p>
+    </div>
+
+    <!-- TÓPICO 1 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> O Shofar: O Alarme dos Céus
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">O Shofar é um instrumento de sopro feito de chifre de carneiro (nunca de boi). Não era um instrumento musical para compor melodias, mas uma ferramenta de comunicação vital. O som rústico e estridente do Shofar era usado para convocar o exército para a guerra, coroar reis, anunciar o início do Ano do Jubileu (onde escravos eram libertos) e chamar o povo ao arrependimento durante as festas.</p>
+    </div>
+
+    <!-- TÓPICO 2 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> A Palavra no Corpo e na Casa: Tefilin e Mezuzá
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">Em obediência literal a Deuteronômio 6 (<em>"Atarás estas palavras como sinal na tua mão e serão por testeiras entre os teus olhos"</em>), os judeus ortodoxos utilizam objetos específicos:</p>
+        <p style="margin-bottom: 15px; text-align: justify;">Os <strong>Filactérios (Tefilin)</strong> são duas caixinhas de couro preto contendo pequenos pergaminhos com versículos da Torá. Uma é amarrada com tiras de couro no braço (perto do coração) e a outra na testa (a mente), alinhando pensamentos e ações à Vontade Divina durante a oração.</p>
+        <p style="text-align: justify;">A <strong>Mezuzá</strong> é um pequeno estojo fixado no umbral direito de quase todas as portas de uma casa judaica. Dentro dela, também há um pergaminho sagrado. Ao entrar e sair, o morador toca a Mezuzá e beija os dedos, lembrando-se de que Deus guarda a sua casa e de que a Lei deve governar a vida familiar.</p>
+    </div>
+
+    <!-- TÓPICO 3 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> O Talit e as Franjas
+        </h3>
+        <div style="background: rgba(255,255,255,0.03); border-left: 4px solid #D4A843; padding: 15px; margin-bottom: 15px; border-radius: 0 8px 8px 0;">
+            O <strong>Talit</strong> é o manto de oração judaico. O mais importante nele não é o tecido, mas as franjas amarradas em suas quatro pontas, chamadas de <strong>Tzitzit</strong>.
+        </div>
+        <p style="text-align: justify;">Deus ordenou o uso dessas franjas para que, ao olhar para elas, o homem lembrasse de todos os mandamentos do Senhor e não fosse arrastado pelos desejos do próprio coração. Na cultura antiga, a barra do manto representava a autoridade do indivíduo. Foi na franja (Tzitzit) do manto de Jesus que a mulher do fluxo de sangue tocou em busca de cura e virtude.</p>
+    </div>
+
+    <!-- TÓPICO 4 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> A Cultura do Barro: Jarros, Lâmpadas e Selos
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">O plástico e o vidro eram praticamente inexistentes na vida comum. Tudo girava em torno da argila. Os <strong>jarros de barro</strong> (talhas) guardavam vinho, azeite e água e, pela sua porosidade, ajudavam a manter a água relativamente fresca. Quando os profetas ou o próprio Jesus comparam a humanidade a "vasos de barro", estão evocando a ideia de fragilidade extrema e dependência do Oleiro.</p>
+        <p style="margin-bottom: 15px; text-align: justify;">As <strong>lâmpadas</strong> da época não eram tochas, mas pequenos potes de barro do tamanho da palma da mão, enchidos com azeite e um pavio de linho. A luz era tênue, iluminando apenas os passos imediatos de quem a segurava (<em>"Lâmpada para os meus pés é a tua palavra"</em>).</p>
+        <p style="text-align: justify;">A comunicação escrita era feita em <strong>Pergaminhos</strong> (pele de animal tratada) ou <strong>Papiros</strong> (fibras vegetais), e armazenada enrolada em varas de madeira (Rolos da Torá). Para garantir a autenticidade e segurança de um documento ou túmulo, usavam um pedaço de argila macia prensado com o anel oficial (<strong>o Selo</strong>), que secava e se tornava uma marca irrevogável de propriedade.</p>
+    </div>
+  </div>
+`;
+
+// ================= CURSO CULTURA BÍBLICA: MÓDULO 6 =================
+window.CULTURA_MOD_6_HTML = `
+  <div class="licao-html" style="background-color: #0D0829; padding: 20px; max-width: 800px; margin: 0 auto; color: #F5F0E8; font-family: 'Inter', sans-serif; padding-bottom: 80px; line-height: 1.8;">
+
+    <div style="text-align: center; margin-bottom: 40px; border-bottom: 1px solid rgba(212,168,67,0.2); padding-bottom: 20px;">
+        <span style="font-size: 3rem; margin-bottom: 10px; display: block;">🍞</span>
+        <h2 style="font-family: 'Cinzel', serif; color: #D4A843; font-size: 2.2rem; margin-bottom: 10px; line-height: 1.2;">Módulo 6<br>Alimentação Bíblica</h2>
+        <p style="color: #9B8FCB; font-size: 1rem;">O pão nosso de cada dia e as leis de pureza à mesa.</p>
+    </div>
+
+    <!-- TÓPICO 1 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> A Tríade da Vida: Pão, Vinho e Azeite
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">A dieta mediterrânea antiga baseava-se nestes três pilares absolutos. O <strong>Pão (Lechem)</strong> não era apenas um acompanhamento, era a refeição em si. Feito principalmente de cevada (pelos mais pobres) ou trigo, era assado diariamente. Na cultura hebraica, a refeição era um ato de comunhão sagrada. Partir o pão com alguém significava fazer um pacto de paz com aquela pessoa.</p>
+        <p style="margin-bottom: 15px; text-align: justify;">O <strong>Vinho (Yayin)</strong> era essencial. Como as fontes de água eram frequentemente contaminadas, misturava-se um pouco de vinho à água para purificá-la. Além de seu uso medicinal e nutricional, o vinho era o símbolo máximo da alegria festiva e da abundância divina.</p>
+        <p style="text-align: justify;">O <strong>Azeite de Oliva (Shemen)</strong> era o "ouro líquido" de Israel. Suas funções iam muito além da culinária: servia como combustível para as lâmpadas, sabonete para o banho, remédio para feridas e era o elemento sagrado usado para ungir reis e sacerdotes.</p>
+    </div>
+
+    <!-- TÓPICO 2 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> Frutas, Mel e Peixes
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">Quando Deus prometeu uma terra que "mana leite e mel", o mel raramente se referia ao mel de abelha, mas sim ao <strong>melaço espesso extraído de tâmaras ou figos</strong>. As frutas mais comuns eram uvas, figos, romãs e azeitonas.</p>
+        <p style="text-align: justify;">A carne vermelha era um artigo de luxo, consumida quase exclusivamente em dias de festas ou quando se oferecia um sacrifício de comunhão no Templo. A proteína mais comum do dia a dia, especialmente na região da Galileia, eram os <strong>peixes</strong>, geralmente salgados ou secos ao sol para durarem longas viagens.</p>
+    </div>
+
+    <!-- TÓPICO 3 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> A Lei da Pureza (Kashrut)
+        </h3>
+        <div style="background: rgba(255,255,255,0.03); border-left: 4px solid #D4A843; padding: 15px; margin-bottom: 15px; border-radius: 0 8px 8px 0;">
+            A dieta de Israel era regida por leis rigorosas dadas em Levítico 11, dividindo os alimentos entre puros (Kosher) e impuros.
+        </div>
+        <p style="text-align: justify;">Para que um mamífero fosse considerado puro para consumo, ele precisava ter a <strong>unha fendida (casco dividido) e ser ruminante</strong> (como ovelhas, vacas e cabras). O porco tem o casco fendido, mas não rumina, por isso era impuro. Das águas, só se podia comer o que tivesse <strong>barbatanas e escamas</strong> (proibindo o consumo de crustáceos, moluscos e enguias). Essas leis não serviam apenas para higiene, mas eram um marcador de separação cultural, impedindo que o povo de Israel se misturasse facilmente em banquetes idólatras das nações vizinhas.</p>
+    </div>
+  </div>
+`;
+
+// ================= CURSO CULTURA BÍBLICA: MÓDULO 7 =================
+window.CULTURA_MOD_7_HTML = `
+  <div class="licao-html" style="background-color: #0D0829; padding: 20px; max-width: 800px; margin: 0 auto; color: #F5F0E8; font-family: 'Inter', sans-serif; padding-bottom: 80px; line-height: 1.8;">
+
+    <div style="text-align: center; margin-bottom: 40px; border-bottom: 1px solid rgba(212,168,67,0.2); padding-bottom: 20px;">
+        <span style="font-size: 3rem; margin-bottom: 10px; display: block;">🥻</span>
+        <h2 style="font-family: 'Cinzel', serif; color: #D4A843; font-size: 2.2rem; margin-bottom: 10px; line-height: 1.2;">Módulo 7<br>Vestimentas</h2>
+        <p style="color: #9B8FCB; font-size: 1rem;">O simbolismo, a proteção e o status nas roupas do mundo antigo.</p>
+    </div>
+
+    <!-- TÓPICO 1 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> A Base: Túnicas e Mantos
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">A vestimenta bíblica era projetada para proteger o corpo tanto do sol escaldante do deserto quanto do frio intenso da noite, baseada principalmente em lã e linho. A peça íntima e básica de todos, homens e mulheres, era a <strong>Túnica (Ketonet)</strong>, uma vestimenta semelhante a uma camisa longa que descia até os joelhos ou tornozelos, geralmente de cores lisas e neutras.</p>
+        <p style="text-align: justify;">Por cima da túnica, vestia-se a peça mais importante do guarda-roupa: o <strong>Manto (Meil ou Simlah)</strong>. O manto era o cobertor do viajante, a bolsa onde se carregava grãos ou pães e o símbolo do status de uma pessoa (como a túnica colorida que Jacó deu a José). A Lei de Moisés era tão protetora com os pobres que proibia um credor de tomar o manto de um homem como garantia e não devolvê-lo antes do pôr do sol, pois era a única coisa que o aqueceria à noite.</p>
+    </div>
+
+    <!-- TÓPICO 2 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> O Cinto e as Sandálias
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">Como as túnicas eram longas e soltas, era impossível trabalhar, correr ou batalhar sem usar um <strong>Cinto de couro ou tecido (Ezór)</strong>. Daí vem a expressão bíblica "cingir os lombos": significava puxar a barra da túnica para cima, enfiá-la no cinto e preparar-se para a ação. O cinto também funcionava como a "carteira" e o coldre de espadas e punhais do homem antigo.</p>
+        <p style="text-align: justify;">Os pés eram protegidos por simples <strong>sandálias</strong> feitas de solas de couro ou madeira amarradas com tiras (correias). Como as estradas eram poeirentas e os lugares divididos com animais, os pés ficavam extremamente sujos, tornando o ato de "lavar os pés dos convidados" uma das regras máximas de hospitalidade e humildade.</p>
+    </div>
+
+    <!-- TÓPICO 3 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> As Roupas dos Sacerdotes
+        </h3>
+        <div style="background: rgba(255,255,255,0.03); border-left: 4px solid #D4A843; padding: 15px; margin-bottom: 15px; border-radius: 0 8px 8px 0;">
+            Diferente do povo que usava muita lã, os sacerdotes enquanto oficiavam no Templo deveriam usar <strong>exclusivamente Linho Fino</strong>, pois a lã faz suar, e o suor, na visão da pureza cerimonial, é um resíduo do corpo não adequado para o serviço santo.
+        </div>
+        <p style="text-align: justify;">O <strong>Sumo Sacerdote</strong> possuía "Vestes de Glória e Beleza". Sobre o linho branco, ele vestia um manto azul com sinos de ouro na barra, e por cima de tudo o <strong>Éfode</strong>, uma veste tecida com fios de ouro, azul, púrpura e carmesim. No peito, usava o <em>Peitoral do Juízo</em>, uma placa cravejada com doze pedras preciosas distintas, carregando o nome de cada tribo de Israel para a presença do Senhor.</p>
+    </div>
+  </div>
+`;
+
+// ================= CURSO CULTURA BÍBLICA: MÓDULO 8 =================
+window.CULTURA_MOD_8_HTML = `
+  <div class="licao-html" style="background-color: #0D0829; padding: 20px; max-width: 800px; margin: 0 auto; color: #F5F0E8; font-family: 'Inter', sans-serif; padding-bottom: 80px; line-height: 1.8;">
+
+    <div style="text-align: center; margin-bottom: 40px; border-bottom: 1px solid rgba(212,168,67,0.2); padding-bottom: 20px;">
+        <span style="font-size: 3rem; margin-bottom: 10px; display: block;">⚖️</span>
+        <h2 style="font-family: 'Cinzel', serif; color: #D4A843; font-size: 2.2rem; margin-bottom: 10px; line-height: 1.2;">Módulo 8<br>Economia</h2>
+        <p style="color: #9B8FCB; font-size: 1rem;">Agricultura, comércio e o valor do dinheiro nas Escrituras.</p>
+    </div>
+
+    <!-- TÓPICO 1 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> A Base da Riqueza: Terra e Rebanhos
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">Na cultura bíblica, a verdadeira riqueza não era medida em moedas de ouro guardadas em cofres, mas na posse de <strong>terras produtivas e grandes rebanhos</strong>. A sociedade era majoritariamente agrário-pastoril. Abraão, Isaque e Jacó eram essencialmente nômades muito ricos devido às suas vastas posses de ovelhas, cabras, camelos e servos.</p>
+        <p style="text-align: justify;">A <strong>Agricultura</strong> exigia fé. Diferente do Egito, que era irrigado pelo rio Nilo independentemente do clima, Israel dependia das chuvas que caíam do céu (Deuteronômio 11). A semeadura e a colheita ritmavam a vida civil e religiosa da nação, fazendo da terra uma herança que não podia ser vendida para sempre, mas que retornava à família original no Ano do Jubileu.</p>
+    </div>
+
+    <!-- TÓPICO 2 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> Pesos e Medidas: O Corpo e as Sementes
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">As medidas de comprimento eram padronizadas com base no corpo humano. O <strong>Côvado</strong> (a medida usada para construir a Arca de Noé e o Templo) era a distância do cotovelo até a ponta do dedo médio (cerca de 45 a 50 cm). O <strong>Palmo</strong> era a medida da mão esticada.</p>
+        <p style="text-align: justify;">Para pesar cereais ou prata, usavam-se balanças de pratos. Os contrapesos eram geralmente pedras entalhadas com medidas fixas baseadas na semente mais estável da natureza: a semente da alfarroba. O comércio desonesto, onde mercadores usavam "pedras de peso duplo" (uma pesada para comprar e uma leve para vender), era considerado uma abominação para Deus segundo os Provérbios.</p>
+    </div>
+
+    <!-- TÓPICO 3 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> As Moedas da Bíblia
+        </h3>
+        <div style="background: rgba(255,255,255,0.03); border-left: 4px solid #D4A843; padding: 15px; margin-bottom: 15px; border-radius: 0 8px 8px 0;">
+            No Antigo Testamento, a economia funcionava na base do escambo ou da pesagem de metais (pagava-se pesando argolas ou barras de prata). A cunhagem de moedas com rostos de imperadores surgiu mais tarde.
+        </div>
+        <p style="margin-bottom: 15px; text-align: justify;">No tempo de Jesus, o mercado era uma confusão de câmbios estrangeiros. Havia o <strong>Denário Romano</strong> (uma moeda de prata equivalente ao pagamento de um dia inteiro de trabalho de um braçal). Havia o <strong>Siclo de Tiro</strong>, que era a única moeda aceita no Templo por não ter rosto humano cravado nela, o que deu origem aos cambistas que Jesus expulsou do Templo.</p>
+        <p style="text-align: justify;">A moeda de menor valor que existia era o <strong>Lepto ou Quadrante</strong> (a "moedinha de cobre"). Foi exatamente essa moeda ínfima que a viúva pobre depositou no gasofilácio, e que Jesus declarou ter mais valor do que as sacolas de ouro dos ricos, pois ela deu todo o seu sustento.</p>
+    </div>
+  </div>
+`;
+
+// ================= CURSO CULTURA BÍBLICA: MÓDULO 9 =================
+window.CULTURA_MOD_9_HTML = `
+  <div class="licao-html" style="background-color: #0D0829; padding: 20px; max-width: 800px; margin: 0 auto; color: #F5F0E8; font-family: 'Inter', sans-serif; padding-bottom: 80px; line-height: 1.8;">
+
+    <div style="text-align: center; margin-bottom: 40px; border-bottom: 1px solid rgba(212,168,67,0.2); padding-bottom: 20px;">
+        <span style="font-size: 3rem; margin-bottom: 10px; display: block;">👥</span>
+        <h2 style="font-family: 'Cinzel', serif; color: #D4A843; font-size: 2.2rem; margin-bottom: 10px; line-height: 1.2;">Módulo 9<br>Personagens e Costumes</h2>
+        <p style="color: #9B8FCB; font-size: 1rem;">O mosaico político, religioso e social que formava o mundo de Jesus.</p>
+    </div>
+
+    <!-- TÓPICO 1 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> A Elite Religiosa: Fariseus e Saduceus
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">O primeiro século era um caldeirão de grupos rivais. Os <strong>Fariseus (Os Separados)</strong> eram os líderes espirituais amados pelas massas. Eles acreditavam em anjos, na ressurreição dos mortos e eram extremamente rigorosos não apenas com a Torá (A Lei Escrita), mas com a "Tradição dos Anciãos" (a lei oral). Muitas vezes batiam de frente com Jesus porque valorizavam mais a exterioridade da regra do que a misericórdia.</p>
+        <p style="text-align: justify;">Os <strong>Saduceus</strong>, por outro lado, eram a aristocracia rica. Eles controlavam o Templo e o sacerdócio. Eram aliados políticos de Roma (pois queriam manter o poder) e acreditavam estritamente nos cinco primeiros livros de Moisés. Negavam a existência do mundo espiritual, anjos e a ressurreição. Por isso, a Bíblia diz que eles vieram perguntar a Jesus sobre a mulher que casou com sete irmãos, tentando ridicularizar a ideia de vida após a morte.</p>
+    </div>
+
+    <!-- TÓPICO 2 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> Os Odiados: Publicanos e Samaritanos
+        </h3>
+        <div style="background: rgba(255,255,255,0.03); border-left: 4px solid #D4A843; padding: 15px; margin-bottom: 15px; border-radius: 0 8px 8px 0;">
+            A traição doeu mais porque vinha de dentro. Os <strong>Publicanos</strong> eram judeus que compravam o direito de cobrar impostos para Roma. Eles extorquiam seu próprio povo e lucravam em cima da miséria. Eram considerados traidores da pátria, impuros e nivelados aos maiores pecadores. Foi um desses (Mateus) que Jesus chamou para ser apóstolo.
+        </div>
+        <p style="text-align: justify;">Os <strong>Samaritanos</strong> eram ainda mais rejeitados. Eram descendentes de judeus que se misturaram com povos pagãos após o exílio assírio. Eles construíram um templo rival no Monte Gerizim e alteraram as Escrituras. Um judeu rígido preferia dar uma volta enorme pelo deserto a pisar em Samaria. Quando Jesus conta a parábola do "Bom Samaritano" e mostra esse homem como herói no lugar de um Sacerdote, foi um choque cultural e um escândalo absoluto para a audiência da época.</p>
+    </div>
+
+    <!-- TÓPICO 3 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> Zelotes, Escribas e Pescadores
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">Os <strong>Zelotes</strong> eram o braço armado e revolucionário. Eles odiavam o domínio romano e acreditavam que a violência era justificada para libertar Israel. Andavam com punhais (sicários) escondidos nas vestes e não pagavam impostos. Ironicamente, Jesus chamou Simão, um Zelote, para andar no mesmo grupo que Mateus, o cobrador de impostos de Roma!</p>
+        <p style="text-align: justify;">Os <strong>Escribas (Soferim)</strong> eram os juristas e teólogos. Eles copiavam a Lei à mão, letra por letra, e eram os intérpretes oficiais dos tribunais religiosos. No extremo oposto social, estavam os <strong>Pescadores da Galileia</strong>, homens rústicos, sem educação formal em teologia, de forte sotaque do norte, mas que conheciam as tempestades e o trabalho braçal pesado. Foi desse grupo improvável que saíram os fundadores da Igreja.</p>
+    </div>
+  </div>
+`;
+
+// ================= CURSO CULTURA BÍBLICA: MÓDULO 10 =================
+window.CULTURA_MOD_10_HTML = `
+  <div class="licao-html" style="background-color: #0D0829; padding: 20px; max-width: 800px; margin: 0 auto; color: #F5F0E8; font-family: 'Inter', sans-serif; padding-bottom: 80px; line-height: 1.8;">
+
+    <div style="text-align: center; margin-bottom: 40px; border-bottom: 1px solid rgba(212,168,67,0.2); padding-bottom: 20px;">
+        <span style="font-size: 3rem; margin-bottom: 10px; display: block;">💡</span>
+        <h2 style="font-family: 'Cinzel', serif; color: #D4A843; font-size: 2.2rem; margin-bottom: 10px; line-height: 1.2;">Módulo 10<br>Curiosidades Bíblicas</h2>
+        <p style="color: #9B8FCB; font-size: 1rem;">O significado oculto por trás dos hábitos e costumes antigos.</p>
+    </div>
+
+    <!-- TÓPICO 1 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> Lavar os Pés e o Ósculo Santo
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">O beijo (ósculo) na cultura do Oriente Médio não tinha conotação romântica, mas era um cumprimento afetuoso que conferia igualdade. Dar um beijo no ombro ou na face era dizer "nós somos irmãos". O beijo da traição de Judas doeu porque usou um símbolo de profunda intimidade e amizade para entregar o Mestre à morte.</p>
+        <p style="text-align: justify;">Em contrapartida, <strong>Lavar os Pés</strong> era considerado um trabalho tão indigno e sujo que um judeu não podia obrigar nem o seu escravo hebreu a fazê-lo; era uma tarefa destinada ao escravo mais baixo da casa (geralmente estrangeiro). Quando o Criador do Universo (Jesus) tira a túnica, amarra a toalha na cintura e se ajoelha para lavar a poeira dos pés de seus discípulos — incluindo de Judas —, o choque cultural e teológico foi imensurável.</p>
+    </div>
+
+    <!-- TÓPICO 2 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> Rasgar as Vestes e Usar Pano de Saco
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">Hoje, quando ficamos tristes, choramos e ficamos isolados. No mundo antigo, a dor precisava ser <strong>visível e corpórea</strong>. Rasgar as vestes não significava rasgar a roupa inteira, mas dar um pequeno rasgo na gola (perto do coração) com força, produzindo um som alto de rasgo, expressando uma dor na alma que as palavras não podiam descrever. Era feito diante da morte de alguém ou ao ouvir uma blasfêmia.</p>
+        <p style="text-align: justify;">Vestir <strong>Pano de Saco e Cinzas</strong> era o luto levado ao extremo. O "pano de saco" era um tecido grosseiro de pelo de cabra negra (geralmente usado para carregar cereais). Vestir isso diretamente sobre a pele crua causava coceira e desconforto constantes, servindo para lembrar a pessoa do seu estado de humilhação, arrependimento ou miséria diante de Deus.</p>
+    </div>
+
+    <!-- TÓPICO 3 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> As Portas da Cidade e os Casamentos Noturnos
+        </h3>
+        <div style="background: rgba(255,255,255,0.03); border-left: 4px solid #D4A843; padding: 15px; margin-bottom: 15px; border-radius: 0 8px 8px 0;">
+            A expressão "sentar-se à porta da cidade" não significava estar de bobeira. A porta principal de uma cidade murada era larga, tinha praças e funcionava como <strong>Tribunal, Fórum e Prefeitura</strong>.
+        </div>
+        <p style="margin-bottom: 15px; text-align: justify;">Era ali que os juízes e anciãos julgavam as causas e os profetas pregavam. Quando Boaz comprou as terras de Rute para casar-se com ela, ele formalizou o contrato "à porta da cidade" diante das testemunhas.</p>
+        <p style="text-align: justify;">Sobre os <strong>casamentos</strong>, o grande clímax da festa sempre ocorria à noite. O noivo vinha com sua comitiva para buscar a noiva de surpresa (por isso a parábola das 10 virgens exigia que as lâmpadas tivessem azeite de reserva). A escuridão da rua sem iluminação pública era cortada pelas tochas e cânticos festivos, e apenas quem estava na procissão com a luz podia entrar na casa para o banquete quando a porta fosse trancada.</p>
+    </div>
+  </div>
+`;
+
+// ================= CURSO CULTURA BÍBLICA: BÔNUS =================
+window.CULTURA_BONUS_HTML = `
+  <div class="licao-html" style="background-color: #0D0829; padding: 20px; max-width: 800px; margin: 0 auto; color: #F5F0E8; font-family: 'Inter', sans-serif; padding-bottom: 80px; line-height: 1.8;">
+
+    <div style="text-align: center; margin-bottom: 40px; border-bottom: 1px solid rgba(212,168,67,0.2); padding-bottom: 20px;">
+        <span style="font-size: 3rem; margin-bottom: 10px; display: block;">🎁</span>
+        <h2 style="font-family: 'Cinzel', serif; color: #D4A843; font-size: 2.2rem; margin-bottom: 10px; line-height: 1.2;">Bônus Exclusivo</h2>
+        <p style="color: #9B8FCB; font-size: 1rem;">O peso dos Nomes, Símbolos e Números nas Escrituras.</p>
+    </div>
+
+    <!-- TÓPICO 1 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> O Significado Profético dos Nomes
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">Para nós, um nome serve apenas para identificar alguém. No mundo hebraico antigo, <strong>o nome é o destino e o caráter da pessoa</strong>. Conhecer o nome de alguém é conhecer a sua essência. Por isso, quando a vida de um personagem mudava drasticamente, Deus alterava seu nome.</p>
+        <p style="text-align: justify;">Abrão (Pai Exaltado) tornou-se Abraão (Pai de Multidões) quando a aliança foi selada. Jacó (Enganador/Aquele que segura o calcanhar) lutou com o anjo e virou Israel (Príncipe com Deus / O que luta com Deus). Jesus em hebraico é <strong>Yeshua</strong>, que significa literalmente "O Senhor é a Salvação", definindo exatamente o Seu propósito redentor na terra.</p>
+    </div>
+
+    <!-- TÓPICO 2 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> Os Números e seus Símbolos
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">A cultura bíblica usa a numerologia não como mágica, mas como poesia profética, onde números carregam conceitos absolutos:</p>
+        <ul style="margin: 0; padding-left: 20px; font-size: 0.95rem; line-height: 1.8; color: #E8E3F5; text-align: justify;">
+            <li style="margin-bottom: 10px;"><strong>O número 7:</strong> É o número da perfeição divina e da completude. Deus descansou no 7º dia. A Menorá tem 7 hastes. O perdão deve ser "setenta vezes sete".</li>
+            <li style="margin-bottom: 10px;"><strong>O número 40:</strong> Representa um período longo de provação, julgamento ou transição. O dilúvio durou 40 dias. Moisés esteve 40 dias no Sinai. Israel vagou 40 anos no deserto. Jesus jejuou 40 dias.</li>
+            <li><strong>O número 12:</strong> Simboliza a autoridade e o governo divino na terra (12 Tribos no Antigo Testamento, 12 Apóstolos no Novo Testamento).</li>
+        </ul>
+    </div>
+
+    <!-- TÓPICO 3 -->
+    <div style="margin-bottom: 35px;">
+        <h3 style="color: #F0C96A; font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+            <span style="color: var(--gold); font-size: 1.2rem;">✦</span> A Divisão Trágica do Reino
+        </h3>
+        <p style="margin-bottom: 15px; text-align: justify;">Muitos leitores da Bíblia se confundem ao ler os livros dos Reis e Crônicas. É essencial entender que após a morte do Rei Salomão, <strong>o Reino de Israel rachou ao meio em uma guerra civil</strong> (Revolta de Jeroboão).</p>
+        <div style="background: rgba(255,255,255,0.03); border-left: 4px solid #D4A843; padding: 15px; margin-bottom: 15px; border-radius: 0 8px 8px 0;">
+            O país se dividiu em dois reinos totalmente independentes e, muitas vezes, inimigos.
+        </div>
+        <p style="text-align: justify;">O <strong>Reino do Norte (Israel)</strong> era formado por 10 tribos. Sua capital era Samaria, e eles caíram rapidamente na idolatria mais terrível. Nenhum de seus reis foi bom. Foram destruídos pelo Império da Assíria. O <strong>Reino do Sul (Judá)</strong> era formado por apenas 2 tribos (Judá e Benjamim). Mantiveram a capital em Jerusalém com o Templo, tiveram a linhagem real de Davi e, apesar de altos e baixos com reis idolatras e reis piedosos, foram os únicos que sobreviveram no cativeiro babilônico para preservar o povo judeu até a vinda do Messias.</p>
+    </div>
+
+  </div>
+`;
+
+// ================= CURSO CULTURA BÍBLICA: QUIZ FINAL =================
+window.CULTURA_QUIZ_HTML = `
+  <div class="licao-html" style="background-color: #0D0829; padding: 20px; max-width: 800px; margin: 0 auto; color: #F5F0E8; font-family: 'Inter', sans-serif; padding-bottom: 80px; line-height: 1.6;">
+
+    <div style="text-align: center; margin-bottom: 40px; border-bottom: 1px solid rgba(212,168,67,0.2); padding-bottom: 20px;">
+        <span style="font-size: 3rem; margin-bottom: 10px; display: block;">🏆</span>
+        <h2 style="font-family: 'Cinzel', serif; color: #D4A843; font-size: 2.2rem; margin-bottom: 10px; line-height: 1.2;">Quiz Final<br>Cultura Bíblica</h2>
+        <p style="color: #9B8FCB; font-size: 1rem;">Teste seus conhecimentos. Clique na alternativa para ver se acertou!</p>
+    </div>
+
+    <!-- QUESTÃO 1 -->
+    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px; margin-bottom: 25px;">
+        <h3 style="color: #F0C96A; font-size: 1.1rem; margin-bottom: 15px;">1. Geograficamente, por que Israel era palco de tantas guerras no mundo antigo?</h3>
+        <div onclick="this.style.background='rgba(231, 76, 60, 0.2)'; this.style.borderColor='#e74c3c';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            A) Porque possuía as maiores minas de ouro e prata do Oriente Médio.
+        </div>
+        <div onclick="this.style.background='rgba(46, 204, 113, 0.2)'; this.style.borderColor='#2ecc71';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            B) Porque funcionava como uma ponte terrestre obrigatória ligando três continentes.
+        </div>
+        <div onclick="this.style.background='rgba(231, 76, 60, 0.2)'; this.style.borderColor='#e74c3c';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            C) Porque era uma ilha isolada e fácil de ser conquistada por navios.
+        </div>
+    </div>
+
+    <!-- QUESTÃO 2 -->
+    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px; margin-bottom: 25px;">
+        <h3 style="color: #F0C96A; font-size: 1.1rem; margin-bottom: 15px;">2. Na cultura judaica do primeiro século, o que era o "Erusin" (Noivado)?</h3>
+        <div onclick="this.style.background='rgba(46, 204, 113, 0.2)'; this.style.borderColor='#2ecc71';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            A) Um compromisso legal e vinculativo que só podia ser desfeito com um divórcio formal.
+        </div>
+        <div onclick="this.style.background='rgba(231, 76, 60, 0.2)'; this.style.borderColor='#e74c3c';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            B) Uma fase informal de namoro que podia ser cancelada a qualquer momento.
+        </div>
+        <div onclick="this.style.background='rgba(231, 76, 60, 0.2)'; this.style.borderColor='#e74c3c';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            C) O banquete de sete dias realizado após o casamento.
+        </div>
+    </div>
+
+    <!-- QUESTÃO 3 -->
+    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px; margin-bottom: 25px;">
+        <h3 style="color: #F0C96A; font-size: 1.1rem; margin-bottom: 15px;">3. Quem era a única pessoa autorizada a entrar no "Santo dos Santos" (Kodesh Hakodashim) e quando?</h3>
+        <div onclick="this.style.background='rgba(231, 76, 60, 0.2)'; this.style.borderColor='#e74c3c';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            A) O Rei de Israel, todos os sábados.
+        </div>
+        <div onclick="this.style.background='rgba(231, 76, 60, 0.2)'; this.style.borderColor='#e74c3c';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            B) Qualquer levita da tribo, durante as três grandes festas anuais.
+        </div>
+        <div onclick="this.style.background='rgba(46, 204, 113, 0.2)'; this.style.borderColor='#2ecc71';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            C) O Sumo Sacerdote, apenas uma vez por ano, no Yom Kippur.
+        </div>
+    </div>
+
+    <!-- QUESTÃO 4 -->
+    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px; margin-bottom: 25px;">
+        <h3 style="color: #F0C96A; font-size: 1.1rem; margin-bottom: 15px;">4. O que era celebrado na Festa de Pentecostes (Shavuot)?</h3>
+        <div onclick="this.style.background='rgba(46, 204, 113, 0.2)'; this.style.borderColor='#2ecc71';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            A) A colheita do trigo e a entrega da Torá (A Lei) a Moisés no Sinai.
+        </div>
+        <div onclick="this.style.background='rgba(231, 76, 60, 0.2)'; this.style.borderColor='#e74c3c';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            B) A libertação da escravidão no Egito e a morte dos primogênitos.
+        </div>
+        <div onclick="this.style.background='rgba(231, 76, 60, 0.2)'; this.style.borderColor='#e74c3c';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            C) A moradia em tendas no deserto durante 40 anos.
+        </div>
+    </div>
+
+    <!-- QUESTÃO 5 -->
+    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px; margin-bottom: 25px;">
+        <h3 style="color: #F0C96A; font-size: 1.1rem; margin-bottom: 15px;">5. Do que era feito o Shofar, o instrumento de sopro bíblico?</h3>
+        <div onclick="this.style.background='rgba(231, 76, 60, 0.2)'; this.style.borderColor='#e74c3c';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            A) De bronze maciço polido.
+        </div>
+        <div onclick="this.style.background='rgba(231, 76, 60, 0.2)'; this.style.borderColor='#e74c3c';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            B) De chifre de boi (o animal de carga mais forte).
+        </div>
+        <div onclick="this.style.background='rgba(46, 204, 113, 0.2)'; this.style.borderColor='#2ecc71';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            C) De chifre de carneiro (nunca de boi).
+        </div>
+    </div>
+
+    <!-- QUESTÃO 6 -->
+    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px; margin-bottom: 25px;">
+        <h3 style="color: #F0C96A; font-size: 1.1rem; margin-bottom: 15px;">6. Segundo a lei de pureza alimentar (Kashrut), quais características um mamífero precisava ter para ser comido?</h3>
+        <div onclick="this.style.background='rgba(231, 76, 60, 0.2)'; this.style.borderColor='#e74c3c';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            A) Ter casco fendido apenas, como o porco.
+        </div>
+        <div onclick="this.style.background='rgba(46, 204, 113, 0.2)'; this.style.borderColor='#2ecc71';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            B) Ser ruminante e ter a unha fendida (casco dividido), como a ovelha e a vaca.
+        </div>
+        <div onclick="this.style.background='rgba(231, 76, 60, 0.2)'; this.style.borderColor='#e74c3c';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            C) Ter patas com garras, desde que fosse caçado na floresta.
+        </div>
+    </div>
+
+    <!-- QUESTÃO 7 -->
+    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px; margin-bottom: 25px;">
+        <h3 style="color: #F0C96A; font-size: 1.1rem; margin-bottom: 15px;">7. Para que serviam as franjas (Tzitzit) presas nas pontas do manto de oração (Talit)?</h3>
+        <div onclick="this.style.background='rgba(46, 204, 113, 0.2)'; this.style.borderColor='#2ecc71';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            A) Para lembrar o homem de todos os mandamentos do Senhor e afastá-lo dos desejos carnais.
+        </div>
+        <div onclick="this.style.background='rgba(231, 76, 60, 0.2)'; this.style.borderColor='#e74c3c';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            B) Para demonstrar o status de riqueza da família na sociedade.
+        </div>
+        <div onclick="this.style.background='rgba(231, 76, 60, 0.2)'; this.style.borderColor='#e74c3c';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            C) Para proteger as pernas do frio durante as viagens no deserto.
+        </div>
+    </div>
+
+    <!-- QUESTÃO 8 -->
+    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px; margin-bottom: 25px;">
+        <h3 style="color: #F0C96A; font-size: 1.1rem; margin-bottom: 15px;">8. Como era medida a principal riqueza de um patriarca como Abraão ou Jó?</h3>
+        <div onclick="this.style.background='rgba(231, 76, 60, 0.2)'; this.style.borderColor='#e74c3c';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            A) Pela quantidade de moedas de ouro cunhadas com o rosto do rei.
+        </div>
+        <div onclick="this.style.background='rgba(231, 76, 60, 0.2)'; this.style.borderColor='#e74c3c';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            B) Pela quantidade de navios mercantes que possuíam no Mar Mediterrâneo.
+        </div>
+        <div onclick="this.style.background='rgba(46, 204, 113, 0.2)'; this.style.borderColor='#2ecc71';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            C) Pela posse de terras produtivas e pelo tamanho de seus grandes rebanhos.
+        </div>
+    </div>
+
+    <!-- QUESTÃO 9 -->
+    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px; margin-bottom: 25px;">
+        <h3 style="color: #F0C96A; font-size: 1.1rem; margin-bottom: 15px;">9. Qual grupo religioso controlava o Templo, era formado pela aristocracia e NÃO acreditava na ressurreição dos mortos?</h3>
+        <div onclick="this.style.background='rgba(231, 76, 60, 0.2)'; this.style.borderColor='#e74c3c';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            A) Fariseus.
+        </div>
+        <div onclick="this.style.background='rgba(46, 204, 113, 0.2)'; this.style.borderColor='#2ecc71';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            B) Saduceus.
+        </div>
+        <div onclick="this.style.background='rgba(231, 76, 60, 0.2)'; this.style.borderColor='#e74c3c';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            C) Zelotes.
+        </div>
+    </div>
+
+    <!-- QUESTÃO 10 -->
+    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px; margin-bottom: 25px;">
+        <h3 style="color: #F0C96A; font-size: 1.1rem; margin-bottom: 15px;">10. Na cultura bíblica, o que significava o ato de rasgar as próprias vestes?</h3>
+        <div onclick="this.style.background='rgba(46, 204, 113, 0.2)'; this.style.borderColor='#2ecc71';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            A) Uma demonstração física e visível de dor extrema, luto profundo ou indignação.
+        </div>
+        <div onclick="this.style.background='rgba(231, 76, 60, 0.2)'; this.style.borderColor='#e74c3c';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            B) Uma tradição feita exclusivamente quando alguém comprava uma túnica nova.
+        </div>
+        <div onclick="this.style.background='rgba(231, 76, 60, 0.2)'; this.style.borderColor='#e74c3c';" style="padding: 12px; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: 0.3s;">
+            C) Um sinal de celebração e extrema alegria durante casamentos.
+        </div>
+    </div>
+
+  </div>
+`;
   
 // 🧠 MOTOR DO QUIZ INTERATIVO
 const QUIZ_QUESTIONS = [
