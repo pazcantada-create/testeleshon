@@ -2704,7 +2704,7 @@ const LICAO_5_HTML = `
         btnVoltar.setAttribute('onclick', `navTo('${idDaTelaDeRetorno}')`);
     }
 
-    // A mágica acontece aqui: em vez de imagens, ele joga o HTML!
+    // A mágica acontece aqui: ele injeta o código gigante na tela de leitura!
     const container = document.getElementById('container-imagens');
     container.innerHTML = codigoHtml; 
     
