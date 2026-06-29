@@ -3391,7 +3391,8 @@ function renderProfile(){
   }
 }
 
-window.navTo = function(scr){
+// ================= NAVEGAÇÃO E BOTÃO VOLTAR DO CELULAR =================
+window.navTo = function(scr, salvarNoHistorico = true){
   document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
   document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
   
@@ -3401,11 +3402,25 @@ window.navTo = function(scr){
   const nb = document.getElementById(`nav-${scr}`);
   if(nb) nb.classList.add('active');
 
-  // 👇 NOVA LINHA: Garante que o menu volte a aparecer nas outras telas
+  // Garante que o menu de baixo apareça em todas as telas, menos no login
   if(scr !== 'splash') {
       document.getElementById('bottom-nav').classList.add('visible');
   }
+
+  // MÁGICA: Avisa o celular que mudamos de tela!
+  if (salvarNoHistorico) {
+      window.history.pushState({ tela: scr }, '', `#${scr}`);
+  }
 };
+
+// Escuta o botão físico de voltar do celular
+window.addEventListener('popstate', function(event) {
+  if (event.state && event.state.tela) {
+      // Se apertou voltar, navega para a tela anterior sem salvar no histórico de novo
+      window.navTo(event.state.tela, false);
+  }
+});
+// =========================================================================
 
 window.logout = function(){
   window.closePlayer(); 
