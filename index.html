@@ -6125,7 +6125,6 @@ window.searchMusic = function() {
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
   import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
-  import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 
   const firebaseConfig = {
     apiKey: "AIzaSyAT_n5mYe59hRpT-6_nNgwdOEGVV1l9jx0",
@@ -6138,10 +6137,8 @@ window.searchMusic = function() {
 
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
-  const auth = getAuth(app);
 
-window.entrarSeguro = async function() {
-    // Pega apenas o e-mail, remove espaços vazios e deixa em minúsculo
+  window.entrarSeguro = async function() {
     const email = document.getElementById("login-email").value.toLowerCase().trim();
 
     if (!email) {
@@ -6150,15 +6147,17 @@ window.entrarSeguro = async function() {
     }
 
     try {
-      // Procura diretamente na sua coleção "usuarios" se esse e-mail existe
       const usuarioRef = doc(db, "usuarios", email);
       const usuarioSnap = await getDoc(usuarioRef);
 
       if (usuarioSnap.exists()) {
-        // Salva o e-mail no navegador para o cliente não precisar digitar toda vez
+        // Salva o e-mail no navegador
         localStorage.setItem('leshonUserEmail', email);
 
-        // Acesso liberado: Chama a engrenagem original do seu App para carregar tudo!
+        // A NOVA MÁGICA: Revela o menu inferior depois do login!
+        document.getElementById("bottom-nav").style.display = "";
+
+        // Acesso liberado: Chama a engrenagem original do seu App
         if (typeof window.handleLogin === "function") {
             window.handleLogin();
         } else if (typeof handleLogin === "function") {
@@ -6167,28 +6166,15 @@ window.entrarSeguro = async function() {
             console.error("Função handleLogin não encontrada.");
         }
       } else {
-        // Se o e-mail não foi inserido no banco pelo n8n ainda
         alert("E-mail não encontrado. Verifique se digitou o mesmo e-mail utilizado na compra da Hotmart.");
       }
     } catch (error) {
       console.error("Erro ao verificar acesso:", error);
       alert("Ops, tivemos um problema de conexão. Tente novamente em instantes.");
     }
-};
-
-        // A NOVA MÁGICA: Revela o menu inferior depois do login!
-        document.getElementById("bottom-nav").style.display = "";
-        
-      } else {
-        alert("🔒 Sua conta não tem acesso PRO ou o pagamento ainda está sendo processado.");
-      }
-    } catch (e) {
-      console.log("Erro ao logar:", e);
-      alert("E-mail ou senha incorretos.");
-    }
   };
-
 </script>
+
 <!-- A JANELA FLUTUANTE (MODAL) VERTICAL PARA SHORTS (AGORA LIVRE PARA TODAS AS TELAS) -->
 <div id="modal-video" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); z-index: 999999; justify-content: center; align-items: center; flex-direction: column;">
   <div style="width: 85%; max-width: 350px; background: #120e2b; padding: 15px; border-radius: 12px; border: 1px solid #d4af37; text-align: right;">
