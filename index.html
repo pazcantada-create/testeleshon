@@ -182,10 +182,16 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Inter'
   
   <div class="form-group">
     <label class="form-label" for="login-email">Seu e-mail</label>
-    <input id="login-email" class="form-input" type="email" placeholder="seuemail@exemplo.com">
+    <input id="login-email" class="form-input" type="email" placeholder="seuemail@exemplo.com" onkeypress="if(event.key === 'Enter') entrarSeguro()">
   </div>
-  <button class="btn btn-primary" onclick="handleLogin()">Entrar</button>
-  <p class="splash-note">Modo de visualização. O banco de dados está desligado.</p>
+
+  <div class="form-group" style="margin-top: 15px;">
+    <label class="form-label" for="login-password">Sua senha</label>
+    <input id="login-password" class="form-input" type="password" placeholder="******" onkeypress="if(event.key === 'Enter') entrarSeguro()">
+  </div>
+
+  <button class="btn btn-primary" onclick="entrarSeguro()">Entrar</button>
+
 </div>
 
 <!-- HOME -->
@@ -792,7 +798,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Inter'
 
 </div>
 <!-- ================= FIM DA TELA DO CURSO DE CULTURA ================= -->
-<nav class="bottom-nav" id="bottom-nav">
+<nav class="bottom-nav" id="bottom-nav" style="display: none;">
   <button class="nav-btn active" id="nav-home" onclick="navTo('home')"><span class="nav-ico">🏠</span><span class="nav-lbl">Início</span></button>
   <button class="nav-btn" id="nav-devocional" onclick="navTo('devocional')"><span class="nav-ico">🙏</span><span class="nav-lbl">Devocional</span></button>
   <button class="nav-btn" id="nav-dict" onclick="navTo('dict')"><span class="nav-ico">📖</span><span class="nav-lbl">Dicionário</span></button>
@@ -3467,8 +3473,12 @@ window.addEventListener('popstate', function(event) {
 // =========================================================================
 
 window.logout = function(){
-  window.closePlayer(); 
+  window.closePlayer();
   document.getElementById('bottom-nav').classList.remove('visible');
+  
+  // A NOSSA MÁGICA PARA ESCONDER O MENU DE VERDADE NA HORA DE SAIR:
+  document.getElementById('bottom-nav').style.display = 'none';
+  
   localStorage.removeItem('leshon_email'); // 🗑️ Apaga a memória ao sair
   window.navTo('splash');
 };
@@ -6097,6 +6107,62 @@ window.searchMusic = function() {
   }).join('');
 };  
 </script>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+  import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+  import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 
+  const firebaseConfig = {
+    apiKey: "AIzaSyAT_n5mYe59hRpT-6_nNgwdOEGVV1l9jx0",
+    authDomain: "leshon-bfe5e.firebaseapp.com",
+    projectId: "leshon-bfe5e",
+    storageBucket: "leshon-bfe5e.firebasestorage.app",
+    messagingSenderId: "73721682022",
+    appId: "1:73721682022:web:d715df8de13f1bade2f5a7"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+  const auth = getAuth(app);
+
+  window.entrarSeguro = async function() {
+    const email = document.getElementById("login-email").value;
+    const senha = document.getElementById("login-password").value;
+
+    if (!email || !senha) {
+      alert("Por favor, preencha e-mail e senha.");
+      return;
+    }
+
+    try {
+      await signInWithEmailAndPassword(auth, email, senha);
+      
+      const usuarioRef = doc(db, "usuarios", email);
+      const usuarioSnap = await getDoc(usuarioRef);
+
+      if (usuarioSnap.exists() && usuarioSnap.data().plano === "pro") {
+        
+        // Acesso liberado: Chama a engrenagem original do seu App para carregar os textos!
+        if (typeof window.handleLogin === "function") {
+            window.handleLogin();
+        } else if (typeof handleLogin === "function") {
+            handleLogin(); 
+        } else {
+            console.error("Função handleLogin não encontrada.");
+        }
+
+        // A NOVA MÁGICA: Revela o menu inferior depois do login!
+        document.getElementById("bottom-nav").style.display = "";
+        
+      } else {
+        alert("🔒 Sua conta não tem acesso PRO ou o pagamento ainda está sendo processado.");
+      }
+    } catch (e) {
+      console.log("Erro ao logar:", e);
+      alert("E-mail ou senha incorretos.");
+    }
+  };
+</script>
+</script>
 </body>
 </html>
