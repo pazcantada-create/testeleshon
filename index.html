@@ -197,12 +197,13 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Inter'
       📲 Como instalar no celular? Assista ao vídeo
     </button>
   </div>
-
+<!-- A JANELA FLUTUANTE (MODAL) VERTICAL PARA SHORTS -->
   <div id="modal-video" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); z-index: 999999; justify-content: center; align-items: center; flex-direction: column;">
-    <div style="width: 90%; max-width: 400px; background: #120e2b; padding: 15px; border-radius: 12px; border: 1px solid #d4af37; text-align: right;">
+    <div style="width: 85%; max-width: 350px; background: #120e2b; padding: 15px; border-radius: 12px; border: 1px solid #d4af37; text-align: right;">
       <button onclick="fecharVideo()" style="background: none; border: none; color: #fff; font-size: 16px; font-weight: bold; cursor: pointer; margin-bottom: 10px;">✖ Fechar</button>
       
-      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+      <!-- O REPRODUTOR DE VÍDEO VERTICAL (9:16) -->
+      <div style="position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden; border-radius: 8px;">
         <iframe id="iframe-video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       
@@ -223,9 +224,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Inter'
   <div class="home-pad">
     <div class="greeting">Shalom,</div>
     <div class="greeting-name" id="home-user">bem-vindo</div>
-<button class="btn-pro" onclick="window.location.href='LINK_DA_SUA_KIWIFY_AQUI'">
-  ⭐ Adquirir Pro
-</button>
+
     
     <!-- PAINEL DA PALAVRA DO DIA -->
     <div class="card card-gold devo-card">
@@ -569,9 +568,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Inter'
     
     <!-- BOTÃO PRO CENTRALIZADO 👇 -->
     <div style="text-align: center; margin-bottom: 20px;">
-      <button class="btn-pro" onclick="window.location.href='LINK_DA_SUA_KIWIFY_AQUI'">
-        ⭐ Adquirir Pro
-      </button>
+      
     </div>
     <!-- ======================== -->
 
@@ -585,8 +582,15 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Inter'
         <div class="prof-item-l"><span>🚪</span><span style="color:var(--danger)">Sair</span></div>
       </div>
     </div>
+
+  <!-- BOTÃO DO VÍDEO EXPLICATIVO (PARA O PERFIL) -->
+  <div style="text-align: center; margin-top: 20px; margin-bottom: 20px; width: 100%;">
+    <button onclick="abrirVideo()" style="color: #d4af37; text-decoration: none; font-size: 13px; font-weight: bold; display: inline-block; padding: 10px 20px; border: 1px solid #d4af37; border-radius: 8px; background-color: rgba(212, 175, 55, 0.05); transition: 0.3s; cursor: pointer;">
+      📲 Como instalar no celular? Assista ao vídeo
+    </button>
   </div>
-</div>
+
+
 
 <!-- BOTTOM NAV -->
 <!-- ================= TELA DE ESTUDOS ================= -->
