@@ -175,20 +175,17 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Inter'
 <body>
 <div id="app">
 
-<!-- SPLASH / LOGIN -->
+<!-- SPLASH / LOGIN (AGORA SÓ COM E-MAIL) -->
 <div id="screen-splash" class="screen active">
   
   <img src="imagens/logoApps.png" style="width: 250px; margin-bottom: 40px; margin-top: -20px;" alt="Logo Leshon">
   
   <div class="form-group">
-    <label class="form-label" for="login-email">Seu e-mail</label>
-    <input id="login-email" class="form-input" type="email" placeholder="seuemail@exemplo.com" onkeypress="if(event.key === 'Enter') entrarSeguro()">
+    <label class="form-label" for="login-email">Seu e-mail de compra</label>
+    <input id="login-email" class="form-input" type="email" placeholder="O e-mail usado na Hotmart..." onkeypress="if(event.key === 'Enter') entrarSeguro()">
   </div>
 
-  <div class="form-group" style="margin-top: 15px;">
-    <label class="form-label" for="login-password">Sua senha</label>
-    <input id="login-password" class="form-input" type="password" placeholder="******" onkeypress="if(event.key === 'Enter') entrarSeguro()">
-  </div>
+  <!-- Removemos a div da senha inteira! -->
 
   <button class="btn btn-primary" onclick="entrarSeguro()">Entrar</button>
 
@@ -198,7 +195,7 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Inter'
       📲 Como instalar no celular? Assista ao vídeo
     </button>
   </div>
-
+</div>
   
       
     </div>
@@ -6143,24 +6140,25 @@ window.searchMusic = function() {
   const db = getFirestore(app);
   const auth = getAuth(app);
 
-  window.entrarSeguro = async function() {
-    const email = document.getElementById("login-email").value;
-    const senha = document.getElementById("login-password").value;
+window.entrarSeguro = async function() {
+    // Pega apenas o e-mail, remove espaços vazios e deixa em minúsculo
+    const email = document.getElementById("login-email").value.toLowerCase().trim();
 
-    if (!email || !senha) {
-      alert("Por favor, preencha e-mail e senha.");
+    if (!email) {
+      alert("Por favor, preencha o seu e-mail de compra.");
       return;
     }
 
     try {
-      await signInWithEmailAndPassword(auth, email, senha);
-      
+      // Procura diretamente na sua coleção "usuarios" se esse e-mail existe
       const usuarioRef = doc(db, "usuarios", email);
       const usuarioSnap = await getDoc(usuarioRef);
 
-      if (usuarioSnap.exists() && usuarioSnap.data().plano === "pro") {
-        
-        // Acesso liberado: Chama a engrenagem original do seu App para carregar os textos!
+      if (usuarioSnap.exists()) {
+        // Salva o e-mail no navegador para o cliente não precisar digitar toda vez
+        localStorage.setItem('leshonUserEmail', email);
+
+        // Acesso liberado: Chama a engrenagem original do seu App para carregar tudo!
         if (typeof window.handleLogin === "function") {
             window.handleLogin();
         } else if (typeof handleLogin === "function") {
@@ -6168,6 +6166,15 @@ window.searchMusic = function() {
         } else {
             console.error("Função handleLogin não encontrada.");
         }
+      } else {
+        // Se o e-mail não foi inserido no banco pelo n8n ainda
+        alert("E-mail não encontrado. Verifique se digitou o mesmo e-mail utilizado na compra da Hotmart.");
+      }
+    } catch (error) {
+      console.error("Erro ao verificar acesso:", error);
+      alert("Ops, tivemos um problema de conexão. Tente novamente em instantes.");
+    }
+};
 
         // A NOVA MÁGICA: Revela o menu inferior depois do login!
         document.getElementById("bottom-nav").style.display = "";
