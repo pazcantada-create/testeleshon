@@ -196,12 +196,6 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Inter'
     </button>
   </div>
 </div>
-  
-      
-    </div>
-  </div>
-
-</div>
 
 <!-- HOME -->
 <div id="screen-home" class="screen">
@@ -246,12 +240,6 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Inter'
   </div>
 </div>
 
-<div id="screen-jornada-diaria" class="screen">
-  <div style="padding: 20px; padding-bottom: 100px; overflow-y: auto; height: 100%;">
-    
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px;">
-        <h1 style="font-size: 22px; font-weight: 600; color: white; margin: 0;">JORNADA DE 7 DIAS</h1>
-    </div>
 
     <!-- Lista de Dias -->
     <div style="display: flex; flex-direction: column; gap: 12px;">
@@ -362,135 +350,336 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Inter'
   </div>
 </div>
 
+<!-- ================= TELA: JORNADA DE 7 DIAS (HEBRAICO) ================= -->
 <div id="screen-jornada-diaria" class="screen">
-  <div style="padding: 20px; color: white;">
-    <h2 style="color: var(--gold);">Jornada de 7 Dias com Deus através do Hebraico</h2>
-    <p>Aqui aparecerá o conteúdo do seu PDF quando finalizarmos a integração.</p>
-    <!-- Botão "Voltar" na tela da jornada -->
-<button class="btn btn-ghost" onclick="navTo('devocional')">← Voltar</button>
+  <div style="padding: 20px; padding-bottom: 100px; overflow-y: auto; height: 100%;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px;">
+        <h1 style="font-size: 22px; font-weight: 600; color: white; margin: 0;">JORNADA DE 7 DIAS</h1>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+            <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/eleven-labs-2026-06-24-t-17-03-09-lucas-deep-profound-narrator-pvc-sp-95-s-70-sb-90-v-3/ElevenLabs_2026-06-24T17_03_09_Lucas%20-%20Deep%20%26%20Profound%20Narrator_pvc_sp95_s70_sb90_v3.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer;">▶</button>
+            <div><div style="color: white; font-weight: bold;">Dia 1: Shalom</div><div style="color: #aaa; font-size: 13px;">Paz Completa</div></div>
+             <button onclick="abrirLiçao(['imagens/dev1.jpeg'])" style="background: var(--gold); color: #1a1a2e; border: none; border-radius: 8px; padding: 10px 15px; font-weight: bold; cursor: pointer; white-space: nowrap;">Iniciar</button>
+        </div>
+        <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+            <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/eleven-labs-2026-06-24-t-18-29-46-lucas-deep-profound-narrator-pvc-sp-95-s-70-sb-90-v-3/ElevenLabs_2026-06-24T18_29_46_Lucas%20-%20Deep%20%26%20Profound%20Narrator_pvc_sp95_s70_sb90_v3.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer;">▶</button>
+            <div><div style="color: white; font-weight: bold;">Dia 2: Emunah</div><div style="color: #aaa; font-size: 13px;">Fé que Permanece</div></div>
+             <button onclick="abrirLiçao(['imagens/dev2.jpeg'])" style="background: var(--gold); color: #1a1a2e; border: none; border-radius: 8px; padding: 10px 15px; font-weight: bold; cursor: pointer; white-space: nowrap;">Iniciar</button>
+        </div>
+        <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+            <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/dia-3-chesed-amor-que-nao-desiste/ElevenLabs_2026-06-24T18_35_38_Lucas%20-%20Deep%20%26%20Profound%20Narrator_pvc_sp95_s70_sb90_v3.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer;">▶</button>
+            <div><div style="color: white; font-weight: bold;">Dia 3: Chesed</div><div style="color: #aaa; font-size: 13px;">Amor que não desiste</div></div>
+             <button onclick="abrirLiçao(['imagens/dev3.jpeg'])" style="background: var(--gold); color: #1a1a2e; border: none; border-radius: 8px; padding: 10px 15px; font-weight: bold; cursor: pointer; white-space: nowrap;">Iniciar</button>
+        </div>
+        <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+            <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/dia-4-ruach-o-sopro-de-deus/ElevenLabs_2026-06-24T18_41_10_Lucas%20-%20Deep%20%26%20Profound%20Narrator_pvc_sp95_s70_sb90_v3.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer;">▶</button>
+            <div><div style="color: white; font-weight: bold;">Dia 4: Ruach</div><div style="color: #aaa; font-size: 13px;">O Sopro de Deus</div></div>
+             <button onclick="abrirLiçao(['imagens/dev4.jpeg'])" style="background: var(--gold); color: #1a1a2e; border: none; border-radius: 8px; padding: 10px 15px; font-weight: bold; cursor: pointer; white-space: nowrap;">Iniciar</button>
+        </div>
+        <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+            <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/dia-5-tikvah-esperanca-viva/ElevenLabs_2026-06-24T18_47_44_Lucas%20-%20Deep%20%26%20Profound%20Narrator_pvc_sp95_s70_sb90_v3.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer;">▶</button>
+            <div><div style="color: white; font-weight: bold;">Dia 5: Tikvah</div><div style="color: #aaa; font-size: 13px;">Esperança Viva</div></div>
+             <button onclick="abrirLiçao(['imagens/dev5.jpeg'])" style="background: var(--gold); color: #1a1a2e; border: none; border-radius: 8px; padding: 10px 15px; font-weight: bold; cursor: pointer; white-space: nowrap;">Iniciar</button>
+        </div>
+        <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+            <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/dia-6-yeshua-salvacao-e-libertacao/ElevenLabs_2026-06-24T18_54_07_Lucas%20-%20Deep%20%26%20Profound%20Narrator_pvc_sp95_s70_sb90_v3.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer;">▶</button>
+            <div><div style="color: white; font-weight: bold;">Dia 6: Yeshua</div><div style="color: #aaa; font-size: 13px;">Salvação e Libertação</div></div>
+             <button onclick="abrirLiçao(['imagens/dev6.jpeg'])" style="background: var(--gold); color: #1a1a2e; border: none; border-radius: 8px; padding: 10px 15px; font-weight: bold; cursor: pointer; white-space: nowrap;">Iniciar</button>
+        </div>
+        <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+            <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/dia-7-or-luz-que-guia/ElevenLabs_2026-06-24T19_01_45_Lucas%20-%20Deep%20%26%20Profound%20Narrator_pvc_sp95_s70_sb90_v3.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer;">▶</button>
+            <div><div style="color: white; font-weight: bold;">Dia 7: Or</div><div style="color: #aaa; font-size: 13px;">Luz que Guia</div></div>
+             <button onclick="abrirLiçao(['imagens/dev7.jpeg'])" style="background: var(--gold); color: #1a1a2e; border: none; border-radius: 8px; padding: 10px 15px; font-weight: bold; cursor: pointer; white-space: nowrap;">Iniciar</button>
+        </div>
+        <div style="background: rgba(212, 168, 67, 0.2); border: 1px solid var(--gold); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+            <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/dia-8-encerramento-a-jornada-continua/ElevenLabs_2026-06-24T19_10_59_Lucas%20-%20Deep%20%26%20Profound%20Narrator_pvc_sp95_s70_sb90_v3.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer;">▶</button>
+            <div><div style="color: white; font-weight: bold;">Dia 8: Encerramento</div><div style="color: #ddd; font-size: 13px;">A Jornada Continua</div></div>
+             <button onclick="abrirLiçao(['imagens/enc8.jpeg'])" style="background: var(--gold); color: #1a1a2e; border: none; border-radius: 8px; padding: 10px 15px; font-weight: bold; cursor: pointer; white-space: nowrap;">Iniciar</button>
+        </div>
+    </div>
+    <div style="margin-top: 30px;">
+        <button class="btn btn-ghost" onclick="navTo('devocional')">← Voltar</button>
+    </div>
   </div>
 </div>
 
-<!-- TELA DEVOCIONAL -->
+<!-- ================= MENU DOS DEVOCIONAIS ================= -->
 <div id="screen-devocional" class="screen" style="padding-bottom: 100px; overflow-y: auto; height: 100%;">
   <div class="screen-header">
     <h2 style="font-family:'Cinzel',serif;font-size:1.2rem;font-weight:600; color:var(--gold)">Devocionais</h2>
   </div>
   <div class="prof-pad">
-    
     <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px; margin-top: 20px; display: flex; flex-direction: column;">
        <h3 style="color: white; font-size: 1.1rem; margin-bottom: 5px;">Jornada de 7 Dias com Deus através do Hebraico</h3>
        <p style="color:var(--text-dim); margin-bottom: 15px; font-size: 0.9rem;">Mergulhe no hebraico bíblico.</p>
-       <button class="btn btn-primary" style="align-self: flex-start; max-width: 200px; padding: 10px 20px; font-size: 0.9rem; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.3s;" onclick="navTo('jornada-diaria')">
-           Começar
-       </button>
+       <button class="btn btn-primary" style="align-self: flex-start; max-width: 200px; padding: 10px 20px; font-size: 0.9rem; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.3s;" onclick="navTo('jornada-diaria')">Começar</button>
     </div> 
-
     <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px; margin-top: 20px; display: flex; flex-direction: column;">
        <h3 style="color: white; font-size: 1.1rem; margin-bottom: 5px;">Jornada de 7 Dias: Os Nomes de Deus</h3>
-       <p style="color:var(--text-dim); margin-bottom: 15px; font-size: 0.9rem;">Conheça o caráter e o poder do Criador através de Suas revelações no hebraico.</p>
-       <button class="btn btn-primary" style="align-self: flex-start; max-width: 200px; padding: 10px 20px; font-size: 0.9rem; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.3s;" onclick="navTo('devo-nomes')">
-           Começar
-       </button>
+       <p style="color:var(--text-dim); margin-bottom: 15px; font-size: 0.9rem;">Conheça o caráter e o poder do Criador.</p>
+       <button class="btn btn-primary" style="align-self: flex-start; max-width: 200px; padding: 10px 20px; font-size: 0.9rem; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.3s;" onclick="navTo('devo-nomes')">Começar</button>
     </div>
-
+    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px; margin-top: 20px; display: flex; flex-direction: column;">
+       <h3 style="color: white; font-size: 1.1rem; margin-bottom: 5px;">Jornada de 7 Dias: Renovando a Mente</h3>
+       <p style="color:var(--text-dim); margin-bottom: 15px; font-size: 0.9rem;">Jornada de 7 dias para encontrar a paz.</p>
+       <button class="btn btn-primary" style="align-self: flex-start; max-width: 200px; padding: 10px 20px; font-size: 0.9rem; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.3s;" onclick="navTo('devo-paz')">Começar</button>
+    </div>
   </div>
 </div>
-<!-- FIM TELA DEVOCIONAL -->
 
 <!-- ================= TELA: JORNADA NOMES DE DEUS ================= -->
 <div class="screen" id="screen-devo-nomes" style="padding: 20px; padding-bottom: 100px; overflow-y: auto; height: 100%;">
-  
   <div style="display: flex; align-items: center; margin-bottom: 25px; gap: 15px;">
     <button onclick="navTo('devocional')" style="background: none; border: none; color: var(--gold); font-size: 24px; cursor: pointer; line-height: 1;">←</button>
     <h1 style="font-size: 16px; font-weight: bold; color: white; margin: 0; text-transform: uppercase; letter-spacing: 1px;">JORNADA DE 7 DIAS</h1>
   </div>
-
   <div style="display: flex; flex-direction: column; gap: 12px;">
-
-    <!-- DIA 1 -->
     <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
       <button class="btn-jornada" onclick="playSimpleAudio('https://ia601509.us.archive.org/9/items/dia-1-elohim-o-deus-criador-e-majestoso/1-ElevenLabs_2026-06-29T23_32_53_Lucas%20-%20Deep%20%26%20Profound%20Narrator_pvc_sp95_s70_sb90_v3.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer; flex-shrink: 0;">▶</button>
-      <div style="text-align: center; flex: 1; padding: 0 10px;">
-        <div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 1: Elohim</div>
-        <div style="color: #9B8FCB; font-size: 11px;">O Deus Criador e Majestoso</div>
-      </div>
+      <div style="text-align: center; flex: 1; padding: 0 10px;"><div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 1: Elohim</div><div style="color: #9B8FCB; font-size: 11px;">O Deus Criador e Majestoso</div></div>
       <button onclick="abrirLicaoConteudo(window.DEVO_NOMES_1)" style="background: rgba(212,168,67,0.15); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 16px; font-weight: bold; font-size: 12px; cursor: pointer;">Iniciar</button>
     </div>
-
-    <!-- DIA 2 -->
     <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
       <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/dia-2-el-shaddai-o-todo-poderoso-que-sustenta/2-ElevenLabs_2026-06-29T23_35_28_Lucas%20-%20Deep%20%26%20Profound%20Narrator_pvc_sp95_s70_sb90_v3.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer; flex-shrink: 0;">▶</button>
-      <div style="text-align: center; flex: 1; padding: 0 10px;">
-        <div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 2: El Shaddai</div>
-        <div style="color: #9B8FCB; font-size: 11px;">O Todo-Poderoso que Sustenta</div>
-      </div>
+      <div style="text-align: center; flex: 1; padding: 0 10px;"><div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 2: El Shaddai</div><div style="color: #9B8FCB; font-size: 11px;">O Todo-Poderoso que Sustenta</div></div>
       <button onclick="abrirLicaoConteudo(window.DEVO_NOMES_2)" style="background: rgba(212,168,67,0.15); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 16px; font-weight: bold; font-size: 12px; cursor: pointer;">Iniciar</button>
     </div>
-
-    <!-- DIA 3 -->
     <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
       <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/dia-3-yahweh-yireh-o-senhor-provera/3-ElevenLabs_2026-06-29T23_37_53_Lucas%20-%20Deep%20%26%20Profound%20Narrator_pvc_sp95_s70_sb90_v3.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer; flex-shrink: 0;">▶</button>
-      <div style="text-align: center; flex: 1; padding: 0 10px;">
-        <div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 3: Yahweh Yireh</div>
-        <div style="color: #9B8FCB; font-size: 11px;">O Senhor Proverá</div>
-      </div>
+      <div style="text-align: center; flex: 1; padding: 0 10px;"><div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 3: Yahweh Yireh</div><div style="color: #9B8FCB; font-size: 11px;">O Senhor Proverá</div></div>
       <button onclick="abrirLicaoConteudo(window.DEVO_NOMES_3)" style="background: rgba(212,168,67,0.15); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 16px; font-weight: bold; font-size: 12px; cursor: pointer;">Iniciar</button>
     </div>
-
-    <!-- DIA 4 -->
     <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
       <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/dia-4-yahweh-rapha-o-senhor-que-cura/4-ElevenLabs_2026-06-29T23_45_02_Lucas%20-%20Deep%20%26%20Profound%20Narrator_pvc_sp95_s70_sb90_v3.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer; flex-shrink: 0;">▶</button>
-      <div style="text-align: center; flex: 1; padding: 0 10px;">
-        <div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 4: Yahweh Rapha</div>
-        <div style="color: #9B8FCB; font-size: 11px;">O Senhor que Cura</div>
-      </div>
+      <div style="text-align: center; flex: 1; padding: 0 10px;"><div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 4: Yahweh Rapha</div><div style="color: #9B8FCB; font-size: 11px;">O Senhor que Cura</div></div>
       <button onclick="abrirLicaoConteudo(window.DEVO_NOMES_4)" style="background: rgba(212,168,67,0.15); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 16px; font-weight: bold; font-size: 12px; cursor: pointer;">Iniciar</button>
     </div>
-
-    <!-- DIA 5 -->
     <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
       <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/dia-5-yahweh-shalom-o-senhor-e-paz/5-ElevenLabs_2026-06-30T00_03_24_Lucas%20-%20Deep%20%26%20Profound%20Narrator_pvc_sp95_s70_sb90_v3.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer; flex-shrink: 0;">▶</button>
-      <div style="text-align: center; flex: 1; padding: 0 10px;">
-        <div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 5: Yahweh Shalom</div>
-        <div style="color: #9B8FCB; font-size: 11px;">O Senhor é Paz</div>
-      </div>
+      <div style="text-align: center; flex: 1; padding: 0 10px;"><div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 5: Yahweh Shalom</div><div style="color: #9B8FCB; font-size: 11px;">O Senhor é Paz</div></div>
       <button onclick="abrirLicaoConteudo(window.DEVO_NOMES_5)" style="background: rgba(212,168,67,0.15); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 16px; font-weight: bold; font-size: 12px; cursor: pointer;">Iniciar</button>
     </div>
-
-    <!-- DIA 6 -->
     <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
       <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/dia-6-yahweh-roi-o-senhor-e-meu-pastor/6-ElevenLabs_2026-06-29T23_51_51_Lucas%20-%20Deep%20%26%20Profound%20Narrator_pvc_sp95_s70_sb90_v3.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer; flex-shrink: 0;">▶</button>
-      <div style="text-align: center; flex: 1; padding: 0 10px;">
-        <div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 6: Yahweh Ro'i</div>
-        <div style="color: #9B8FCB; font-size: 11px;">O Senhor é meu Pastor</div>
-      </div>
+      <div style="text-align: center; flex: 1; padding: 0 10px;"><div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 6: Yahweh Ro'i</div><div style="color: #9B8FCB; font-size: 11px;">O Senhor é meu Pastor</div></div>
       <button onclick="abrirLicaoConteudo(window.DEVO_NOMES_6)" style="background: rgba(212,168,67,0.15); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 16px; font-weight: bold; font-size: 12px; cursor: pointer;">Iniciar</button>
     </div>
-
-    <!-- DIA 7 -->
     <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
       <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/dia-7-immanuel-deus-conosco/7-ElevenLabs_2026-06-29T23_58_47_Lucas%20-%20Deep%20%26%20Profound%20Narrator_pvc_sp95_s70_sb90_v3.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer; flex-shrink: 0;">▶</button>
-      <div style="text-align: center; flex: 1; padding: 0 10px;">
-        <div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 7: Immanuel</div>
-        <div style="color: #9B8FCB; font-size: 11px;">Deus Conosco</div>
-      </div>
+      <div style="text-align: center; flex: 1; padding: 0 10px;"><div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 7: Immanuel</div><div style="color: #9B8FCB; font-size: 11px;">Deus Conosco</div></div>
       <button onclick="abrirLicaoConteudo(window.DEVO_NOMES_7)" style="background: rgba(212,168,67,0.15); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 16px; font-weight: bold; font-size: 12px; cursor: pointer;">Iniciar</button>
     </div>
-
-    <!-- DIA 8 (ENCERRAMENTO) -->
     <div style="background: rgba(212,168,67,0.05); border: 1px solid var(--gold); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center; margin-top: 5px;">
       <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/dia-8-encerramento-a-revelacao-completa/8-ElevenLabs_2026-06-30T00_05_27_Lucas%20-%20Deep%20%26%20Profound%20Narrator_pvc_sp95_s70_sb90_v3.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer; flex-shrink: 0;">▶</button>
-      <div style="text-align: center; flex: 1; padding: 0 10px;">
-        <div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 8: Encerramento</div>
-        <div style="color: var(--gold); font-size: 11px;">A Revelação Completa</div>
-      </div>
+      <div style="text-align: center; flex: 1; padding: 0 10px;"><div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 8: Encerramento</div><div style="color: var(--gold); font-size: 11px;">A Revelação Completa</div></div>
       <button onclick="abrirLicaoConteudo(window.DEVO_NOMES_8)" style="background: var(--gold); color: #1a1a2e; border: none; border-radius: 8px; padding: 8px 16px; font-weight: bold; font-size: 12px; cursor: pointer;">Iniciar</button>
     </div>
-
   </div>
 </div>
-<!-- ================= FIM DA TELA ================= -->
+
+<!-- ================= TELA: ÍNDICE - RENOVANDO A MENTE ================= -->
+<div class="screen" id="screen-devo-paz" style="padding: 20px; padding-bottom: 100px; overflow-y: auto; height: 100%;">
+  <div style="display: flex; align-items: center; margin-bottom: 25px; gap: 15px;">
+    <button onclick="navTo('devocional')" style="background: none; border: none; color: var(--gold); font-size: 24px; cursor: pointer; line-height: 1;">←</button>
+    <h1 style="font-size: 16px; font-weight: bold; color: white; margin: 0; text-transform: uppercase; letter-spacing: 1px;">RENOVANDO A MENTE</h1>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 12px;">
+    <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+      <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/1-lmnt-zain-a-leitura-de-hoje-est-em-fili/1-LMNT_Zain_A-leitura-de-hoje-est-em-Fili.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer; flex-shrink: 0;">▶</button>
+      <div style="text-align: center; flex: 1; padding: 0 10px;"><div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 1: A Paz</div><div style="color: #9B8FCB; font-size: 11px;">Que excede o entendimento</div></div>
+      <button onclick="navTo('devo-paz-dia1')" style="background: rgba(212,168,67,0.15); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 16px; font-weight: bold; font-size: 12px; cursor: pointer;">Iniciar</button>
+    </div>
+    <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+      <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/2-lmnt-zain-a-leitura-de-hoje-est-em-isa/2-LMNT_Zain_A-leitura-de-hoje-est-em-Isa-.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer; flex-shrink: 0;">▶</button>
+      <div style="text-align: center; flex: 1; padding: 0 10px;"><div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 2: A Força</div><div style="color: #9B8FCB; font-size: 11px;">Que vem da espera</div></div>
+      <button onclick="navTo('devo-paz-dia2')" style="background: rgba(212,168,67,0.15); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 16px; font-weight: bold; font-size: 12px; cursor: pointer;">Iniciar</button>
+    </div>
+    <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+      <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/3-lmnt-zain-a-leitura-de-hoje-est-em-roma/3-LMNT_Zain_A-leitura-de-hoje-est-em-Roma.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer; flex-shrink: 0;">▶</button>
+      <div style="text-align: center; flex: 1; padding: 0 10px;"><div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 3: A Mente</div><div style="color: #9B8FCB; font-size: 11px;">Transformação diária</div></div>
+      <button onclick="navTo('devo-paz-dia3')" style="background: rgba(212,168,67,0.15); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 16px; font-weight: bold; font-size: 12px; cursor: pointer;">Iniciar</button>
+    </div>
+    <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+      <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/4-lmnt-zain-a-leitura-de-hoje-est-em-prov/4-LMNT_Zain_A-leitura-de-hoje-est-em-Prov.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer; flex-shrink: 0;">▶</button>
+      <div style="text-align: center; flex: 1; padding: 0 10px;"><div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 4: A Bússola</div><div style="color: #9B8FCB; font-size: 11px;">Para as decisões</div></div>
+      <button onclick="navTo('devo-paz-dia4')" style="background: rgba(212,168,67,0.15); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 16px; font-weight: bold; font-size: 12px; cursor: pointer;">Iniciar</button>
+    </div>
+    <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+      <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/5-lmnt-zain-a-leitura-de-hoje-est-em-prov/5-LMNT_Zain_A-leitura-de-hoje-est-em-Prov.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer; flex-shrink: 0;">▶</button>
+      <div style="text-align: center; flex: 1; padding: 0 10px;"><div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 5: As Palavras</div><div style="color: #9B8FCB; font-size: 11px;">O poder do que falamos</div></div>
+      <button onclick="navTo('devo-paz-dia5')" style="background: rgba(212,168,67,0.15); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 16px; font-weight: bold; font-size: 12px; cursor: pointer;">Iniciar</button>
+    </div>
+    <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+      <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/6-lmnt-zain-a-leitura-de-hoje-est-em-prim/6-LMNT_Zain_A-leitura-de-hoje-est-em-Prim.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer; flex-shrink: 0;">▶</button>
+      <div style="text-align: center; flex: 1; padding: 0 10px;"><div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 6: O Amor</div><div style="color: #9B8FCB; font-size: 11px;">O amor em ação</div></div>
+      <button onclick="navTo('devo-paz-dia6')" style="background: rgba(212,168,67,0.15); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 16px; font-weight: bold; font-size: 12px; cursor: pointer;">Iniciar</button>
+    </div>
+    <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+      <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/7-lmnt-zain-a-leitura-de-hoje-est-no-salm/7-LMNT_Zain_A-leitura-de-hoje-est-no-Salm.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer; flex-shrink: 0;">▶</button>
+      <div style="text-align: center; flex: 1; padding: 0 10px;"><div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 7: A Gratidão</div><div style="color: #9B8FCB; font-size: 11px;">A prática diária</div></div>
+      <button onclick="navTo('devo-paz-dia7')" style="background: rgba(212,168,67,0.15); color: var(--gold); border: 1px solid var(--gold); border-radius: 8px; padding: 8px 16px; font-weight: bold; font-size: 12px; cursor: pointer;">Iniciar</button>
+    </div>
+    <div style="background: rgba(212,168,67,0.05); border: 1px solid var(--gold); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: center; margin-top: 5px;">
+      <button class="btn-jornada" onclick="playSimpleAudio('https://archive.org/download/8-lmnt-zain-a-nossa-ltima-leitura-desta-j/8-LMNT_Zain_A-nossa-ltima-leitura-desta-j.mp3', this)" style="background: rgba(212,168,67,0.15); border: 1px solid var(--gold); color: var(--gold); height: 40px; padding: 0 15px; border-radius: 8px; font-weight: bold; cursor: pointer; flex-shrink: 0;">▶</button>
+      <div style="text-align: center; flex: 1; padding: 0 10px;"><div style="color: white; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Dia 8: Encerramento</div><div style="color: var(--gold); font-size: 11px;">A Paz Contínua</div></div>
+      <button onclick="navTo('devo-paz-dia8')" style="background: var(--gold); color: #1a1a2e; border: none; border-radius: 8px; padding: 8px 16px; font-weight: bold; font-size: 12px; cursor: pointer;">Iniciar</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= TELA: CONTEÚDO DIA 1 ================= -->
+<div class="screen" id="screen-devo-paz-dia1" style="padding: 20px; padding-bottom: 100px; overflow-y: auto; height: 100%;">
+  <div style="display: flex; align-items: center; margin-bottom: 25px; gap: 15px;">
+    <button onclick="navTo('devo-paz')" style="background: none; border: none; color: var(--gold); font-size: 24px; cursor: pointer; line-height: 1;">←</button>
+    <h1 style="font-size: 16px; font-weight: bold; color: white; margin: 0; text-transform: uppercase; letter-spacing: 1px;">DIA 1</h1>
+  </div>
+  <div style="background-color: #120e2b; border: 1px solid #d4af37; border-left: 5px solid #d4af37; padding: 20px; border-radius: 10px; margin-bottom: 25px;">
+    <h2 style="color: #d4af37; margin-top: 0; font-size: 20px; border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding-bottom: 10px;">A Paz que Excede o Entendimento</h2>
+    <div style="margin-top: 15px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">📖 Leitura Direcionada</h3>
+      <p style="color: #e0e0e0; font-size: 14px; font-style: italic; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 6px;">"Não andem ansiosos por coisa alguma... E a paz de Deus, que excede todo o entendimento, guardará o coração..."<br><strong style="color: #d4af37;">— Filipenses 4:6-7</strong></p></div>
+    <div style="margin-top: 20px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">💭 Reflexão Prática</h3>
+      <p style="color: #e0e0e0; font-size: 14px;">A ansiedade muitas vezes nasce da nossa necessidade de controlar o amanhã. Troque a preocupação pela oração.</p>
+      <div style="background-color: rgba(212, 175, 55, 0.1); border-left: 3px solid #d4af37; padding: 10px; margin-top: 10px; border-radius: 0 6px 6px 0;"><p style="color: #fff; font-size: 14px; margin: 0;"><strong style="color: #d4af37;">Aplicação:</strong> Identifique uma situação que está roubando sua paz e transforme-a em agradecimento.</p></div></div>
+    <div style="margin-top: 20px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">🙏 Momento de Oração</h3>
+      <p style="color: #e0e0e0; font-size: 14px;">"Senhor, obrigado por cuidar dos detalhes. Entrego as minhas preocupações a Ti. Em nome de Jesus, amém."</p></div>
+  </div>
+  <div style="margin-top: 30px;"><button style="background: transparent; color: #a0a0a0; border: 1px solid #a0a0a0; padding: 10px 20px; border-radius: 8px; cursor: pointer;" onclick="navTo('devo-paz')">← Voltar para o Índice</button></div>
+</div>
+
+<!-- ================= TELA: CONTEÚDO DIA 2 ================= -->
+<div class="screen" id="screen-devo-paz-dia2" style="padding: 20px; padding-bottom: 100px; overflow-y: auto; height: 100%;">
+  <div style="display: flex; align-items: center; margin-bottom: 25px; gap: 15px;">
+    <button onclick="navTo('devo-paz')" style="background: none; border: none; color: var(--gold); font-size: 24px; cursor: pointer; line-height: 1;">←</button>
+    <h1 style="font-size: 16px; font-weight: bold; color: white; margin: 0; text-transform: uppercase; letter-spacing: 1px;">DIA 2</h1>
+  </div>
+  <div style="background-color: #120e2b; border: 1px solid #d4af37; border-left: 5px solid #d4af37; padding: 20px; border-radius: 10px; margin-bottom: 25px;">
+    <h2 style="color: #d4af37; margin-top: 0; font-size: 20px; border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding-bottom: 10px;">A Força que Vem da Espera</h2>
+    <div style="margin-top: 15px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">📖 Leitura Direcionada</h3>
+      <p style="color: #e0e0e0; font-size: 14px; font-style: italic; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 6px;">"Mas os que esperam no Senhor renovarão as suas forças..."<br><strong style="color: #d4af37;">— Isaías 40:31</strong></p></div>
+    <div style="margin-top: 20px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">💭 Reflexão Prática</h3>
+      <p style="color: #e0e0e0; font-size: 14px;">Esperar não é uma atitude passiva, é um ato de confiança ativa de que o tempo de Deus é perfeito.</p>
+      <div style="background-color: rgba(212, 175, 55, 0.1); border-left: 3px solid #d4af37; padding: 10px; margin-top: 10px; border-radius: 0 6px 6px 0;"><p style="color: #fff; font-size: 14px; margin: 0;"><strong style="color: #d4af37;">Aplicação:</strong> Tire 5 minutos hoje para silenciar e lembrar que a sua força vem do Alto.</p></div></div>
+    <div style="margin-top: 20px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">🙏 Momento de Oração</h3>
+      <p style="color: #e0e0e0; font-size: 14px;">"Deus, ajuda-me a descansar em Ti e a respeitar o Teu tempo. Renova as minhas forças. Amém."</p></div>
+  </div>
+  <div style="margin-top: 30px;"><button style="background: transparent; color: #a0a0a0; border: 1px solid #a0a0a0; padding: 10px 20px; border-radius: 8px; cursor: pointer;" onclick="navTo('devo-paz')">← Voltar para o Índice</button></div>
+</div>
+
+<!-- ================= TELA: CONTEÚDO DIA 3 ================= -->
+<div class="screen" id="screen-devo-paz-dia3" style="padding: 20px; padding-bottom: 100px; overflow-y: auto; height: 100%;">
+  <div style="display: flex; align-items: center; margin-bottom: 25px; gap: 15px;">
+    <button onclick="navTo('devo-paz')" style="background: none; border: none; color: var(--gold); font-size: 24px; cursor: pointer; line-height: 1;">←</button>
+    <h1 style="font-size: 16px; font-weight: bold; color: white; margin: 0; text-transform: uppercase; letter-spacing: 1px;">DIA 3</h1>
+  </div>
+  <div style="background-color: #120e2b; border: 1px solid #d4af37; border-left: 5px solid #d4af37; padding: 20px; border-radius: 10px; margin-bottom: 25px;">
+    <h2 style="color: #d4af37; margin-top: 0; font-size: 20px; border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding-bottom: 10px;">A Transformação da Mente</h2>
+    <div style="margin-top: 15px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">📖 Leitura Direcionada</h3>
+      <p style="color: #e0e0e0; font-size: 14px; font-style: italic; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 6px;">"Não se amoldem ao padrão deste mundo, mas transformem-se pela renovação da sua mente..."<br><strong style="color: #d4af37;">— Romanos 12:2</strong></p></div>
+    <div style="margin-top: 20px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">💭 Reflexão Prática</h3>
+      <p style="color: #e0e0e0; font-size: 14px;">Para viver a vontade de Deus, precisamos filtrar o que consumimos e deixar a Palavra moldar nossos pensamentos.</p>
+      <div style="background-color: rgba(212, 175, 55, 0.1); border-left: 3px solid #d4af37; padding: 10px; margin-top: 10px; border-radius: 0 6px 6px 0;"><p style="color: #fff; font-size: 14px; margin: 0;"><strong style="color: #d4af37;">Aplicação:</strong> Substitua um pensamento negativo por uma verdade que a Bíblia diz sobre você.</p></div></div>
+    <div style="margin-top: 20px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">🙏 Momento de Oração</h3>
+      <p style="color: #e0e0e0; font-size: 14px;">"Pai, peço que o Espírito Santo renove minha forma de pensar hoje. Amém."</p></div>
+  </div>
+  <div style="margin-top: 30px;"><button style="background: transparent; color: #a0a0a0; border: 1px solid #a0a0a0; padding: 10px 20px; border-radius: 8px; cursor: pointer;" onclick="navTo('devo-paz')">← Voltar para o Índice</button></div>
+</div>
+
+<!-- ================= TELA: CONTEÚDO DIA 4 ================= -->
+<div class="screen" id="screen-devo-paz-dia4" style="padding: 20px; padding-bottom: 100px; overflow-y: auto; height: 100%;">
+  <div style="display: flex; align-items: center; margin-bottom: 25px; gap: 15px;">
+    <button onclick="navTo('devo-paz')" style="background: none; border: none; color: var(--gold); font-size: 24px; cursor: pointer; line-height: 1;">←</button>
+    <h1 style="font-size: 16px; font-weight: bold; color: white; margin: 0; text-transform: uppercase; letter-spacing: 1px;">DIA 4</h1>
+  </div>
+  <div style="background-color: #120e2b; border: 1px solid #d4af37; border-left: 5px solid #d4af37; padding: 20px; border-radius: 10px; margin-bottom: 25px;">
+    <h2 style="color: #d4af37; margin-top: 0; font-size: 20px; border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding-bottom: 10px;">A Bússola para as Decisões</h2>
+    <div style="margin-top: 15px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">📖 Leitura Direcionada</h3>
+      <p style="color: #e0e0e0; font-size: 14px; font-style: italic; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 6px;">"Confie no Senhor de todo o seu coração... e Ele endireitará as suas veredas."<br><strong style="color: #d4af37;">— Provérbios 3:5-6</strong></p></div>
+    <div style="margin-top: 20px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">💭 Reflexão Prática</h3>
+      <p style="color: #e0e0e0; font-size: 14px;">Confiar significa envolver Deus até nas escolhas simples. Ele remove os obstáculos e dá clareza.</p>
+      <div style="background-color: rgba(212, 175, 55, 0.1); border-left: 3px solid #d4af37; padding: 10px; margin-top: 10px; border-radius: 0 6px 6px 0;"><p style="color: #fff; font-size: 14px; margin: 0;"><strong style="color: #d4af37;">Aplicação:</strong> Apresente a Deus uma decisão importante que você precisa tomar hoje.</p></div></div>
+    <div style="margin-top: 20px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">🙏 Momento de Oração</h3>
+      <p style="color: #e0e0e0; font-size: 14px;">"Senhor, convido-Te a participar de todas as minhas decisões. Dirige os meus passos. Amém."</p></div>
+  </div>
+  <div style="margin-top: 30px;"><button style="background: transparent; color: #a0a0a0; border: 1px solid #a0a0a0; padding: 10px 20px; border-radius: 8px; cursor: pointer;" onclick="navTo('devo-paz')">← Voltar para o Índice</button></div>
+</div>
+
+<!-- ================= TELA: CONTEÚDO DIA 5 ================= -->
+<div class="screen" id="screen-devo-paz-dia5" style="padding: 20px; padding-bottom: 100px; overflow-y: auto; height: 100%;">
+  <div style="display: flex; align-items: center; margin-bottom: 25px; gap: 15px;">
+    <button onclick="navTo('devo-paz')" style="background: none; border: none; color: var(--gold); font-size: 24px; cursor: pointer; line-height: 1;">←</button>
+    <h1 style="font-size: 16px; font-weight: bold; color: white; margin: 0; text-transform: uppercase; letter-spacing: 1px;">DIA 5</h1>
+  </div>
+  <div style="background-color: #120e2b; border: 1px solid #d4af37; border-left: 5px solid #d4af37; padding: 20px; border-radius: 10px; margin-bottom: 25px;">
+    <h2 style="color: #d4af37; margin-top: 0; font-size: 20px; border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding-bottom: 10px;">O Poder das Nossas Palavras</h2>
+    <div style="margin-top: 15px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">📖 Leitura Direcionada</h3>
+      <p style="color: #e0e0e0; font-size: 14px; font-style: italic; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 6px;">"A língua tem poder sobre a vida e sobre a morte..."<br><strong style="color: #d4af37;">— Provérbios 18:21</strong></p></div>
+    <div style="margin-top: 20px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">💭 Reflexão Prática</h3>
+      <p style="color: #e0e0e0; font-size: 14px;">O que falamos constrói ou destrói. Se plantarmos encorajamento, colheremos vida.</p>
+      <div style="background-color: rgba(212, 175, 55, 0.1); border-left: 3px solid #d4af37; padding: 10px; margin-top: 10px; border-radius: 0 6px 6px 0;"><p style="color: #fff; font-size: 14px; margin: 0;"><strong style="color: #d4af37;">Aplicação:</strong> Desafie-se a não reclamar de nada hoje e faça um elogio sincero a alguém.</p></div></div>
+    <div style="margin-top: 20px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">🙏 Momento de Oração</h3>
+      <p style="color: #e0e0e0; font-size: 14px;">"Pai, purifica meus lábios. Que as minhas palavras sejam fonte de bênção hoje. Amém."</p></div>
+  </div>
+  <div style="margin-top: 30px;"><button style="background: transparent; color: #a0a0a0; border: 1px solid #a0a0a0; padding: 10px 20px; border-radius: 8px; cursor: pointer;" onclick="navTo('devo-paz')">← Voltar para o Índice</button></div>
+</div>
+
+<!-- ================= TELA: CONTEÚDO DIA 6 ================= -->
+<div class="screen" id="screen-devo-paz-dia6" style="padding: 20px; padding-bottom: 100px; overflow-y: auto; height: 100%;">
+  <div style="display: flex; align-items: center; margin-bottom: 25px; gap: 15px;">
+    <button onclick="navTo('devo-paz')" style="background: none; border: none; color: var(--gold); font-size: 24px; cursor: pointer; line-height: 1;">←</button>
+    <h1 style="font-size: 16px; font-weight: bold; color: white; margin: 0; text-transform: uppercase; letter-spacing: 1px;">DIA 6</h1>
+  </div>
+  <div style="background-color: #120e2b; border: 1px solid #d4af37; border-left: 5px solid #d4af37; padding: 20px; border-radius: 10px; margin-bottom: 25px;">
+    <h2 style="color: #d4af37; margin-top: 0; font-size: 20px; border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding-bottom: 10px;">O Amor em Ação</h2>
+    <div style="margin-top: 15px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">📖 Leitura Direcionada</h3>
+      <p style="color: #e0e0e0; font-size: 14px; font-style: italic; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 6px;">"Amados, visto que Deus assim nos amou, nós também devemos amar uns aos outros..."<br><strong style="color: #d4af37;">— 1 João 4:11-12</strong></p></div>
+    <div style="margin-top: 20px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">💭 Reflexão Prática</h3>
+      <p style="color: #e0e0e0; font-size: 14px;">O amor de Deus foi feito para ser distribuído. É uma ação, não apenas um sentimento.</p>
+      <div style="background-color: rgba(212, 175, 55, 0.1); border-left: 3px solid #d4af37; padding: 10px; margin-top: 10px; border-radius: 0 6px 6px 0;"><p style="color: #fff; font-size: 14px; margin: 0;"><strong style="color: #d4af37;">Aplicação:</strong> Faça um ato prático de bondade, como ouvir alguém com atenção.</p></div></div>
+    <div style="margin-top: 20px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">🙏 Momento de Oração</h3>
+      <p style="color: #e0e0e0; font-size: 14px;">"Senhor, enche-me com o Teu Espírito para que eu possa amar com o Teu amor hoje. Amém."</p></div>
+  </div>
+  <div style="margin-top: 30px;"><button style="background: transparent; color: #a0a0a0; border: 1px solid #a0a0a0; padding: 10px 20px; border-radius: 8px; cursor: pointer;" onclick="navTo('devo-paz')">← Voltar para o Índice</button></div>
+</div>
+
+<!-- ================= TELA: CONTEÚDO DIA 7 ================= -->
+<div class="screen" id="screen-devo-paz-dia7" style="padding: 20px; padding-bottom: 100px; overflow-y: auto; height: 100%;">
+  <div style="display: flex; align-items: center; margin-bottom: 25px; gap: 15px;">
+    <button onclick="navTo('devo-paz')" style="background: none; border: none; color: var(--gold); font-size: 24px; cursor: pointer; line-height: 1;">←</button>
+    <h1 style="font-size: 16px; font-weight: bold; color: white; margin: 0; text-transform: uppercase; letter-spacing: 1px;">DIA 7</h1>
+  </div>
+  <div style="background-color: #120e2b; border: 1px solid #d4af37; border-left: 5px solid #d4af37; padding: 20px; border-radius: 10px; margin-bottom: 25px;">
+    <h2 style="color: #d4af37; margin-top: 0; font-size: 20px; border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding-bottom: 10px;">A Prática da Gratidão</h2>
+    <div style="margin-top: 15px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">📖 Leitura Direcionada</h3>
+      <p style="color: #e0e0e0; font-size: 14px; font-style: italic; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 6px;">"Este é o dia em que o Senhor agiu; alegremo-nos e exultemos neste dia."<br><strong style="color: #d4af37;">— Salmos 118:24</strong></p></div>
+    <div style="margin-top: 20px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">💭 Reflexão Prática</h3>
+      <p style="color: #e0e0e0; font-size: 14px;">A gratidão muda a nossa lente. Reconhecer que o "hoje" é um presente de Deus nos traz alegria.</p>
+      <div style="background-color: rgba(212, 175, 55, 0.1); border-left: 3px solid #d4af37; padding: 10px; margin-top: 10px; border-radius: 0 6px 6px 0;"><p style="color: #fff; font-size: 14px; margin: 0;"><strong style="color: #d4af37;">Aplicação:</strong> Escreva 5 coisas específicas pelas quais você é grato hoje.</p></div></div>
+    <div style="margin-top: 20px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">🙏 Momento de Oração</h3>
+      <p style="color: #e0e0e0; font-size: 14px;">"Deus, meu coração transborda de gratidão pelo dom da vida e pela Tua graça. Amém!"</p></div>
+  </div>
+  <div style="margin-top: 30px;"><button style="background: transparent; color: #a0a0a0; border: 1px solid #a0a0a0; padding: 10px 20px; border-radius: 8px; cursor: pointer;" onclick="navTo('devo-paz')">← Voltar para o Índice</button></div>
+</div>
+
+<!-- ================= TELA: CONTEÚDO DIA 8 ================= -->
+<div class="screen" id="screen-devo-paz-dia8" style="padding: 20px; padding-bottom: 100px; overflow-y: auto; height: 100%;">
+  <div style="display: flex; align-items: center; margin-bottom: 25px; gap: 15px;">
+    <button onclick="navTo('devo-paz')" style="background: none; border: none; color: var(--gold); font-size: 24px; cursor: pointer; line-height: 1;">←</button>
+    <h1 style="font-size: 16px; font-weight: bold; color: white; margin: 0; text-transform: uppercase; letter-spacing: 1px;">DIA 8: ENCERRAMENTO</h1>
+  </div>
+  <div style="background-color: #120e2b; border: 1px solid #d4af37; border-left: 5px solid #d4af37; padding: 20px; border-radius: 10px; margin-bottom: 25px;">
+    <h2 style="color: #d4af37; margin-top: 0; font-size: 20px; border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding-bottom: 10px;">A Paz Contínua</h2>
+    <div style="margin-top: 15px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">📖 Leitura Direcionada</h3>
+      <p style="color: #e0e0e0; font-size: 14px; font-style: italic; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 6px;">"Tu guardarás em perfeita paz aquele cujo propósito é firme, porque em ti confia."<br><strong style="color: #d4af37;">— Isaías 26:3</strong></p></div>
+    <div style="margin-top: 20px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">💭 Reflexão Prática</h3>
+      <p style="color: #e0e0e0; font-size: 14px;">A paz não é um destino onde você chega e estaciona, mas uma caminhada diária de confiança.</p>
+      <div style="background-color: rgba(212, 175, 55, 0.1); border-left: 3px solid #d4af37; padding: 10px; margin-top: 10px; border-radius: 0 6px 6px 0;"><p style="color: #fff; font-size: 14px; margin: 0;"><strong style="color: #d4af37;">Aplicação:</strong> Defina um horário e um local na sua casa para continuar a sua leitura todos os dias.</p></div></div>
+    <div style="margin-top: 20px;"><h3 style="color: #d4af37; font-size: 16px; margin-bottom: 5px;">🙏 Momento de Oração</h3>
+      <p style="color: #e0e0e0; font-size: 14px;">"Senhor, peço disciplina e desejo ardente para buscar a Tua presença todos os dias. Amém!"</p></div>
+  </div>
+  <div style="margin-top: 30px;"><button style="background: transparent; color: #a0a0a0; border: 1px solid #a0a0a0; padding: 10px 20px; border-radius: 8px; cursor: pointer;" onclick="navTo('devo-paz')">← Voltar para o Índice</button></div>
+</div>
+<!-- ================= FIM DA TELA DIA 8 ================= -->
 
 <!-- ================= TELA DO DICIONÁRIO ================= -->
 <div class="screen" id="screen-dict" style="padding: 20px; padding-bottom: 100px; overflow-y: auto; height: 100%;">
@@ -6185,7 +6374,6 @@ window.searchMusic = function() {
   </div>
 </div>
 
-<!-- MOTOR DA JANELA DO VÍDEO -->
 <script>
   function abrirVideo() {
     document.getElementById('iframe-video').src = "https://www.youtube.com/embed/HfupVzQb6ns";
@@ -6196,27 +6384,6 @@ window.searchMusic = function() {
     document.getElementById('modal-video').style.display = "none";
     document.getElementById('iframe-video').src = ""; 
   }
-</script>
-
-</body>
-</html>
-<!-- MOTOR DA JANELA DO VÍDEO -->
-<script>
-  function abrirVideo() {
-    // O link exato do seu vídeo transformado em Embed!
-    document.getElementById('iframe-video').src = "https://www.youtube.com/embed/HfupVzQb6ns";
-    
-    // Mostra a janela
-    document.getElementById('modal-video').style.display = "flex";
-  }
-
-  function fecharVideo() {
-    // Esconde a janela
-    document.getElementById('modal-video').style.display = "none";
-    // Apaga o link temporariamente para cortar o som do YouTube
-    document.getElementById('iframe-video').src = ""; 
-  }
-</script>
 </script>
 </body>
 </html>
